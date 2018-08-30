@@ -1,0 +1,129 @@
+---
+layout: post
+title: "Linux Java"
+description: ""
+category: linux
+tags: [linux, ubuntu, java, jdk, oracle jdk, open jdk, tomcat]
+---
+{% include JB/setup %}
+
+## Oracle JDK
+
+### Ubuntu
+
+```sh
+sudo apt-get install software-properties-common python-software-properties
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+```
+
+### CentOS
+
+```sh
+mkdir ~/bin/
+cd ~/bin/
+wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u5-b13/jdk-8u5-linux-x64.rpm"
+sudo rpm -Uvh jdk-8u5-linux-x64.rpm
+java -version
+export JAVA_HOME="/usr/java/latest"
+export JRE_HOME="$JAVA_HOME/jre"
+export PATH="$PATH:$JAVA_HOME/bin:$JRE_HOME/bin"
+```
+
+[Install Oracle Java JDK/JRE 8u5 on Fedora 20/19, CentOS/RHEL 6.5/5.10](http://www.if-not-true-then-false.com/2014/install-oracle-java-8-on-fedora-centos-rhel/)
+
+[Install Oracle Java JDK/JRE 7u40 on Fedora 19/18, CentOS/RHEL 6.4/5.9](http://www.if-not-true-then-false.com/2010/install-sun-oracle-java-jdk-jre-7-on-fedora-centos-red-hat-rhel/)
+
+[Properly installing Oracle's JDK on CentOS, RHEL or Scientific Linux](https://www.redbridge.se/blog/-/blogs/properly-installing-oracle-s-jdk-on-centos-rhel-or-scientific-linux)
+
+## Open JDK
+
+### CentOS
+
+```sh
+yum search java | grep java-
+sudo yum install java-1.7.0-openjdk-devel
+sudo yum install java-1.6.0-openjdk-devel
+```
+
+### Ubuntu
+
+```sh
+sudo apt-get install openjdk-7jdk
+```
+
+## Apache Tomcat
+
+```sh
+yum install tomcat6 tomcat6-webapps tomcat6-admin-webapps
+chkconfig tomcat6 on
+service tomcat6 restart
+```
+
+```
+http://[IP]:8080/
+```
+
+[Apache Tomcat Installation on Linux (RHEL and clones)](http://oracle-base.com/articles/linux/apache-tomcat-installation-on-linux.php)
+
+[How to install Tomcat 6 on RHEL 6 or CentOS 6](http://newpush.com/2011/10/how-to-install-tomcat-6-on-rhel-6-or-centos-6/)
+
+## Remote Access
+
+### Disable Firewall
+
+This is the most important step.
+
+#### Ubuntu
+
+```sh
+ufw disable
+```
+
+#### CentOS
+
+```sh
+service iptables stop
+```
+
+### Enable Firewall
+
+#### CentOS
+
+Add these lines before `-A INPUT -j REJECT` line
+
+```sh
+-A INPUT -p tcp --dport 8080 -m state --state NEW -j ACCEPT
+-A INPUT -p tcp --dport 8009 -m state --state NEW -j ACCEPT
+```
+
+Now restart service
+
+```sh
+service iptables restart
+```
+
+### Enable list directories
+
+```sh
+vim conf/web.xml
+```
+
+```xml
+<init-param>
+	<param-name>listings</param-name>
+	<param-value>true</param-value>
+</init-param>
+```
+
+Change `true` to `false`.
+
+
+## IntelliJ IDEA
+
+[IdeaVim](http://plugins.jetbrains.com/plugin/164?pr=idea)
+
+Download the `*.zip` file.
+
+Intellij IDEA -> Preferences... -> Plugins -> Install plugin from disk...

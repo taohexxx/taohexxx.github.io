@@ -1,0 +1,1150 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Blog · Tao He</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="A website for Tao He"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Blog · Tao He"/><meta property="og:type" content="website"/><meta property="og:url" content="https://taohexxx.github.io/index.html"/><meta property="og:description" content="A website for Tao He"/><meta property="og:image" content="https://taohexxx.github.io/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://taohexxx.github.io/img/docusaurus.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://taohexxx.github.io/blog/atom.xml" title="Tao He Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://taohexxx.github.io/blog/feed.xml" title="Tao He Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="blog"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/docusaurus.svg" alt="Tao He"/><h2 class="headerTitleWithLogo">Tao He</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/doc1" target="_self">Docs</a></li><li class=""><a href="/docs/doc4" target="_self">API</a></li><li class=""><a href="/en/help" target="_self">Help</a></li><li class="siteNavGroupActive siteNavItemActive"><a href="/blog" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Recent Posts</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Recent Posts</h3><ul><li class="navListItem"><a class="navItem" href="/blog/2019/01/13/microsoft-powerpoint">Microsoft PowerPoint</a></li><li class="navListItem"><a class="navItem" href="/blog/2018/12/12/chrome">Chrome</a></li><li class="navListItem"><a class="navItem" href="/blog/2018/11/21/alfred">Alfred</a></li><li class="navListItem"><a class="navItem" href="/blog/2018/09/01/docusaurus">Docusaurus</a></li><li class="navListItem"><a class="navItem" href="/blog/2018/08/30/git-commands">Git Commands</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer postContainer blogContainer"><div class="wrapper"><div class="posts"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2014/04/03/reaver">Reaver</a></h1><p class="post-meta">April 3, 2014</p><div class="authorBlock"></div></header><article class="post-content"><div><span><p>{% include JB/setup %}</p>
+<h2><a class="anchor" aria-hidden="true" id="kali-or-ubuntu"></a><a href="#kali-or-ubuntu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Kali or Ubuntu</h2>
+<h3><a class="anchor" aria-hidden="true" id="install"></a><a href="#install" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install</h3>
+<pre><code class="hljs css language-sh">apt-get install reaver
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="run"></a><a href="#run" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Run</h3>
+<pre><code class="hljs css language-sh">airmon-ng start wlan0
+airodump-ng mon0
+reaver -i mon0 -b 00:11:22:33:44:55 -c 1 -vv
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="macos"></a><a href="#macos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>macOS</h2>
+<h3><a class="anchor" aria-hidden="true" id="install-1"></a><a href="#install-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install</h3>
+<p><a href="http://www.aircrack-ng.org/doku.php?id=faq#is_mac_os_x_supported">airmon-ng on Mac OS X is not supported.</a></p>
+<p>Use GoAgent, or you will failed downloading Aircrack-ng.</p>
+<pre><code class="hljs css language-sh"><span class="hljs-built_in">export</span> http_proxy=http://127.0.0.1:8087
+</code></pre>
+<p>Install from Homebrew.</p>
+<pre><code class="hljs css language-sh">brew install aircrack-ng
+brew install reaver
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="run-1"></a><a href="#run-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Run</h3>
+<pre><code class="hljs css language-sh">ifconfig
+sudo wash -i en0
+sudo reaver -i en0 -b 00:11:22:33:44:55 -vv
+cp /etc/reaver/ABC.wpc ~/
+sudo reaver --session ~/ABC.wpc -i en0 -b 00:11:22:33:44:55 -vv
+</code></pre>
+</span></div></article></div><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2014/03/27/document">Document</a></h1><p class="post-meta">March 27, 2014</p><div class="authorBlock"></div></header><article class="post-content"><div><span><p>{% include JB/setup %}</p>
+<h2><a class="anchor" aria-hidden="true" id="uml"></a><a href="#uml" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>UML</h2>
+<p><a href="http://plantuml.sourceforge.net/">PlantUML</a>
+<a href="https://github.com/aklt/plantuml-syntax">PlantUML Vim Syntax/Plugin/FTDetect</a></p>
+<h3><a class="anchor" aria-hidden="true" id="macos"></a><a href="#macos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>macOS</h3>
+<pre><code class="hljs css language-sh">brew install graphviz
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="windows"></a><a href="#windows" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Windows</h3>
+<p>Download <a href="http://www.graphviz.org/Download_windows.php">Graphviz</a></p>
+<h3><a class="anchor" aria-hidden="true" id="eclipse"></a><a href="#eclipse" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Eclipse</h3>
+<p>Support UTF-8</p>
+<p>Eclipse -&gt; Preferences... -&gt; General -&gt; Workspace -&gt; Text file encoding -&gt; UTF-8</p>
+<h3><a class="anchor" aria-hidden="true" id="gui"></a><a href="#gui" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>GUI</h3>
+<p>Download <a href="http://sourceforge.net/projects/plantuml/files/plantuml.jar/download">plantuml.jar</a></p>
+<pre><code class="hljs css language-sh">java -jar plantuml.jar -gui
+</code></pre>
+<p>Dounble-click not support Chinese.</p>
+</span></div></article></div><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2014/03/26/cpp">C Plus Plus</a></h1><p class="post-meta">March 26, 2014</p><div class="authorBlock"></div></header><article class="post-content"><div><span><p>{% include JB/setup %}</p>
+<h2><a class="anchor" aria-hidden="true" id="graph"></a><a href="#graph" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Graph</h2>
+<p><a href="http://www.graphviz.org/content/resources">Graphviz - Graph Visualization Software</a></p>
+<h2><a class="anchor" aria-hidden="true" id="debug"></a><a href="#debug" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Debug</h2>
+<p><a href="http://valgrind.org/">Valgrind</a></p>
+<h2><a class="anchor" aria-hidden="true" id="dependency-analysis"></a><a href="#dependency-analysis" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dependency Analysis</h2>
+<p>dependency-alalysis is a part of static-code-analysis. There are several commercial products which are able to do dependency-alalysis on <a href="http://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis">List of tools for static code analysis</a>.</p>
+<p>Here is a discuss on C++ project dependency analysis: <a href="http://stackoverflow.com/questions/1137480/visual-c-project-dependency-analysis">(Visual) C++ project dependency analysis</a>.</p>
+<p><a href="http://stackoverflow.com/questions/5888398/deep-header-dependency-analysis">“Deep” header dependency analysis</a></p>
+<p><a href="https://code.google.com/p/include-what-you-use/">Include what you use</a></p>
+<p>Nmdepend is a lightweight 'link-time' dependency analyzer for C++. It uses object files and libraries instead of source-code as input. It runs UNIX and Cygwin. <a href="http://sourceforge.net/projects/nmdepend/">Nmdepend</a>, [Nmdepend] (<a href="https://github.com/epronk/nmdepend">https://github.com/epronk/nmdepend</a>).</p>
+<p><a href="http://sourceforge.net/projects/depdot/?source=navbar">Library Dependency Graphs</a></p>
+<p><a href="https://github.com/yuzhichang/cppdep">cppdep</a></p>
+<p><a href="http://www.cppdepend.com/">CppDepend</a> (Commercial)</p>
+<p><a href="http://www.profactor.co.uk/includemanager.php">ProFactor IncludeManager</a></p>
+<h2><a class="anchor" aria-hidden="true" id="call-graph"></a><a href="#call-graph" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Call Graph</h2>
+<p><a href="http://kcachegrind.sourceforge.net/cgi-bin/show.cgi">KCachegrind</a>
+<a href="http://www.csn.ul.ie/~mel/projects/codeviz/">CodeViz: A CallGraph Visualiser</a></p>
+</span></div></article></div><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2013/12/21/cygwin">Cygwin</a></h1><p class="post-meta">December 21, 2013</p><div class="authorBlock"></div></header><article class="post-content"><div><span><p>{% include JB/setup %}</p>
+<h2><a class="anchor" aria-hidden="true" id="1-install-openssh"></a><a href="#1-install-openssh" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Install openssh</h2>
+<p>Select <code>/libs/zlib</code>, <code>/net/openssh</code>, <code>/net/tcp_wrappers</code></p>
+<pre><code class="hljs css language-sh">ssh-host-config
+</code></pre>
+<p>When promote <code>... CYGWIN ...</code>, enter <code>ntsec</code></p>
+<pre><code class="hljs css language-sh">passwd taohe
+</code></pre>
+<p>Add rule inbound port 22 to firewall</p>
+<pre><code class="hljs css language-sh">net start sshd
+ssh localhost
+</code></pre>
+</span></div></article></div><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2013/11/21/centos">CentOS</a></h1><p class="post-meta">November 21, 2013</p><div class="authorBlock"></div></header><article class="post-content"><div><span><p>{% include JB/setup %}</p>
+<h2><a class="anchor" aria-hidden="true" id="create-usb-disk"></a><a href="#create-usb-disk" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create USB Disk</h2>
+<pre><code class="hljs css language-sh">dd <span class="hljs-keyword">if</span>= CentOS-6.5-x86_64-bin-DVD1.iso of=/dev/sdb
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="enable-dhcp"></a><a href="#enable-dhcp" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Enable DHCP</h2>
+<pre><code class="hljs css language-sh">sudo cp /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0.bak
+vi /etc/sysconfig/network-scripts/ifcfg-eth0
+</code></pre>
+<p>Add these lines</p>
+<pre><code class="hljs css language-sh">ONBOOT=yes
+BOOTPROTO=dhcp
+</code></pre>
+<p>Start service</p>
+<pre><code class="hljs css language-sh">service network restart
+</code></pre>
+<p>check network status</p>
+<pre><code class="hljs css language-sh">ifconfig
+</code></pre>
+<p><a href="http://www.centos.org/docs/5/html/Deployment_Guide-en-US/s1-networkscripts-interfaces.html">Interface Configuration Files</a></p>
+<h2><a class="anchor" aria-hidden="true" id="user"></a><a href="#user" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>User</h2>
+<h3><a class="anchor" aria-hidden="true" id="add-user"></a><a href="#add-user" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Add User</h3>
+<pre><code class="hljs css language-sh">w
+userdel -f taohe
+rm -rf /home/taohe
+useradd taohe -r -m
+passwd taohe
+visudo
+vi /etc/sudoers
+</code></pre>
+<p>Under <code>root ALL=(ALL) ALL</code> Add <code>taohe ALL=(ALL) ALL</code></p>
+<h3><a class="anchor" aria-hidden="true" id="delete-user"></a><a href="#delete-user" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Delete User</h3>
+<pre><code class="hljs css language-sh">userdel -f taohe
+rm -rf /home/taohe/
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="disable-root-login-ssh"></a><a href="#disable-root-login-ssh" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Disable root Login SSH</h3>
+<pre><code class="hljs css language-sh">sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak
+sudo vim /etc/ssh/sshd_config
+</code></pre>
+<p>Add</p>
+<pre><code class="hljs css language-sh">PermitRootLogin no
+</code></pre>
+<p>Restart sshd</p>
+<pre><code class="hljs css language-sh">sudo service sshd restart
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="add-repos"></a><a href="#add-repos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Add repos</h2>
+<pre><code class="hljs css language-sh">sudo yum install wget
+wget http://packages.sw.be/rpmforge-release/rpmforge-release-0.5.2-2.el6.rf.x86_64.rpm
+sudo rpm -i rpmforge-release-0.5.2-2.el6.rf.x86_64.rpm
+sudo yum update
+</code></pre>
+<p><a href="wiki.centos.org/Repositories">Repositories</a></p>
+<h2><a class="anchor" aria-hidden="true" id="mount-usb"></a><a href="#mount-usb" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Mount USB</h2>
+<p>列出所有存储设备</p>
+<pre><code class="hljs css language-sh">lsblk
+</code></pre>
+<p>找到U盘大小的分区（例如根据大小来判断）。注意是分区而不是盘，例如sda1是分区，而sda盘</p>
+<p>挂载U盘</p>
+<pre><code class="hljs css language-sh">lsblk
+mkdir /mnt/usb/
+mount -t vfat /dev/sdb1 /mnt/usb/
+<span class="hljs-built_in">cd</span> /mnt/usb/
+</code></pre>
+<p>这样U盘就成功mount上去了。这里sdb1是我的U盘，根据实际情况写就行。</p>
+<p>卸载U盘</p>
+<pre><code class="hljs css language-sh">umount /mnt/usb/
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="设置adsl的pppoe拨号上网"></a><a href="#设置adsl的pppoe拨号上网" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>设置ADSL的PPPOE拨号上网</h2>
+<p>以下操作都以root用户执行</p>
+<p>像上面一样设置号eth0并启动</p>
+<h3><a class="anchor" aria-hidden="true" id="1-安装pppoe拨号软件"></a><a href="#1-安装pppoe拨号软件" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. 安装pppoe拨号软件</h3>
+<p>下载所需软件rp-pppoe、ppp、libpcap</p>
+<pre><code class="hljs css language-sh">rpm -ivh libpcap-1.0.0-6.20091201git117cb5.el6.x86_64.rpm
+rpm -ivh ppp-2.4.5-5.el6.x86_64.rpm
+rpm -ivh rp-pppoe-3.10-8.el6.x86_64.rpm
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="2-拨号上网"></a><a href="#2-拨号上网" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. 拨号上网</h3>
+<p>软件安装在/usr/sbin下面</p>
+<pre><code class="hljs css language-sh"><span class="hljs-built_in">cd</span> /usr/sbin/
+ls
+</code></pre>
+<p>pppoe-setup为配置pppoe-status为查看状态，adsl-start或者ifup ppp0启用连接，adsl-stop或者ifdown ppp0断开连接，</p>
+<pre><code class="hljs css language-sh">pppoe-setup
+adsl-start
+</code></pre>
+<p>如果需要手动配置，可以</p>
+<pre><code class="hljs css language-sh">vi /etc/sysconfig/network-scripts/ifcfg-ppp0
+</code></pre>
+<p>ping百度可以的话就成功了。有时会拨号不成功，不一定是配置有问题。多试几次，重启一下。我曾经试过拨号不成功，只有ppp0有ipv4地址，eth0没有ipv4地址。过了半天和若干次重启之后正常了，ppp0和eth0都有ipv4地址。</p>
+<h2><a class="anchor" aria-hidden="true" id="install-packages"></a><a href="#install-packages" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install Packages</h2>
+<h3><a class="anchor" aria-hidden="true" id="gnome"></a><a href="#gnome" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>GNOME</h3>
+<p>X Window</p>
+<pre><code class="hljs css language-sh">yum groupinstall <span class="hljs-string">"X Window System"</span>
+</code></pre>
+<p>GNOME</p>
+<pre><code class="hljs css language-sh">yum groupinstall <span class="hljs-string">"Desktop"</span>
+</code></pre>
+<p>Chinese Support</p>
+<pre><code class="hljs css language-sh">yum groupinstall <span class="hljs-string">"Chinese Support"</span>
+</code></pre>
+<p>Start X</p>
+<pre><code class="hljs css language-sh">startx
+</code></pre>
+<p>Stop X</p>
+<p>Press <code>Ctrl + Alt + Backspace</code></p>
+<h3><a class="anchor" aria-hidden="true" id="php-server"></a><a href="#php-server" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PHP server</h3>
+<p><a href="/blog/php-server/">PHP Server</a></p>
+<h3><a class="anchor" aria-hidden="true" id="ntfs"></a><a href="#ntfs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>NTFS</h3>
+<pre><code class="hljs css language-sh">sudo yum install fuse fuse-ntfs-3g
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="chromium"></a><a href="#chromium" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Chromium</h3>
+<p><a href="http://www.linuxeden.com/html/softuse/20130627/140767.html">在CentOS/RHEL 6.4上安装Chromium</a></p>
+<h3><a class="anchor" aria-hidden="true" id="others"></a><a href="#others" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Others</h3>
+<pre><code class="hljs css language-sh">sudo yum install -y vim htop
+</code></pre>
+</span></div></article></div><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2013/11/15/zsh">Zsh</a></h1><p class="post-meta">November 15, 2013</p><div class="authorBlock"></div></header><article class="post-content"><div><span><p>{% include JB/setup %}</p>
+<h2><a class="anchor" aria-hidden="true" id="zsh"></a><a href="#zsh" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>zsh</h2>
+<h3><a class="anchor" aria-hidden="true" id="macos"></a><a href="#macos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>macOS</h3>
+<pre><code class="hljs css language-sh">brew options zsh
+brew install zsh --with-gdbm --with-pcre --with-unicode9
+brew install zsh-completions
+chsh -s $(<span class="hljs-built_in">which</span> zsh)
+</code></pre>
+<p>If encountered this error:</p>
+<pre><code class="hljs"><span class="hljs-string">chsh:</span> <span class="hljs-regexp">/usr/</span>local<span class="hljs-regexp">/bin/</span><span class="hljs-string">zsh:</span> non-standard shell
+</code></pre>
+<p>Add <code>/usr/local/bin/zsh</code> to <code>/etc/shells</code></p>
+<h3><a class="anchor" aria-hidden="true" id="ubuntu"></a><a href="#ubuntu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ubuntu</h3>
+<pre><code class="hljs css language-sh">sudo apt-get install zsh
+chsh -s $(<span class="hljs-built_in">which</span> zsh)
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="operations"></a><a href="#operations" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Operations</h2>
+<p><a href="http://stackoverflow.com/questions/19302913/exit-zsh-but-leave-running-jobs-open">Exit zsh, but leave running jobs open?</a></p>
+<p><a href="http://www.zsh.org/mla/users/2007/msg01243.html">Weird “jobs” behavior within zsh</a></p>
+<h2><a class="anchor" aria-hidden="true" id="oh-my-zsh"></a><a href="#oh-my-zsh" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>oh-my-zsh</h2>
+<pre><code class="hljs css language-sh">sh -c <span class="hljs-string">"<span class="hljs-variable">$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)</span>"</span>
+</code></pre>
+<p>Edit your new .zshrc file your home directory. You can select themes and plugins for usage in zsh. For a complete list of themes and plugins, look in the .oh-my-zsh folder in your home directory. This was installed with zsh. There is a themes folder here and a plugins folder.</p>
+<p>To add new plugins, find this line in .zshrc:</p>
+<pre><code class="hljs css language-sh">plugins=(git)
+</code></pre>
+<p>I like plugins, so this is my setup:</p>
+<pre><code class="hljs css language-sh">plugins=(autojump git git-extras git-flow git-flow-avh git-hubflow git-prompt git-remote-branch gitfast github gitignore svn svn-fast-info cp brew tmux <span class="hljs-built_in">history</span> <span class="hljs-built_in">history</span>-substring-search terminalapp brew nanoc osx xcode zsh-syntax-highlighting)
+</code></pre>
+<p>Optionally set <code>DEFAULT_USER</code> in <code>~/.zshrc</code> to your regular username to hide the <code>user@hostname</code> info when you’re logged in as yourself on your local machine. For example</p>
+<pre><code class="hljs css language-sh">DEFAULT_USER=taohe
+</code></pre>
+<p>If use brew, modify PATH</p>
+<p>Put <code>/usr/local/bin</code> before <code>/usr/bin</code></p>
+<p>Put <code>/usr/local/sbin</code> before <code>/usr/sbin</code></p>
+<p><a href="http://jakoblaegdsmand.com/blog/2013/04/how-to-get-an-awesome-looking-terminal-on-mac-os-x/">How to get an awesome looking terminal on mac os x</a></p>
+<p><a href="http://fendrich.se/blog/2012/09/28/no/">No, Really. Use Zsh.</a></p>
+<h2><a class="anchor" aria-hidden="true" id="zsh-completions"></a><a href="#zsh-completions" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>zsh-completions</h2>
+<pre><code class="hljs css language-sh">git <span class="hljs-built_in">clone</span> https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
+</code></pre>
+<p>Enable it in <code>~/.zshrc</code> by adding it to your plugin list and reloading the completion:</p>
+<pre><code class="hljs css language-sh">plugins=(… zsh-completions)
+
+<span class="hljs-comment"># zsh-completions</span>
+<span class="hljs-built_in">autoload</span> -U compinit &amp;&amp; compinit
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="zsh-plugins"></a><a href="#zsh-plugins" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>zsh plugins</h2>
+<h3><a class="anchor" aria-hidden="true" id="method-1-install-in-oh-my-zsh-recommended"></a><a href="#method-1-install-in-oh-my-zsh-recommended" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Method 1, install in oh-my-zsh (recommended)</h3>
+<pre><code class="hljs css language-sh"><span class="hljs-built_in">cd</span> ZSH/custom/plugins
+git <span class="hljs-built_in">clone</span> git://github.com/zsh-users/zsh-syntax-highlighting.git
+Activate the plugin <span class="hljs-keyword">in</span> ~/.zshrc (<span class="hljs-keyword">in</span> last position):
+plugins=( [plugins...] zsh-syntax-highlighting)
+<span class="hljs-built_in">source</span> ~/.zshrc
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="method-2-install-in-zsh"></a><a href="#method-2-install-in-zsh" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Method 2, install in zsh</h3>
+<pre><code class="hljs css language-sh">brew install zsh-syntax-highlighting
+brew install zsh-history-substring-search
+more <span class="hljs-string">"/usr/local/opt/zsh-history-substring-search/README.md"</span>
+<span class="hljs-built_in">source</span> /usr/<span class="hljs-built_in">local</span>/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+<span class="hljs-built_in">source</span> /usr/<span class="hljs-built_in">local</span>/opt/zsh-history-substring-search/zsh-history-substring-search.zsh
+<span class="hljs-built_in">source</span> ~/.zshrc
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="themes"></a><a href="#themes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>themes</h3>
+<p><a href="https://github.com/robbyrussell/oh-my-zsh/wiki/themes">Themes</a></p>
+<p>set <code>ZSH_THEME</code> in <code>~/.zshrc</code> to <code>&quot;agnoster&quot;</code>.</p>
+<p>agnoster theme shows git icons but needs patched font.</p>
+<p>Make sure you have already downloaded powerline.</p>
+<pre><code class="hljs css language-sh">fontforge -script ~/.vim/bundle/powerline/font/fontpatcher.py /System/Library/Fonts/Menlo.ttc
+</code></pre>
+<p>If you prefer the old Monaco font, you should type</p>
+<pre><code class="hljs css language-sh">fontforge -script ~/.vim/bundle/powerline/font/fontpatcher.py /System/Library/Fonts/Monaco.dfont
+</code></pre>
+<p>For macOS, Fonts are located in '/Library/Fonts/' or '/System/Library/Fonts/'.</p>
+<p>Menlo is the new default font in Mavericks.</p>
+<p><a href="http://support.apple.com/kb/HT5944">OS X: Fonts included with Mavericks</a></p>
+<p>After running this command, 'Monaco for Powerline.otf' or 'Menlo Regular for Powerline.otf' is generated. Install the font by double-clicking the font file in Finder and click “Install this font” from the preview window.</p>
+<p><a href="https://powerline.readthedocs.org/en/latest/fontpatching.html#font-patching">Font patching</a></p>
+<p>Change iTerm fonts in</p>
+<p>iTerm -&gt; Preferences... -&gt; Profiles -&gt; (Select a profile) -&gt; Text -&gt; ChangeFont -&gt; Menlo Regular for Powerline</p>
+</span></div></article></div><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2013/11/15/macos">macOS</a></h1><p class="post-meta">November 15, 2013</p><div class="authorBlock"></div></header><article class="post-content"><div><span><p>{% include JB/setup %}</p>
+<h2><a class="anchor" aria-hidden="true" id="overview"></a><a href="#overview" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Overview</h2>
+<p><a href="https://github.com/nikitavoloboev/my-mac-os">https://github.com/nikitavoloboev/my-mac-os</a></p>
+<p><a href="https://github.com/nikitavoloboev/my-ios">https://github.com/nikitavoloboev/my-ios</a></p>
+<h2><a class="anchor" aria-hidden="true" id="system"></a><a href="#system" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>System</h2>
+<p>Set the key repeat rate</p>
+<pre><code class="hljs css language-sh">defaults write -g InitialKeyRepeat -int 10  <span class="hljs-comment"># normal minimum is 15 (225 ms)</span>
+defaults write -g KeyRepeat -int 1  <span class="hljs-comment"># normal minimum is 2 (30 ms)</span>
+</code></pre>
+<p><a href="https://support.apple.com/en-us/HT204609">Turn on &quot;three finger drag&quot; for your Force Touch trackpad</a></p>
+<h2><a class="anchor" aria-hidden="true" id="xcode"></a><a href="#xcode" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>XCode</h2>
+<p>If encountered this error:</p>
+<pre><code class="hljs">xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools<span class="hljs-built_in"> instance
+</span></code></pre>
+<p>Run</p>
+<pre><code class="hljs css language-sh">xcode-select --install
+sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="homebrew"></a><a href="#homebrew" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>homebrew</h2>
+<pre><code class="hljs css language-sh">brew update
+brew install
+brew uninstall
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="doctor"></a><a href="#doctor" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>doctor</h3>
+<pre><code class="hljs css language-sh">brew doctor
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="path"></a><a href="#path" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Path</h3>
+<p>Source code in <code>/Library/Caches/Homebrew/</code></p>
+<p>Formula in <code>/usr/local/Library/Formula/</code></p>
+<h3><a class="anchor" aria-hidden="true" id="cask"></a><a href="#cask" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>cask</h3>
+<pre><code class="hljs css language-sh">brew cask install google-chrome
+</code></pre>
+<p>Add to ~/.zshrc</p>
+<pre><code class="hljs css language-zsh">plugins=(brew-cask)
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="git"></a><a href="#git" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>git</h2>
+<p>Install git</p>
+<pre><code class="hljs css language-sh">brew install git
+brew install tig
+brew tap mkchoi212/fac https://github.com/mkchoi212/fac.git
+brew install fac  <span class="hljs-comment"># Easy-to-use CUI for fixing git conflicts</span>
+</code></pre>
+<p>If encountered error:</p>
+<pre><code class="hljs css language-sh">sudo xcodebuild -license
+</code></pre>
+<p>Then 'agree' to it.</p>
+<h2><a class="anchor" aria-hidden="true" id="gperftools"></a><a href="#gperftools" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>gperftools</h2>
+<p>Install</p>
+<pre><code class="hljs css language-sh">brew install gperftools
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="fd"></a><a href="#fd" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>fd</h2>
+<p><a href="https://github.com/sharkdp/fd">fd</a> is a simple, fast and user-friendly alternative to find.</p>
+<p>Install</p>
+<pre><code class="hljs css language-sh">brew install fd
+</code></pre>
+<p>Usage</p>
+<pre><code class="hljs css language-sh">fd blahblahblah
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="the-silver-searcher"></a><a href="#the-silver-searcher" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>The Silver Searcher</h2>
+<p>Install</p>
+<pre><code class="hljs css language-sh">brew install the_silver_searcher
+</code></pre>
+<p>Usage</p>
+<pre><code class="hljs css language-sh">ag blahblahblah ~/code
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="python"></a><a href="#python" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Python</h2>
+<p><a href="/blog/python/">Python</a></p>
+<h2><a class="anchor" aria-hidden="true" id="emacs"></a><a href="#emacs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Emacs</h2>
+<pre><code class="hljs css language-sh">brew tap d12frosted/emacs-plus
+brew install emacs-plus --with-modern-icon
+ln -s /usr/<span class="hljs-built_in">local</span>/opt/emacs-plus/Emacs.app /Applications
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="neovim"></a><a href="#neovim" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Neovim</h2>
+<pre><code class="hljs css language-sh">pip2 install neovim
+pip3 install neovim
+brew update
+brew reinstall neovim
+<span class="hljs-built_in">which</span> nvim
+nvim --version
+</code></pre>
+<p>In nvim, run <code>:CheckHealth</code>. It checks for common problems and best practices.</p>
+<h2><a class="anchor" aria-hidden="true" id="vim"></a><a href="#vim" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>vim</h2>
+<pre><code class="hljs css language-sh">brew cask install xquartz
+brew options vim
+brew install vim --with-client-server --with-gettext --with-luajit --with-python3
+brew options macvim
+brew install macvim --with-luajit --override-system-vim
+<span class="hljs-built_in">which</span> vim
+vim --version
+<span class="hljs-built_in">which</span> mvim
+mvim --version
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="iterm"></a><a href="#iterm" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>iTerm</h2>
+<h3><a class="anchor" aria-hidden="true" id="color"></a><a href="#color" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Color</h3>
+<p><code>Prefs...</code> -&gt; <code>Profiles</code> -&gt; <code>Terminal</code> -&gt; <code>Terminal Emulation</code></p>
+<p><code>Report Terminal Type:</code> <code>xterm-256color</code></p>
+<p>Download <a href="http://ethanschoonover.com/solarized">solarized</a></p>
+<p>Install <code>iterm2-colors-solarized/Solarized\ Dark.itermcolors</code></p>
+<p><code>Prefs...</code> -&gt; <code>Profiles</code> -&gt; <code>Colors</code> -&gt; <code>Load Presets...</code></p>
+<h3><a class="anchor" aria-hidden="true" id="key"></a><a href="#key" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Key</h3>
+<p><code>Prefs...</code> -&gt; <code>Profiles</code> -&gt; <code>Terminal</code> -&gt; Check <code>Use modern parser</code></p>
+<p>If <code>&lt;C-h&gt;</code> does not work in neovim, try this.</p>
+<h4><a class="anchor" aria-hidden="true" id="method-1"></a><a href="#method-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Method 1</h4>
+<p>Add these line to <code>~/.zshrc</code></p>
+<pre><code class="hljs css language-sh">infocmp <span class="hljs-variable">$TERM</span> | sed <span class="hljs-string">'s/kbs=^[hH]/kbs=\\177/'</span> &gt; <span class="hljs-variable">$TERM</span>.ti
+tic <span class="hljs-variable">$TERM</span>.ti
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="method-2-incompatible-with-vim-not-recommended"></a><a href="#method-2-incompatible-with-vim-not-recommended" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Method 2 (Incompatible with Vim. Not Recommended)</h4>
+<p><code>Prefs...</code> -&gt; <code>Profiles</code> -&gt; <code>Keys</code> -&gt; <code>+</code></p>
+<table>
+<thead>
+<tr><th>Keybinding</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><code>^h</code></td><td><code>[104;5u</code></td></tr>
+<tr><td><code>^i</code></td><td><code>[105;5u</code></td></tr>
+<tr><td><code>^m</code></td><td><code>[109;5u</code></td></tr>
+</tbody>
+</table>
+<p><a href="https://github.com/neovim/neovim/issues/2048">https://github.com/neovim/neovim/issues/2048</a></p>
+<p><a href="http://www.macx.cn/thread-2098800-1-1.html">fooCoder的iTerm2使用之道</a></p>
+<h3><a class="anchor" aria-hidden="true" id="guake"></a><a href="#guake" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>guake</h3>
+<p><code>System Prefs...</code> -&gt; <code>Shortcuts</code> -&gt; <code>Mission Control</code> -&gt; Uncheck <code>Show Dashboard</code></p>
+<p><code>Prefs...</code> -&gt; <code>Keys</code> -&gt; Check <code>Show/hide system-wide hotkey</code> -&gt; <code>F12</code> -&gt; Check <code>Hotkey profile</code></p>
+<h3><a class="anchor" aria-hidden="true" id="shell-integration"></a><a href="#shell-integration" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Shell Integration</h3>
+<p><code>Prefs...</code> -&gt; <code>Profiles</code> -&gt; <code>Terminal</code> -&gt; Check <code>Use modern parser</code></p>
+<h2><a class="anchor" aria-hidden="true" id="tmux"></a><a href="#tmux" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>tmux</h2>
+<p>Install tmux</p>
+<pre><code class="hljs css language-sh">brew options tmux
+brew install tmux --with-utf8proc
+</code></pre>
+<p>Add to ~/.zshrc</p>
+<pre><code class="hljs css language-zsh">plugins=(tmux)
+<span class="hljs-built_in">export</span> DISABLE_AUTO_TITLE=<span class="hljs-literal">true</span>
+</code></pre>
+<p>Lists out every bound key and the tmux command it runs</p>
+<pre><code class="hljs css language-sh">tmux list-keys
+</code></pre>
+<p>Default prefix is control + b.</p>
+<p>Create a new tmux session</p>
+<pre><code class="hljs css language-sh">tmux [-CC] [-2] new -s session name
+</code></pre>
+<p>List tmux sessions</p>
+<pre><code class="hljs css language-sh">tmux list-sessions
+</code></pre>
+<p>In iTerm: iTrem -&gt; Shell -&gt; tmux -&gt; Dashboard</p>
+<p>Attach to a session</p>
+<pre><code class="hljs css language-sh">tmux [-CC] [-2] attach -t session name
+</code></pre>
+<p>Detach</p>
+<pre><code class="hljs css language-sh">prefix + d
+</code></pre>
+<p>In iTerm: iTrem -&gt; Shell -&gt; tmux -&gt; Detach</p>
+<p>Create a new window</p>
+<pre><code class="hljs css language-sh">prefix + c
+</code></pre>
+<p>In iTerm: iTrem -&gt; Shell -&gt; tmux -&gt; Window or iTrem -&gt; Shell -&gt; tmux -&gt; Tab</p>
+<p>Move to the window based on index</p>
+<pre><code class="hljs css language-sh">prefix + 0-9
+</code></pre>
+<p>In iTerm: command + 0-9</p>
+<p>Rename window</p>
+<pre><code class="hljs css language-sh">prefix + ,
+</code></pre>
+<p>Splits the window into two vertical panes</p>
+<pre><code class="hljs css language-sh">prefix + <span class="hljs-string">"
+</span></code></pre>
+<p>Splits the window into two horizontal panes</p>
+<pre><code class="hljs css language-sh">prefix + %
+</code></pre>
+<p>Using <code>-CC</code> will integrate tmux into iTerm2 UI. Such as split window and tab. Each tab corresponding to a window in the tmux session. iTerm2 use an arrow icon to indicate a tmux session before tab title.</p>
+<p>Without <code>-CC</code> option, you should add <code>-2</code> to force tmux support 256 colors.</p>
+<p><a href="http://robots.thoughtbot.com/a-tmux-crash-course">Helpful tmux commands</a></p>
+<p><a href="https://code.google.com/p/iterm2/wiki/TmuxIntegration">iTerm2 and tmux Integration</a></p>
+<p><a href="https://gist.github.com/simme/1297707">Install and configure tmux on Mac OS X</a></p>
+<h3><a class="anchor" aria-hidden="true" id="byobu"></a><a href="#byobu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Byobu</h3>
+<pre><code class="hljs css language-sh">brew install byobu
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="fish"></a><a href="#fish" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>fish</h2>
+<pre><code class="hljs css language-sh">curl -L https://get.oh-my.fish | fish
+</code></pre>
+<p><a href="https://github.com/oh-my-fish/oh-my-fish">oh-my-fish</a></p>
+<pre><code class="hljs css language-fish">omf <span class="hljs-keyword">install </span><span class="hljs-keyword">bobthefish
+</span></code></pre>
+<p><a href="https://github.com/oh-my-fish/theme-bobthefish">theme-bobthefish</a></p>
+<pre><code class="hljs css language-fish">omf <span class="hljs-keyword">install </span>autojump
+omf <span class="hljs-keyword">install </span><span class="hljs-keyword">brew
+</span>omf <span class="hljs-keyword">install </span>cd
+omf <span class="hljs-keyword">install </span>code
+omf <span class="hljs-keyword">install </span>fasd
+omf <span class="hljs-keyword">install </span>fzf
+omf <span class="hljs-keyword">install </span>git-flow
+omf <span class="hljs-keyword">install </span>marlin
+omf <span class="hljs-keyword">install </span>osx
+omf <span class="hljs-keyword">install </span>proxy
+omf <span class="hljs-keyword">install </span>tab
+omf <span class="hljs-keyword">install </span>thefuck
+omf <span class="hljs-keyword">install </span>vcs
+omf <span class="hljs-keyword">install </span>z
+</code></pre>
+<p><a href="https://github.com/oh-my-fish/plugin-brew">plugin-brew</a>
+<a href="https://github.com/oh-my-fish/plugin-cd">plugin-cd</a>
+<a href="https://github.com/oh-my-fish/plugin-vscode">plugin-vscode</a>
+<a href="https://github.com/oh-my-fish/plugin-fasd">plugin-fasd</a>
+<a href="https://github.com/oh-my-fish/plugin-git-flow">plugin-git-flow</a>
+<a href="https://github.com/oh-my-fish/marlin">marlin</a>
+<a href="https://github.com/oh-my-fish/plugin-osx">plugin-osx</a>
+<a href="https://github.com/oh-my-fish/plugin-proxy">plugin-proxy</a>
+<a href="https://github.com/oh-my-fish/plugin-tab">plugin-tab</a>
+<a href="https://github.com/oh-my-fish/plugin-thefuck">plugin-thefuck</a>
+<a href="https://github.com/oh-my-fish/plugin-vcs">plugin-vcs</a>
+<a href="https://github.com/oh-my-fish/plugin-z">plugin-z</a></p>
+<p>Set default</p>
+<p>Append <code>which fish</code> to <code>/etc/shells</code></p>
+<pre><code class="hljs css language-sh">sudo vi /etc/shells
+</code></pre>
+<pre><code class="hljs css language-sh">chsh -s `<span class="hljs-built_in">which</span> fish`
+</code></pre>
+<p><a href="https://github.com/jbucaran/awesome-fish">Awesome fish</a></p>
+<h2><a class="anchor" aria-hidden="true" id="zsh"></a><a href="#zsh" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Zsh</h2>
+<p><a href="/blog/zsh/">Zsh</a></p>
+<h2><a class="anchor" aria-hidden="true" id="color-theme"></a><a href="#color-theme" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>color theme</h2>
+<p><code>export TERM=screen-256color</code> in <code>~/.zshrc</code></p>
+<p><code>set -g default-terminal &quot;screen-256color&quot;</code> in <code>~/.tmux.conf</code></p>
+<p><code>set t_Co=256</code> in <code>~/.vimrc</code></p>
+<p>check</p>
+<pre><code class="hljs css language-sh">tput colors
+<span class="hljs-built_in">echo</span> <span class="hljs-variable">$TERM</span>
+</code></pre>
+<p>Download <a href="http://ethanschoonover.com/solarized">solarized</a></p>
+<p>Install <code>iterm2-colors-solarized/Solarized\ Dark.itermcolors</code> and <code>osx-terminal.app-colors-solarized/xterm-256color/Solarized\ Dark\ xterm-256color.terminal</code>.</p>
+<p>In iTerm: <code>iTerm</code> -&gt; <code>Prefs...</code> -&gt; <code>Terminal</code> -&gt; <code>Report Terminal Type:</code> -&gt; <code>xterm-256color</code></p>
+<p>In Terminal: <code>Terminal</code> -&gt; <code>Prefs...</code> -&gt; <code>Settings</code> -&gt; <code>Advanced</code> -&gt; <code>Emulation</code> -&gt; <code>Declare terminal as:</code> -&gt; <code>xterm-256color</code></p>
+<p>Then set as default in iTerm and Terminal.</p>
+<p>(It seems doesn't work in Terminal. Needs manually steal every color from iTerm to Terminal?)</p>
+<p><a href="http://progdoo.wordpress.com/2012/06/05/solarized-color-scheme-14/">Solarized color scheme</a></p>
+<p><a href="http://ethanschoonover.com/solarized/vim-colors-solarized">Solarized colorscheme for vim</a></p>
+<h2><a class="anchor" aria-hidden="true" id="tmuxinator"></a><a href="#tmuxinator" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>tmuxinator</h2>
+<pre><code class="hljs css language-sh">gem install tmuxinator
+</code></pre>
+<p>Add to ~/.zshrc</p>
+<pre><code class="hljs css language-zsh">plugins=(tmuxinator)
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="vscode"></a><a href="#vscode" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>VSCode</h2>
+<p>Enable key repeats</p>
+<pre><code class="hljs css language-sh">defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool <span class="hljs-literal">false</span>
+</code></pre>
+<p><a href="http://www.idownloadblog.com/2015/01/14/how-to-enable-key-repeats-on-your-mac/">How to enable key repeats on your Mac</a></p>
+<p>Open the Command Palette (⇧⌘P) and type 'shell command' to find the Shell Command: Install 'code' command in PATH command.</p>
+<p><a href="https://code.visualstudio.com/docs/setup/mac">Running VS Code on Mac</a></p>
+<p>Pass <code>-</code> as an argument to explicitly signal that the output of a piped command is coming in through stdin. For example:</p>
+<pre><code class="hljs css language-sh">ps aux | grep code | code -
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="the-fuck"></a><a href="#the-fuck" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>The Fuck</h2>
+<pre><code class="hljs css language-sh">brew install thefuck
+</code></pre>
+<p>Add to <code>~/.zshrc</code></p>
+<pre><code class="hljs css language-zsh">plugins=(... thefuck)
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="autojump"></a><a href="#autojump" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>autojump</h2>
+<pre><code class="hljs css language-sh">brew install autojump
+</code></pre>
+<p>Add to <code>~/.zshrc</code></p>
+<pre><code class="hljs css language-zsh">plugins=(... autojump)
+</code></pre>
+<p>Go to recent directories just write</p>
+<pre><code class="hljs css language-sh">j <span class="hljs-variable">$DIRECTORY</span>
+</code></pre>
+<p>And it will jump to the most frequently used directory with that name.</p>
+<h2><a class="anchor" aria-hidden="true" id="k"></a><a href="#k" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>k</h2>
+<pre><code class="hljs css language-sh">brew install k
+git <span class="hljs-built_in">clone</span> https://github.com/supercrabtree/k <span class="hljs-variable">$HOME</span>/.oh-my-zsh/custom/plugins/k
+</code></pre>
+<p>Add to ~/.zshrc</p>
+<pre><code class="hljs css language-zsh">plugins=(k)
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="openssh"></a><a href="#openssh" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>openssh</h2>
+<p>System Prefrences... -&gt; Sharing -&gt; Remote Login</p>
+<h2><a class="anchor" aria-hidden="true" id="gcc"></a><a href="#gcc" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>gcc</h2>
+<p>Down Command Line Tools from Apple website and install it.</p>
+<h2><a class="anchor" aria-hidden="true" id="gdb"></a><a href="#gdb" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>gdb</h2>
+<pre><code class="hljs css language-sh">brew options gdb
+brew install gdb --with-all-targets --with-python
+brew info gdb
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"set startup-with-shell off"</span> &gt;&gt; ~/.gdbinit
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="code-sign"></a><a href="#code-sign" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Code Sign</h2>
+<p>If you try to use your freshly built gdb, you will get an error message such as:</p>
+<pre><code class="hljs">Starting program: /x/y/foo
+Unable <span class="hljs-keyword">to</span> <span class="hljs-builtin-name">find</span> Mach task<span class="hljs-built_in"> port </span><span class="hljs-keyword">for</span> process-id 28885: (os/kern) failure (0x5).
+(please check gdb is codesigned - see taskgated(8))
+</code></pre>
+<p>This is because the Darwin kernel will refuse to allow gdb to debug another process if you don't have special rights, since debugging a process means having full control over that process, and that isn't allowed by default since it would be exploitable by malware. (The kernel won't refuse if you are root, but of course you don't want to be root to debug.)</p>
+<p>The most up to date method to allow gdb to control another process is to sign it with any system-trusted code signing authority. This is an easy process once you have a certificate (see the link below). If the certificate is known as gdb-cert, just use:</p>
+<pre><code class="hljs css language-sh">codesign -s gdb-cert `<span class="hljs-built_in">which</span> gdb`
+</code></pre>
+<p><a href="http://sourceware.org/gdb/wiki/BuildingOnDarwin">BuildingOnDarwin</a></p>
+<h2><a class="anchor" aria-hidden="true" id="gdbgui"></a><a href="#gdbgui" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>gdbgui</h2>
+<p><a href="https://github.com/cs01/gdbgui">gdbgui</a></p>
+<h2><a class="anchor" aria-hidden="true" id="cmake"></a><a href="#cmake" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CMake</h2>
+<pre><code class="hljs css language-sh">brew options cmake
+brew install cmake --with-completion
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="go"></a><a href="#go" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Go</h2>
+<pre><code class="hljs css language-sh">brew install go
+</code></pre>
+<p>Add to ~/.zshrc</p>
+<pre><code class="hljs css language-zsh">plugins=(go golang)
+</code></pre>
+<p><a href="http://openbook.me/16hot/blog/23">Mac OSX下Golang交叉编译</a></p>
+<h2><a class="anchor" aria-hidden="true" id="rust"></a><a href="#rust" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Rust</h2>
+<pre><code class="hljs css language-sh">brew install rust  <span class="hljs-comment"># --with-llvm</span>
+</code></pre>
+<p>Add to <code>~/.zshrc</code></p>
+<pre><code class="hljs css language-zsh">plugins=(rust cargo)
+</code></pre>
+<pre><code class="hljs css language-sh">cargo install exa
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="ruby"></a><a href="#ruby" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ruby</h2>
+<p>Don't use rbenv zsh plugin for a bug <a href="https://github.com/lewagon/setup/issues/40">https://github.com/lewagon/setup/issues/40</a>.</p>
+<pre><code class="hljs css language-sh">brew install ruby
+rbenv <span class="hljs-built_in">which</span> gem  <span class="hljs-comment"># should be `/usr/local/lib/ruby/gems/2.5.0`</span>
+</code></pre>
+<pre><code class="hljs css language-sh">brew install rbenv ruby-build
+</code></pre>
+<p>Run <code>rbenv init</code> and follow the instructions to set up rbenv integration.</p>
+<p>Close your Terminal window and open a new one so your changes take effect.</p>
+<pre><code class="hljs css language-sh">curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash
+</code></pre>
+<p>Install Ruby</p>
+<pre><code class="hljs css language-sh">rbenv versions
+rbenv install 2.5.1
+rbenv <span class="hljs-built_in">rehash</span>
+</code></pre>
+<p>Write <code>2.5.1</code> to <code>~/.ruby-version</code></p>
+<pre><code class="hljs css language-sh">rbenv <span class="hljs-built_in">which</span> gem  <span class="hljs-comment"># should be `/Users/xxx/.rbenv/versions/2.5.1/bin/gem`</span>
+gem env home  <span class="hljs-comment"># should be `/Users/xxx/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0`</span>
+gem install bundler
+gem install colorls
+</code></pre>
+<p><a href="https://github.com/rbenv/rbenv#homebrew-on-macos">https://github.com/rbenv/rbenv#homebrew-on-macos</a></p>
+<p>Add to <code>~/.zshrc</code></p>
+<pre><code class="hljs css language-zsh"><span class="hljs-comment"># colorls</span>
+<span class="hljs-built_in">source</span> $(dirname $(gem <span class="hljs-built_in">which</span> colorls))/tab_complete.sh
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="docker"></a><a href="#docker" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Docker</h2>
+<p><a href="http://taohex.github.io/linux/2014/04/26/docker/">Docker</a></p>
+<h2><a class="anchor" aria-hidden="true" id="fzf"></a><a href="#fzf" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>fzf</h2>
+<pre><code class="hljs css language-sh">brew install fzf
+/usr/<span class="hljs-built_in">local</span>/opt/fzf/install
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="gnu"></a><a href="#gnu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>gnu</h2>
+<p><a href="http://apple.stackexchange.com/questions/69223/how-to-replace-mac-os-x-utilities-with-gnu-core-utilities">How to replace Mac OS X utilities with GNU core utilities?</a>
+<a href="https://www.topbug.net/blog/2013/04/14/install-and-use-gnu-command-line-tools-in-mac-os-x/">Install and Use GNU Command Line Tools on Mac OS X</a></p>
+<pre><code class="hljs css language-sh">brew install coreutils --with-gmp
+brew install binutils
+brew install diffutils
+brew install findutils --with-default-names
+brew install gawk
+brew install gnu-indent --with-default-names
+brew install gnu-sed --with-default-names
+brew install gnutls --with-guile --with-unbound
+brew install grep --with-default-names
+brew install gnu-tar --with-default-names
+</code></pre>
+<p>The <code>--default-names</code> option is optional, turn on this if you really need to use these GNU commands as default ones, or they will be compiled with a g prefix.</p>
+<p><a href="https://github.com/seebi/dircolors-solarized">dircolors-solarized</a></p>
+<p>Add to ~/.zshrc</p>
+<pre><code class="hljs css language-sh"><span class="hljs-built_in">alias</span> l=<span class="hljs-string">'gls --color -ap'</span>
+<span class="hljs-built_in">alias</span> ll=<span class="hljs-string">'gls --color -lahsp'</span>
+
+<span class="hljs-comment"># dircolors</span>
+<span class="hljs-built_in">eval</span> `gdircolors ~/.dircolors/dircolors.ansi-dark`
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="dev-tools"></a><a href="#dev-tools" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>dev tools</h2>
+<p>Tools list <a href="https://github.com/trimstray/the-book-of-secret-knowledge">https://github.com/trimstray/the-book-of-secret-knowledge</a></p>
+<p><a href="https://ivarch.com/programs/pv.shtml">https://ivarch.com/programs/pv.shtml</a></p>
+<p>Pipe Viewer - is a terminal-based tool for monitoring the progress of data through a pipeline.</p>
+<pre><code class="hljs css language-sh">brew install clang-format  <span class="hljs-comment"># &lt;https://clang.llvm.org/docs/ClangFormatStyleOptions.html&gt;</span>
+brew install sift
+brew install ag
+brew install ack
+brew install pt
+brew install cgrep
+brew install editorconfig
+brew install htop --with-ncurses
+brew install hping  <span class="hljs-comment"># &lt;http://www.hping.org/&gt;</span>
+brew install mosh
+brew install hping
+brew install ccat
+brew install catimg
+brew install tree
+brew install hub
+brew install grc
+brew install spark
+brew install z
+brew install magic-wormhole
+brew install pstree
+brew install sysdig
+brew install yarn
+brew install tldr  <span class="hljs-comment"># Simplified and community-driven man pages</span>
+brew install micro
+brew install httpie  <span class="hljs-comment"># [Modern command line HTTP client](https://github.com/jakubroztocil/httpie)</span>
+brew install lrzsz
+brew install wget --with-gpgme --with-libmetalink --with-pcre
+
+<span class="hljs-comment"># &lt;https://github.com/BurntSushi/ripgrep&gt;</span>
+brew install ripgrep
+
+<span class="hljs-comment"># &lt;https://github.com/BurntSushi/xsv&gt;</span>
+<span class="hljs-comment"># A fast CSV command line toolkit written in Rust</span>
+brew install xsv
+
+<span class="hljs-comment"># &lt;https://github.com/tidwall/jj&gt;</span>
+brew tap tidwall/jj
+brew install jj  <span class="hljs-comment"># JSON Stream Editor (command line utility)</span>
+
+<span class="hljs-comment"># &lt;https://github.com/rgcr/m-cli&gt;</span>
+<span class="hljs-comment"># Swiss Army Knife for macOS</span>
+brew install m-cli
+
+pip3 install <span class="hljs-string">'glances[action,browser,cloud,cpuinfo,chart,docker,export,folders,gpu,ip,raid,snmp,web,wifi]'</span>  <span class="hljs-comment"># An Eye on your system</span>
+pip3 install cheat
+pip3 install crocs  <span class="hljs-comment"># Regex for humans</span>
+</code></pre>
+<p><a href="https://github.com/nicolargo/glances">Glances</a></p>
+<pre><code class="hljs css language-sh"><span class="hljs-comment"># &lt;https://github.com/sindresorhus/trash&gt;</span>
+<span class="hljs-comment"># Move files and directories to the trash</span>
+yarn glabal add trash-cli
+
+yarn global add gtop  <span class="hljs-comment"># System monitoring dashboard for terminal</span>
+yarn global add html-primer  <span class="hljs-comment"># generates HTML5 boilerplates</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="method-1-recommended"></a><a href="#method-1-recommended" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Method 1 (Recommended)</h3>
+<p>Add to ~/.zshrc</p>
+<pre><code class="hljs css language-sh">plugins=(catimg mosh)
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="method-2"></a><a href="#method-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Method 2</h3>
+<pre><code class="hljs css language-sh">. `brew --prefix`/etc/profile.d/z.sh
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="apps"></a><a href="#apps" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Apps</h2>
+<h3><a class="anchor" aria-hidden="true" id="app-tamer"></a><a href="#app-tamer" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>App Tamer</h3>
+<p>Reduce invisible apps' cpu usage.</p>
+<h3><a class="anchor" aria-hidden="true" id="moom"></a><a href="#moom" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Moom</h3>
+<p>Dock window to one side in Windows style.</p>
+<h3><a class="anchor" aria-hidden="true" id="sizeup"></a><a href="#sizeup" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SizeUp</h3>
+<p>Dock window to one side in Windows style.</p>
+<h3><a class="anchor" aria-hidden="true" id="manico"></a><a href="#manico" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Manico</h3>
+<p>Use Option + Number to switch app.</p>
+<h3><a class="anchor" aria-hidden="true" id="peep"></a><a href="#peep" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Peep</h3>
+<p>View and modify file encode.</p>
+<h3><a class="anchor" aria-hidden="true" id="popcorn-time"></a><a href="#popcorn-time" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Popcorn-Time</h3>
+<p>P2P movie.</p>
+<h3><a class="anchor" aria-hidden="true" id="nosleep"></a><a href="#nosleep" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>NoSleep</h3>
+<h3><a class="anchor" aria-hidden="true" id="caffeine"></a><a href="#caffeine" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Caffeine</h3>
+<p>Prevent your Mac from going to sleep and displaying the screen saver.</p>
+<h3><a class="anchor" aria-hidden="true" id="itools-pro"></a><a href="#itools-pro" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>iTools Pro</h3>
+<p>Manage iPhone.</p>
+<h3><a class="anchor" aria-hidden="true" id="tongbu-assistant"></a><a href="#tongbu-assistant" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Tongbu Assistant</h3>
+<p>Manage iPhone.</p>
+<h3><a class="anchor" aria-hidden="true" id="iexplorer"></a><a href="#iexplorer" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>iExplorer</h3>
+<p>Manage iPhone.</p>
+<h3><a class="anchor" aria-hidden="true" id="phoneview"></a><a href="#phoneview" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PhoneView</h3>
+<p>Manage iPhone.</p>
+<h3><a class="anchor" aria-hidden="true" id="finder"></a><a href="#finder" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Finder</h3>
+<p><code>System Prefs...</code> -&gt; <code>Keyboard</code> -&gt; <code>Keyboard</code> -&gt; -&gt; Check <code>Use all F1, F2, etc. keys</code></p>
+<p><code>System Prefs...</code> -&gt; <code>Keyboard</code> -&gt; <code>Shortcuts</code> -&gt; <code>Mission Control</code> -&gt; Select <code>All controls</code></p>
+<p><code>System Prefs...</code> -&gt; <code>Keyboard</code> -&gt; <code>Shortcuts</code> -&gt; <code>Mission Control</code> -&gt; Uncheck all <code>F1</code> ~ <code>F12</code> shortcuts</p>
+<h3><a class="anchor" aria-hidden="true" id="xtrafinder"></a><a href="#xtrafinder" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>XtraFinder</h3>
+<p><a href="http://www.trankynam.com/xtrafinder/">http://www.trankynam.com/xtrafinder/</a></p>
+<h3><a class="anchor" aria-hidden="true" id="shortcat"></a><a href="#shortcat" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Shortcat</h3>
+<p><a href="https://shortcatapp.com/">https://shortcatapp.com/</a></p>
+<p>Keyboard control</p>
+<h3><a class="anchor" aria-hidden="true" id="bartender"></a><a href="#bartender" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Bartender</h3>
+<p>Arrange status bar icon</p>
+<h3><a class="anchor" aria-hidden="true" id="midnight-commander"></a><a href="#midnight-commander" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>midnight commander</h3>
+<pre><code class="hljs css language-sh">brew install midnight-commander
+mc
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="fantastical"></a><a href="#fantastical" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Fantastical</h3>
+<p>Calendar</p>
+<h3><a class="anchor" aria-hidden="true" id="dash"></a><a href="#dash" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dash</h3>
+<p>AP reference</p>
+<h3><a class="anchor" aria-hidden="true" id="fuse-for-macos"></a><a href="#fuse-for-macos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>FUSE for macOS</h3>
+<p><a href="https://github.com/osxfuse/osxfuse/releases">https://github.com/osxfuse/osxfuse/releases</a></p>
+<h3><a class="anchor" aria-hidden="true" id="veracrypt"></a><a href="#veracrypt" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>VeraCrypt</h3>
+<p><a href="https://veracrypt.codeplex.com/">https://veracrypt.codeplex.com/</a></p>
+<h3><a class="anchor" aria-hidden="true" id="tad"></a><a href="#tad" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Tad</h3>
+<p>A desktop application for viewing and analyzing tabular data</p>
+<p><a href="https://github.com/antonycourtney/tad">https://github.com/antonycourtney/tad</a></p>
+<h3><a class="anchor" aria-hidden="true" id="seil"></a><a href="#seil" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Seil</h3>
+<p><a href="https://pqrs.org/osx/karabiner/seil.html.en">https://pqrs.org/osx/karabiner/seil.html.en</a></p>
+<h3><a class="anchor" aria-hidden="true" id="proxy"></a><a href="#proxy" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Proxy</h3>
+<p><a href="https://www.proxifier.com/mac_download.htm">https://www.proxifier.com/mac_download.htm</a></p>
+<p>SN: P427L-9Y552-5433E-8DSR3-58Z68</p>
+<p><a href="https://github.com/yichengchen/clashX">ClashX</a></p>
+<h3><a class="anchor" aria-hidden="true" id="aria2"></a><a href="#aria2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Aria2</h3>
+<pre><code class="hljs css language-sh">brew install aria2
+</code></pre>
+<p><a href="https://github.com/alanzhangzm/Photon">https://github.com/alanzhangzm/Photon</a></p>
+<h3><a class="anchor" aria-hidden="true" id="motrix"></a><a href="#motrix" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Motrix</h3>
+<p><a href="https://github.com/agalwood/Motrix">https://github.com/agalwood/Motrix</a></p>
+<h3><a class="anchor" aria-hidden="true" id="youtube"></a><a href="#youtube" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Youtube</h3>
+<pre><code class="hljs css language-sh">docker run -d -p 3000:3000 algram/ytdl-webserver
+</code></pre>
+<p><a href="https://github.com/Algram/ytdl-webserver">ytdl-webserver</a></p>
+<h2><a class="anchor" aria-hidden="true" id="preference-panes"></a><a href="#preference-panes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Preference Panes</h2>
+<p><a href="http://www.rubicode.com/Software/RCDefaultApp/">RCDefaultApp</a></p>
+<p>Set the default application used for various URL schemes, file extensions, file types, MIME types, and Uniform Type Identifiers.</p>
+<h2><a class="anchor" aria-hidden="true" id="beautify"></a><a href="#beautify" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Beautify</h2>
+<h3><a class="anchor" aria-hidden="true" id="the-matrix"></a><a href="#the-matrix" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>The Matrix</h3>
+<p><a href="https://github.com/will8211/unimatrix">https://github.com/will8211/unimatrix</a></p>
+<p><a href="http://ksmx.me/blog/2012/03/18/customize-mac-desktop/">矮矬穷Mac桌面美化得瑟教程</a>
+<a href="http://www.gn00.com/thread-137466-1-1.html">Mac亲们！Mac的桌面也有神美化效果啊！GeekTool...</a>
+<a href="http://www.gn00.com/thread-161837-1-1.html">继Geek Tool后的第二弹后续萌化~~</a></p>
+<h2><a class="anchor" aria-hidden="true" id="delete-caches"></a><a href="#delete-caches" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Delete Caches</h2>
+<pre><code class="hljs css language-sh">brew cleanup
+rm -rf ~/Library/Caches/Homebrew/
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="迁移"></a><a href="#迁移" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>迁移</h2>
+<p>复制 <code>~/Library/Application Support/iTerm2/Scripts/</code>
+微信聊天记录、企业微信聊天记录、RTX聊天记录、iTerm配置、VS Code配置、Bartender配置、OneTab记录、Proxy SwitchyOmega配置、Tamper Monkey配置、Tab Modifier配置、The Great Suspender配置、Alfred配置、vim、spacemacs</p>
+<p><a href="https://github.com/zenorocha/alfred-workflows">https://github.com/zenorocha/alfred-workflows</a>
+<a href="https://www.alfredapp.com/workflows/">https://www.alfredapp.com/workflows/</a>
+<a href="https://github.com/isometry/alfred-tty">https://github.com/isometry/alfred-tty</a></p>
+</span></div></article></div><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2013/11/15/macos-server">macOS Server</a></h1><p class="post-meta">November 15, 2013</p><div class="authorBlock"></div></header><article class="post-content"><div><span><p>{% include JB/setup %}</p>
+<h2><a class="anchor" aria-hidden="true" id="php"></a><a href="#php" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PHP</h2>
+<p><a href="/blog/nginx/">Nginx</a></p>
+<h2><a class="anchor" aria-hidden="true" id="mysql"></a><a href="#mysql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>MySQL</h2>
+<h3><a class="anchor" aria-hidden="true" id="install-mysql"></a><a href="#install-mysql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install MySQL</h3>
+<pre><code class="hljs css language-sh">brew options mysql
+brew install mysql --<span class="hljs-built_in">enable</span>-debug
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="let-launchd-start-mysql-at-login"></a><a href="#let-launchd-start-mysql-at-login" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Let launchd Start MySQL at Login</h3>
+<p><strong>CAUTION:</strong> mysqld takes up 500 MB memory!</p>
+<pre><code class="hljs css language-sh">ln -sfv /usr/<span class="hljs-built_in">local</span>/Cellar/mysql/5.6.17_1/*.plist ~/Library/LaunchAgents/
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="load-mysql"></a><a href="#load-mysql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Load MySQL</h3>
+<p>Option 1 (suggested)</p>
+<pre><code class="hljs css language-sh">sudo gem install lunchy
+lunchy list
+lunchy stop mysql
+lunchy start mysql
+</code></pre>
+<p>Option 2</p>
+<pre><code class="hljs css language-sh">launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+</code></pre>
+<p><a href="http://rtcamp.com/tutorials/mac/osx-brew-php-mysql-nginx/">Brew’ing PHP, MySQL &amp; Nginx on Mac OS X</a></p>
+<h2><a class="anchor" aria-hidden="true" id="redis"></a><a href="#redis" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Redis</h2>
+<pre><code class="hljs css language-sh">brew install redis
+</code></pre>
+<p>To have launchd start redis at login:</p>
+<pre><code class="hljs css language-sh">ln -sfv /usr/<span class="hljs-built_in">local</span>/opt/redis/*.plist ~/Library/LaunchAgents
+</code></pre>
+<p>Then to load redis now:</p>
+<pre><code class="hljs css language-sh">launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
+</code></pre>
+<p>Or, if you don't want/need launchctl, you can just run:</p>
+<pre><code class="hljs css language-sh">redis-server /usr/<span class="hljs-built_in">local</span>/etc/redis.conf
+</code></pre>
+</span></div></article></div><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2013/10/05/postgres">PostgreSQL</a></h1><p class="post-meta">October 5, 2013</p><div class="authorBlock"></div></header><article class="post-content"><div><span><p>{% include JB/setup %}</p>
+<h2><a class="anchor" aria-hidden="true" id="macos"></a><a href="#macos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>macOS</h2>
+<p>Install postgres</p>
+<pre><code class="hljs css language-sh">brew update
+brew remove postgresql
+brew install postgresql
+</code></pre>
+<p>Create a database</p>
+<pre><code class="hljs css language-sh">initdb /usr/<span class="hljs-built_in">local</span>/var/postgres -E utf8
+</code></pre>
+<p>Serve that database</p>
+<pre><code class="hljs css language-sh">postgres -D /usr/<span class="hljs-built_in">local</span>/var/postgres
+</code></pre>
+<p>To have launchd start postgresql at login</p>
+<pre><code class="hljs css language-sh">ln -sfv /usr/<span class="hljs-built_in">local</span>/opt/postgresql/*.plist ~/Library/LaunchAgents
+</code></pre>
+<p>Then to load postgresql now.</p>
+<p>Option 1 (suggested)</p>
+<pre><code class="hljs css language-sh">sudo gem install lunchy
+lunchy list
+lunchy stop postgres
+lunchy start postgres
+</code></pre>
+<p>Option 2</p>
+<pre><code class="hljs css language-sh">launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+</code></pre>
+<p><a href="http://www.moncefbelyamani.com/how-to-install-postgresql-on-a-mac-with-homebrew-and-lunchy/">How to Install PostgreSQL on a Mac With Homebrew and Lunchy</a></p>
+<h2><a class="anchor" aria-hidden="true" id="centos"></a><a href="#centos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CentOS</h2>
+<p>Configure your YUM repository</p>
+<pre><code class="hljs css language-sh">sudo cp /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak
+sudo vim /etc/yum.repos.d/CentOS-Base.repo
+</code></pre>
+<p>Add the following line to /etc/yum.repos.d/CentOS-Base.repo, [base] and [updates] sections</p>
+<pre><code class="hljs css language-sh">exclude=postgresql*
+</code></pre>
+<p>Download and install PGDG RPM files</p>
+<pre><code class="hljs css language-sh">mkdir ~/bin/
+<span class="hljs-built_in">cd</span> ~/bin/
+curl -O http://yum.postgresql.org/9.3/redhat/rhel-6-x86_64/pgdg-centos93-9.3-1.noarch.rpm
+</code></pre>
+<p>Now install RPM distribution</p>
+<pre><code class="hljs css language-sh">sudo rpm -ivh pgdg-centos93-9.3-1.noarch.rpm
+</code></pre>
+<p>Install PostgreSQL</p>
+<pre><code class="hljs css language-sh">sudo yum list postgres*
+sudo yum install postgresql93-server
+</code></pre>
+<p>Initialize</p>
+<pre><code class="hljs css language-sh">sudo service postgresql-9.3 initdb
+</code></pre>
+<p>Startup</p>
+<pre><code class="hljs css language-sh">sudo chkconfig postgresql-9.3 on
+</code></pre>
+<p>Control service</p>
+<pre><code class="hljs css language-sh">sudo service postgresql-9.3 restart
+su postgres
+</code></pre>
+<p><a href="http://wiki.postgresql.org/wiki/YUM_Installation">YUM Installation</a></p>
+<h2><a class="anchor" aria-hidden="true" id="remote-access"></a><a href="#remote-access" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Remote Access</h2>
+<h3><a class="anchor" aria-hidden="true" id="disable-firewall"></a><a href="#disable-firewall" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Disable Firewall</h3>
+<p><a href="/blog/linux-firewall/">Linux Firewall</a></p>
+<h3><a class="anchor" aria-hidden="true" id="edit-conf-file"></a><a href="#edit-conf-file" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Edit conf File</h3>
+<p>To be able to reach the server remotely</p>
+<pre><code class="hljs css language-sh">sudo cp /var/lib/pgsql/9.3/data/postgresql.conf /var/lib/pgsql/9.3/data/postgresql.conf.bak
+sudo vim /var/lib/pgsql/9.3/data/postgresql.conf
+</code></pre>
+<p>Add the line <code>listen_addresses = '*'</code></p>
+<p>PostgreSQL, by default, refuses all connections it receives from any remote address. You have to relax these rules by adding this line to <code>/var/lib/pgsql/9.3/data/pg_hba.conf</code></p>
+<pre><code class="hljs css language-sh">sudo cp /var/lib/pgsql/9.3/data/pg_hba.conf /var/lib/pgsql/9.3/data/pg_hba.conf.bak
+sudo vim /var/lib/pgsql/9.3/data/pg_hba.conf
+</code></pre>
+<p><strong>IMPORTANT:</strong> You must delete the origin corresponding lines, or your configure won't take effect!</p>
+<p>If password is not needed</p>
+<pre><code class="hljs css language-sh">host all all  0.0.0.0/0 trust
+</code></pre>
+<p>If password is not needed</p>
+<pre><code class="hljs css language-sh">host all all  0.0.0.0/0 md5
+</code></pre>
+<p><strong>IMPORTANT:</strong> You can't change user postgres' password through command <code>passwd</code>. Instead, it can be changed by SQL command in psql prompt</p>
+<pre><code class="hljs css language-sh">ALTER USER postgres with encrypted password <span class="hljs-string">'your_password'</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="configure-firewall"></a><a href="#configure-firewall" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configure Firewall</h3>
+<h4><a class="anchor" aria-hidden="true" id="centos-1"></a><a href="#centos-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CentOS</h4>
+<pre><code class="hljs css language-sh">sudo cp /etc/sysconfig/iptables /etc/sysconfig/iptables.bak
+sudo vim /etc/sysconfig/iptables
+</code></pre>
+<p>Add these lines before <code>-A INPUT -j REJECT</code> line</p>
+<pre><code class="hljs css language-sh">-A INPUT -p tcp -s 0/0 --sport 1024:65535 --dport 5432 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A OUTPUT -p tcp --sport 5432 -d 0/0 --dport 1024:65535 -m state --state ESTABLISHED -j ACCEPT
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="enable-firewall"></a><a href="#enable-firewall" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Enable Firewall</h3>
+<p><a href="/blog/linux-firewall/">Linux Firewall</a></p>
+<h3><a class="anchor" aria-hidden="true" id="control-service"></a><a href="#control-service" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Control Service</h3>
+<pre><code class="hljs css language-sh">sudo service postgresql-9.3 restart
+</code></pre>
+<p>Test</p>
+<pre><code class="hljs css language-sh">psql -h 192.168.0.81 -U postgres -d weibominer
+</code></pre>
+<p><a href="http://www.cyberciti.biz/tips/postgres-allow-remote-access-tcp-connection.html">How Do I Enable remote access to PostgreSQL database server?</a></p>
+<h2><a class="anchor" aria-hidden="true" id="tuning"></a><a href="#tuning" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Tuning</h2>
+<p><a href="http://wiki.postgresql.org/wiki/Tuning_Your_PostgreSQL_Server">Tuning Your PostgreSQL Server</a></p>
+<h2><a class="anchor" aria-hidden="true" id="postgresql-studio"></a><a href="#postgresql-studio" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PostgreSQL Studio</h2>
+<p>Download <code>pgstudio_*.tar.bz2</code> from <a href="http://www.postgresqlstudio.org/?ddownload=837">PostgreSQL Studio</a></p>
+<p>Uncompress and put the <code>*.war</code> under</p>
+<h3><a class="anchor" aria-hidden="true" id="centos-tomcat6"></a><a href="#centos-tomcat6" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CentOS Tomcat6</h3>
+<pre><code class="hljs css language-sh">cp pgstudio.war /var/lib/tomcat6/webapps/
+</code></pre>
+<p>Add PostgreSQL JDBC Driver (Not a must because PostgreSQL Studio owns it)</p>
+<p>Download from <a href="http://jdbc.postgresql.org/download.html">PostgreSQL JDBC Driver</a></p>
+<p>Put the <code>postgresql-*-jdbc*.jar</code> under</p>
+<h3><a class="anchor" aria-hidden="true" id="centos-tomcat6-1"></a><a href="#centos-tomcat6-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CentOS Tomcat6</h3>
+<pre><code class="hljs css language-sh">/usr/share/tomcat6/lib/
+</code></pre>
+<p>Start Tomcat</p>
+<pre><code class="hljs css language-sh">service tomcat6 restart
+</code></pre>
+<p>Browse in browser.</p>
+<p><a href="http://localhost:8080/pgstudio">PostgreSQL Studio</a></p>
+<p><a href="http://www.postgresqlstudio.org/support/documentation/supportdocumentationinstallation-guide/">Installation Guide</a></p>
+<h2><a class="anchor" aria-hidden="true" id="pgadmin"></a><a href="#pgadmin" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PgAdmin</h2>
+<p>Install from yum</p>
+<pre><code class="hljs css language-sh">yum search pgadmin
+yum install pgadmin3_93
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="sql"></a><a href="#sql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SQL</h2>
+<pre><code class="hljs css language-sql">psql -l
+psql postgres
+\?
+
+<span class="hljs-keyword">SET</span> <span class="hljs-keyword">time_zone</span> = <span class="hljs-string">"+08:00"</span>;
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">DATABASE</span> weibominer;
+
+\c[onnect] [DBNAME|- USER|- HOST|- PORT|-]
+\c weibominer
+\l+
+\encoding [ENCODING]
+
+<span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">EXISTS</span> sina_user_filter;
+
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> sina_user_filter
+(uid SERIAL4, ui <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">UNIQUE</span>, un <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">UNIQUE</span>, sn <span class="hljs-built_in">TEXT</span>, sx <span class="hljs-built_in">CHAR</span>(<span class="hljs-number">1</span>), ad <span class="hljs-built_in">TEXT</span>, de <span class="hljs-built_in">TEXT</span>, iu <span class="hljs-built_in">TEXT</span>, an <span class="hljs-built_in">INT8</span>, fn <span class="hljs-built_in">INT8</span>, mn <span class="hljs-built_in">INT8</span>, iv <span class="hljs-built_in">BOOLEAN</span>, <span class="hljs-keyword">id</span> INT2, vi <span class="hljs-built_in">TEXT</span>, wt <span class="hljs-keyword">TIMESTAMP</span>, tg <span class="hljs-built_in">TEXT</span>, <span class="hljs-keyword">at</span> <span class="hljs-keyword">TIMESTAMP</span>, fui <span class="hljs-built_in">TEXT</span>);
+
+<span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">EXISTS</span> sina_friendship;
+
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> sina_friendship 
+(fid SERIAL4, 
+friend_uid <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>, follower_uid <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>, 
+hit INT4 <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, crawl_time <span class="hljs-keyword">TIMESTAMP</span>, 
+PRIMARY <span class="hljs-keyword">KEY</span> (fid), <span class="hljs-keyword">UNIQUE</span> (friend_uid, follower_uid));
+
+<span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">EXISTS</span> sina_user;
+
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> sina_user 
+(uid SERIAL4, 
+user_uid <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">UNIQUE</span>, 
+screen_name <span class="hljs-built_in">TEXT</span>, <span class="hljs-keyword">name</span> <span class="hljs-built_in">TEXT</span>, province INT2, 
+city INT2, location <span class="hljs-built_in">TEXT</span>, description <span class="hljs-built_in">TEXT</span>, 
+<span class="hljs-keyword">url</span> <span class="hljs-built_in">TEXT</span>, profile_image_url <span class="hljs-built_in">TEXT</span>, 
+<span class="hljs-keyword">domain</span> <span class="hljs-built_in">TEXT</span>, gender <span class="hljs-built_in">BOOLEAN</span>, 
+followers_count <span class="hljs-built_in">INT8</span>, friends_count <span class="hljs-built_in">INT8</span>, bi_followers_count <span class="hljs-built_in">INT8</span>, 
+statuses_count <span class="hljs-built_in">INT8</span>, favourites_count <span class="hljs-built_in">INT8</span>, 
+group_count <span class="hljs-built_in">INT8</span>, 
+created_at <span class="hljs-keyword">TIMESTAMP</span>, allow_all_act_msg <span class="hljs-built_in">BOOLEAN</span>, 
+remark <span class="hljs-built_in">TEXT</span>, geo_enabled <span class="hljs-built_in">BOOLEAN</span>, verified INT2, 
+allow_all_comment <span class="hljs-built_in">BOOLEAN</span>, verified_reason <span class="hljs-built_in">TEXT</span>, 
+online_status INT2, 
+status_id <span class="hljs-built_in">INT8</span>, 
+friend_uid <span class="hljs-built_in">INT8</span>, follower_uid <span class="hljs-built_in">INT8</span>, <span class="hljs-keyword">rank</span> INT2, 
+visited_user INT4 <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+visited_friend <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+visited_follower <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+visited_follower_active <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+visited_bilateral <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+visited_timeline <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+visited_user_info <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+visited_microblog <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+visited_repost <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+hit <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, crawl_time <span class="hljs-keyword">TIMESTAMP</span>, 
+PRIMARY <span class="hljs-keyword">KEY</span> (uid));
+
+<span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">EXISTS</span> sina_status_info;
+
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> sina_status_info 
+(<span class="hljs-keyword">sid</span> SERIAL4, 
+status_id <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">UNIQUE</span>, 
+status_mid <span class="hljs-built_in">TEXT</span> <span class="hljs-keyword">UNIQUE</span>, 
+source_url <span class="hljs-built_in">TEXT</span>, source_rel <span class="hljs-built_in">TEXT</span>, source_name <span class="hljs-built_in">TEXT</span>, <span class="hljs-keyword">url</span> <span class="hljs-built_in">TEXT</span>, created_at <span class="hljs-keyword">TIMESTAMP</span>, 
+previous_id <span class="hljs-built_in">INT8</span>, origin_id <span class="hljs-built_in">INT8</span>, 
+previous_mid <span class="hljs-built_in">TEXT</span>, origin_mid <span class="hljs-built_in">TEXT</span>, 
+previous_idstr <span class="hljs-built_in">TEXT</span>, origin_idstr <span class="hljs-built_in">TEXT</span>, 
+repost_count INT4 <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+comment_count INT4 <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+attitude_count INT4 <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+user_uid <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>, 
+retweeted_status_id <span class="hljs-built_in">INT8</span>, 
+visited_query_mid INT4 <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+visited_query_id INT4 <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+hit INT4 <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, crawl_time <span class="hljs-keyword">TIMESTAMP</span>, 
+PRIMARY <span class="hljs-keyword">KEY</span> (<span class="hljs-keyword">sid</span>));
+
+<span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">EXISTS</span> sina_status_detail;
+
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> sina_status_detail 
+(<span class="hljs-keyword">sid</span> SERIAL4, 
+status_id <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">UNIQUE</span>, 
+<span class="hljs-built_in">text</span> <span class="hljs-built_in">TEXT</span>, 
+hit INT4 <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, crawl_time <span class="hljs-keyword">TIMESTAMP</span>, 
+PRIMARY <span class="hljs-keyword">KEY</span> (<span class="hljs-keyword">sid</span>));
+
+\dt+
+
+<span class="hljs-keyword">UPDATE</span> sina_user <span class="hljs-keyword">SET</span> visited_friendship=<span class="hljs-number">0</span>;
+<span class="hljs-keyword">UPDATE</span> sina_user <span class="hljs-keyword">SET</span> visited_follower=<span class="hljs-number">0</span>;
+<span class="hljs-keyword">UPDATE</span> sina_user <span class="hljs-keyword">SET</span> visited_follower_active=<span class="hljs-number">0</span>;
+<span class="hljs-keyword">UPDATE</span> sina_user <span class="hljs-keyword">SET</span> visited_bilateral=<span class="hljs-number">0</span>;
+
+<span class="hljs-keyword">DELETE</span> <span class="hljs-keyword">FROM</span> sina_user *;
+<span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">NOW</span>(); <span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">COUNT</span>(uid) <span class="hljs-keyword">FROM</span> sina_user; <span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">COUNT</span>(fid) <span class="hljs-keyword">FROM</span> sina_friendship; <span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">COUNT</span>(uid) <span class="hljs-keyword">FROM</span> sina_user <span class="hljs-keyword">WHERE</span> visited_friend&gt;<span class="hljs-number">0</span>; <span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">COUNT</span>(uid) <span class="hljs-keyword">FROM</span> sina_user <span class="hljs-keyword">WHERE</span> visited_follower&gt;<span class="hljs-number">0</span>; <span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">COUNT</span>(<span class="hljs-keyword">sid</span>) <span class="hljs-keyword">FROM</span> sina_status_info; <span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">COUNT</span>(<span class="hljs-keyword">sid</span>) <span class="hljs-keyword">FROM</span> sina_status_detail;
+<span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> test1 <span class="hljs-keyword">VALUES</span> (<span class="hljs-string">'ok'</span>);
+<span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> test2 <span class="hljs-keyword">VALUES</span> (<span class="hljs-string">'too long'</span>::<span class="hljs-built_in">varchar</span>(<span class="hljs-number">5</span>)); <span class="hljs-comment">-- explicit truncation</span>
+
+\q
+</code></pre>
+</span></div></article></div><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2013/10/05/linux-java">Linux Java</a></h1><p class="post-meta">October 5, 2013</p><div class="authorBlock"></div></header><article class="post-content"><div><span><p>{% include JB/setup %}</p>
+<h2><a class="anchor" aria-hidden="true" id="oracle-jdk"></a><a href="#oracle-jdk" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Oracle JDK</h2>
+<h3><a class="anchor" aria-hidden="true" id="ubuntu"></a><a href="#ubuntu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ubuntu</h3>
+<pre><code class="hljs css language-sh">sudo apt-get install software-properties-common python-software-properties
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="centos"></a><a href="#centos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CentOS</h3>
+<pre><code class="hljs css language-sh">mkdir ~/bin/
+<span class="hljs-built_in">cd</span> ~/bin/
+wget --no-cookies --no-check-certificate --header <span class="hljs-string">"Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie"</span> <span class="hljs-string">"http://download.oracle.com/otn-pub/java/jdk/8u5-b13/jdk-8u5-linux-x64.rpm"</span>
+sudo rpm -Uvh jdk-8u5-linux-x64.rpm
+java -version
+<span class="hljs-built_in">export</span> JAVA_HOME=<span class="hljs-string">"/usr/java/latest"</span>
+<span class="hljs-built_in">export</span> JRE_HOME=<span class="hljs-string">"<span class="hljs-variable">$JAVA_HOME</span>/jre"</span>
+<span class="hljs-built_in">export</span> PATH=<span class="hljs-string">"<span class="hljs-variable">$PATH</span>:<span class="hljs-variable">$JAVA_HOME</span>/bin:<span class="hljs-variable">$JRE_HOME</span>/bin"</span>
+</code></pre>
+<p><a href="http://www.if-not-true-then-false.com/2014/install-oracle-java-8-on-fedora-centos-rhel/">Install Oracle Java JDK/JRE 8u5 on Fedora 20/19, CentOS/RHEL 6.5/5.10</a></p>
+<p><a href="http://www.if-not-true-then-false.com/2010/install-sun-oracle-java-jdk-jre-7-on-fedora-centos-red-hat-rhel/">Install Oracle Java JDK/JRE 7u40 on Fedora 19/18, CentOS/RHEL 6.4/5.9</a></p>
+<p><a href="https://www.redbridge.se/blog/-/blogs/properly-installing-oracle-s-jdk-on-centos-rhel-or-scientific-linux">Properly installing Oracle's JDK on CentOS, RHEL or Scientific Linux</a></p>
+<h2><a class="anchor" aria-hidden="true" id="open-jdk"></a><a href="#open-jdk" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Open JDK</h2>
+<h3><a class="anchor" aria-hidden="true" id="centos-1"></a><a href="#centos-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CentOS</h3>
+<pre><code class="hljs css language-sh">yum search java | grep java-
+sudo yum install java-1.7.0-openjdk-devel
+sudo yum install java-1.6.0-openjdk-devel
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="ubuntu-1"></a><a href="#ubuntu-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ubuntu</h3>
+<pre><code class="hljs css language-sh">sudo apt-get install openjdk-7jdk
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="apache-tomcat"></a><a href="#apache-tomcat" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Apache Tomcat</h2>
+<pre><code class="hljs css language-sh">yum install tomcat6 tomcat6-webapps tomcat6-admin-webapps
+chkconfig tomcat6 on
+service tomcat6 restart
+</code></pre>
+<pre><code class="hljs"><span class="hljs-link">http://</span>[<span class="hljs-string">IP</span>]:8080/
+</code></pre>
+<p><a href="http://oracle-base.com/articles/linux/apache-tomcat-installation-on-linux.php">Apache Tomcat Installation on Linux (RHEL and clones)</a></p>
+<p><a href="http://newpush.com/2011/10/how-to-install-tomcat-6-on-rhel-6-or-centos-6/">How to install Tomcat 6 on RHEL 6 or CentOS 6</a></p>
+<h2><a class="anchor" aria-hidden="true" id="remote-access"></a><a href="#remote-access" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Remote Access</h2>
+<h3><a class="anchor" aria-hidden="true" id="disable-firewall"></a><a href="#disable-firewall" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Disable Firewall</h3>
+<p>This is the most important step.</p>
+<h4><a class="anchor" aria-hidden="true" id="ubuntu-2"></a><a href="#ubuntu-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ubuntu</h4>
+<pre><code class="hljs css language-sh">ufw <span class="hljs-built_in">disable</span>
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="centos-2"></a><a href="#centos-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CentOS</h4>
+<pre><code class="hljs css language-sh">service iptables stop
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="enable-firewall"></a><a href="#enable-firewall" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Enable Firewall</h3>
+<h4><a class="anchor" aria-hidden="true" id="centos-3"></a><a href="#centos-3" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CentOS</h4>
+<p>Add these lines before <code>-A INPUT -j REJECT</code> line</p>
+<pre><code class="hljs css language-sh">-A INPUT -p tcp --dport 8080 -m state --state NEW -j ACCEPT
+-A INPUT -p tcp --dport 8009 -m state --state NEW -j ACCEPT
+</code></pre>
+<p>Now restart service</p>
+<pre><code class="hljs css language-sh">service iptables restart
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="enable-list-directories"></a><a href="#enable-list-directories" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Enable list directories</h3>
+<pre><code class="hljs css language-sh">vim conf/web.xml
+</code></pre>
+<pre><code class="hljs css language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">init-param</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">param-name</span>&gt;</span>listings<span class="hljs-tag">&lt;/<span class="hljs-name">param-name</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">param-value</span>&gt;</span>true<span class="hljs-tag">&lt;/<span class="hljs-name">param-value</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">init-param</span>&gt;</span>
+</code></pre>
+<p>Change <code>true</code> to <code>false</code>.</p>
+<h2><a class="anchor" aria-hidden="true" id="intellij-idea"></a><a href="#intellij-idea" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>IntelliJ IDEA</h2>
+<p><a href="http://plugins.jetbrains.com/plugin/164?pr=idea">IdeaVim</a></p>
+<p>Download the <code>*.zip</code> file.</p>
+<p>Intellij IDEA -&gt; Preferences... -&gt; Plugins -&gt; Install plugin from disk...</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev" href="/blog/page5/">← Prev</a><a class="docs-next" href="/blog/page7/">Next →</a></div></div></div></div></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/docusaurus.svg" alt="Tao He" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/docs/en/doc2.html">Guides (or other categories)</a><a href="/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2019 Your Name or Your Company Name</section></footer></div></body></html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>PostgreSQL · Tao He</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="{% include JB/setup %}"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="PostgreSQL · Tao He"/><meta property="og:type" content="website"/><meta property="og:url" content="https://taohexxx.github.io/blog/2013/10/05/postgres"/><meta property="og:description" content="{% include JB/setup %}"/><meta property="og:image" content="https://taohexxx.github.io/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://taohexxx.github.io/img/docusaurus.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://taohexxx.github.io/blog/atom.xml" title="Tao He Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://taohexxx.github.io/blog/feed.xml" title="Tao He Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/docusaurus.svg" alt="Tao He"/><h2 class="headerTitleWithLogo">Tao He</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/doc1" target="_self">Docs</a></li><li class=""><a href="/docs/doc4" target="_self">API</a></li><li class=""><a href="/en/help" target="_self">Help</a></li><li class="siteNavGroupActive"><a href="/blog" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Recent Posts</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Recent Posts</h3><ul><li class="navListItem"><a class="navItem" href="/blog/2019/01/13/microsoft-powerpoint">Microsoft PowerPoint</a></li><li class="navListItem"><a class="navItem" href="/blog/2018/12/12/chrome">Chrome</a></li><li class="navListItem"><a class="navItem" href="/blog/2018/11/21/alfred">Alfred</a></li><li class="navListItem"><a class="navItem" href="/blog/2018/09/01/docusaurus">Docusaurus</a></li><li class="navListItem"><a class="navItem" href="/blog/2018/08/30/git-commands">Git Commands</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer postContainer blogContainer"><div class="wrapper"><div class="lonePost"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2013/10/05/postgres">PostgreSQL</a></h1><p class="post-meta">October 5, 2013</p><div class="authorBlock"></div></header><div><span><p>{% include JB/setup %}</p>
+<h2><a class="anchor" aria-hidden="true" id="macos"></a><a href="#macos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>macOS</h2>
+<p>Install postgres</p>
+<pre><code class="hljs css language-sh">brew update
+brew remove postgresql
+brew install postgresql
+</code></pre>
+<p>Create a database</p>
+<pre><code class="hljs css language-sh">initdb /usr/<span class="hljs-built_in">local</span>/var/postgres -E utf8
+</code></pre>
+<p>Serve that database</p>
+<pre><code class="hljs css language-sh">postgres -D /usr/<span class="hljs-built_in">local</span>/var/postgres
+</code></pre>
+<p>To have launchd start postgresql at login</p>
+<pre><code class="hljs css language-sh">ln -sfv /usr/<span class="hljs-built_in">local</span>/opt/postgresql/*.plist ~/Library/LaunchAgents
+</code></pre>
+<p>Then to load postgresql now.</p>
+<p>Option 1 (suggested)</p>
+<pre><code class="hljs css language-sh">sudo gem install lunchy
+lunchy list
+lunchy stop postgres
+lunchy start postgres
+</code></pre>
+<p>Option 2</p>
+<pre><code class="hljs css language-sh">launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+</code></pre>
+<p><a href="http://www.moncefbelyamani.com/how-to-install-postgresql-on-a-mac-with-homebrew-and-lunchy/">How to Install PostgreSQL on a Mac With Homebrew and Lunchy</a></p>
+<h2><a class="anchor" aria-hidden="true" id="centos"></a><a href="#centos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CentOS</h2>
+<p>Configure your YUM repository</p>
+<pre><code class="hljs css language-sh">sudo cp /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak
+sudo vim /etc/yum.repos.d/CentOS-Base.repo
+</code></pre>
+<p>Add the following line to /etc/yum.repos.d/CentOS-Base.repo, [base] and [updates] sections</p>
+<pre><code class="hljs css language-sh">exclude=postgresql*
+</code></pre>
+<p>Download and install PGDG RPM files</p>
+<pre><code class="hljs css language-sh">mkdir ~/bin/
+<span class="hljs-built_in">cd</span> ~/bin/
+curl -O http://yum.postgresql.org/9.3/redhat/rhel-6-x86_64/pgdg-centos93-9.3-1.noarch.rpm
+</code></pre>
+<p>Now install RPM distribution</p>
+<pre><code class="hljs css language-sh">sudo rpm -ivh pgdg-centos93-9.3-1.noarch.rpm
+</code></pre>
+<p>Install PostgreSQL</p>
+<pre><code class="hljs css language-sh">sudo yum list postgres*
+sudo yum install postgresql93-server
+</code></pre>
+<p>Initialize</p>
+<pre><code class="hljs css language-sh">sudo service postgresql-9.3 initdb
+</code></pre>
+<p>Startup</p>
+<pre><code class="hljs css language-sh">sudo chkconfig postgresql-9.3 on
+</code></pre>
+<p>Control service</p>
+<pre><code class="hljs css language-sh">sudo service postgresql-9.3 restart
+su postgres
+</code></pre>
+<p><a href="http://wiki.postgresql.org/wiki/YUM_Installation">YUM Installation</a></p>
+<h2><a class="anchor" aria-hidden="true" id="remote-access"></a><a href="#remote-access" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Remote Access</h2>
+<h3><a class="anchor" aria-hidden="true" id="disable-firewall"></a><a href="#disable-firewall" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Disable Firewall</h3>
+<p><a href="/blog/linux-firewall/">Linux Firewall</a></p>
+<h3><a class="anchor" aria-hidden="true" id="edit-conf-file"></a><a href="#edit-conf-file" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Edit conf File</h3>
+<p>To be able to reach the server remotely</p>
+<pre><code class="hljs css language-sh">sudo cp /var/lib/pgsql/9.3/data/postgresql.conf /var/lib/pgsql/9.3/data/postgresql.conf.bak
+sudo vim /var/lib/pgsql/9.3/data/postgresql.conf
+</code></pre>
+<p>Add the line <code>listen_addresses = '*'</code></p>
+<p>PostgreSQL, by default, refuses all connections it receives from any remote address. You have to relax these rules by adding this line to <code>/var/lib/pgsql/9.3/data/pg_hba.conf</code></p>
+<pre><code class="hljs css language-sh">sudo cp /var/lib/pgsql/9.3/data/pg_hba.conf /var/lib/pgsql/9.3/data/pg_hba.conf.bak
+sudo vim /var/lib/pgsql/9.3/data/pg_hba.conf
+</code></pre>
+<p><strong>IMPORTANT:</strong> You must delete the origin corresponding lines, or your configure won't take effect!</p>
+<p>If password is not needed</p>
+<pre><code class="hljs css language-sh">host all all  0.0.0.0/0 trust
+</code></pre>
+<p>If password is not needed</p>
+<pre><code class="hljs css language-sh">host all all  0.0.0.0/0 md5
+</code></pre>
+<p><strong>IMPORTANT:</strong> You can't change user postgres' password through command <code>passwd</code>. Instead, it can be changed by SQL command in psql prompt</p>
+<pre><code class="hljs css language-sh">ALTER USER postgres with encrypted password <span class="hljs-string">'your_password'</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="configure-firewall"></a><a href="#configure-firewall" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configure Firewall</h3>
+<h4><a class="anchor" aria-hidden="true" id="centos-1"></a><a href="#centos-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CentOS</h4>
+<pre><code class="hljs css language-sh">sudo cp /etc/sysconfig/iptables /etc/sysconfig/iptables.bak
+sudo vim /etc/sysconfig/iptables
+</code></pre>
+<p>Add these lines before <code>-A INPUT -j REJECT</code> line</p>
+<pre><code class="hljs css language-sh">-A INPUT -p tcp -s 0/0 --sport 1024:65535 --dport 5432 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A OUTPUT -p tcp --sport 5432 -d 0/0 --dport 1024:65535 -m state --state ESTABLISHED -j ACCEPT
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="enable-firewall"></a><a href="#enable-firewall" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Enable Firewall</h3>
+<p><a href="/blog/linux-firewall/">Linux Firewall</a></p>
+<h3><a class="anchor" aria-hidden="true" id="control-service"></a><a href="#control-service" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Control Service</h3>
+<pre><code class="hljs css language-sh">sudo service postgresql-9.3 restart
+</code></pre>
+<p>Test</p>
+<pre><code class="hljs css language-sh">psql -h 192.168.0.81 -U postgres -d weibominer
+</code></pre>
+<p><a href="http://www.cyberciti.biz/tips/postgres-allow-remote-access-tcp-connection.html">How Do I Enable remote access to PostgreSQL database server?</a></p>
+<h2><a class="anchor" aria-hidden="true" id="tuning"></a><a href="#tuning" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Tuning</h2>
+<p><a href="http://wiki.postgresql.org/wiki/Tuning_Your_PostgreSQL_Server">Tuning Your PostgreSQL Server</a></p>
+<h2><a class="anchor" aria-hidden="true" id="postgresql-studio"></a><a href="#postgresql-studio" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PostgreSQL Studio</h2>
+<p>Download <code>pgstudio_*.tar.bz2</code> from <a href="http://www.postgresqlstudio.org/?ddownload=837">PostgreSQL Studio</a></p>
+<p>Uncompress and put the <code>*.war</code> under</p>
+<h3><a class="anchor" aria-hidden="true" id="centos-tomcat6"></a><a href="#centos-tomcat6" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CentOS Tomcat6</h3>
+<pre><code class="hljs css language-sh">cp pgstudio.war /var/lib/tomcat6/webapps/
+</code></pre>
+<p>Add PostgreSQL JDBC Driver (Not a must because PostgreSQL Studio owns it)</p>
+<p>Download from <a href="http://jdbc.postgresql.org/download.html">PostgreSQL JDBC Driver</a></p>
+<p>Put the <code>postgresql-*-jdbc*.jar</code> under</p>
+<h3><a class="anchor" aria-hidden="true" id="centos-tomcat6-1"></a><a href="#centos-tomcat6-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CentOS Tomcat6</h3>
+<pre><code class="hljs css language-sh">/usr/share/tomcat6/lib/
+</code></pre>
+<p>Start Tomcat</p>
+<pre><code class="hljs css language-sh">service tomcat6 restart
+</code></pre>
+<p>Browse in browser.</p>
+<p><a href="http://localhost:8080/pgstudio">PostgreSQL Studio</a></p>
+<p><a href="http://www.postgresqlstudio.org/support/documentation/supportdocumentationinstallation-guide/">Installation Guide</a></p>
+<h2><a class="anchor" aria-hidden="true" id="pgadmin"></a><a href="#pgadmin" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PgAdmin</h2>
+<p>Install from yum</p>
+<pre><code class="hljs css language-sh">yum search pgadmin
+yum install pgadmin3_93
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="sql"></a><a href="#sql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SQL</h2>
+<pre><code class="hljs css language-sql">psql -l
+psql postgres
+\?
+
+<span class="hljs-keyword">SET</span> <span class="hljs-keyword">time_zone</span> = <span class="hljs-string">"+08:00"</span>;
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">DATABASE</span> weibominer;
+
+\c[onnect] [DBNAME|- USER|- HOST|- PORT|-]
+\c weibominer
+\l+
+\encoding [ENCODING]
+
+<span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">EXISTS</span> sina_user_filter;
+
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> sina_user_filter
+(uid SERIAL4, ui <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">UNIQUE</span>, un <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">UNIQUE</span>, sn <span class="hljs-built_in">TEXT</span>, sx <span class="hljs-built_in">CHAR</span>(<span class="hljs-number">1</span>), ad <span class="hljs-built_in">TEXT</span>, de <span class="hljs-built_in">TEXT</span>, iu <span class="hljs-built_in">TEXT</span>, an <span class="hljs-built_in">INT8</span>, fn <span class="hljs-built_in">INT8</span>, mn <span class="hljs-built_in">INT8</span>, iv <span class="hljs-built_in">BOOLEAN</span>, <span class="hljs-keyword">id</span> INT2, vi <span class="hljs-built_in">TEXT</span>, wt <span class="hljs-keyword">TIMESTAMP</span>, tg <span class="hljs-built_in">TEXT</span>, <span class="hljs-keyword">at</span> <span class="hljs-keyword">TIMESTAMP</span>, fui <span class="hljs-built_in">TEXT</span>);
+
+<span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">EXISTS</span> sina_friendship;
+
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> sina_friendship 
+(fid SERIAL4, 
+friend_uid <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>, follower_uid <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>, 
+hit INT4 <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, crawl_time <span class="hljs-keyword">TIMESTAMP</span>, 
+PRIMARY <span class="hljs-keyword">KEY</span> (fid), <span class="hljs-keyword">UNIQUE</span> (friend_uid, follower_uid));
+
+<span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">EXISTS</span> sina_user;
+
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> sina_user 
+(uid SERIAL4, 
+user_uid <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">UNIQUE</span>, 
+screen_name <span class="hljs-built_in">TEXT</span>, <span class="hljs-keyword">name</span> <span class="hljs-built_in">TEXT</span>, province INT2, 
+city INT2, location <span class="hljs-built_in">TEXT</span>, description <span class="hljs-built_in">TEXT</span>, 
+<span class="hljs-keyword">url</span> <span class="hljs-built_in">TEXT</span>, profile_image_url <span class="hljs-built_in">TEXT</span>, 
+<span class="hljs-keyword">domain</span> <span class="hljs-built_in">TEXT</span>, gender <span class="hljs-built_in">BOOLEAN</span>, 
+followers_count <span class="hljs-built_in">INT8</span>, friends_count <span class="hljs-built_in">INT8</span>, bi_followers_count <span class="hljs-built_in">INT8</span>, 
+statuses_count <span class="hljs-built_in">INT8</span>, favourites_count <span class="hljs-built_in">INT8</span>, 
+group_count <span class="hljs-built_in">INT8</span>, 
+created_at <span class="hljs-keyword">TIMESTAMP</span>, allow_all_act_msg <span class="hljs-built_in">BOOLEAN</span>, 
+remark <span class="hljs-built_in">TEXT</span>, geo_enabled <span class="hljs-built_in">BOOLEAN</span>, verified INT2, 
+allow_all_comment <span class="hljs-built_in">BOOLEAN</span>, verified_reason <span class="hljs-built_in">TEXT</span>, 
+online_status INT2, 
+status_id <span class="hljs-built_in">INT8</span>, 
+friend_uid <span class="hljs-built_in">INT8</span>, follower_uid <span class="hljs-built_in">INT8</span>, <span class="hljs-keyword">rank</span> INT2, 
+visited_user INT4 <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+visited_friend <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+visited_follower <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+visited_follower_active <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+visited_bilateral <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+visited_timeline <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+visited_user_info <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+visited_microblog <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+visited_repost <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+hit <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, crawl_time <span class="hljs-keyword">TIMESTAMP</span>, 
+PRIMARY <span class="hljs-keyword">KEY</span> (uid));
+
+<span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">EXISTS</span> sina_status_info;
+
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> sina_status_info 
+(<span class="hljs-keyword">sid</span> SERIAL4, 
+status_id <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">UNIQUE</span>, 
+status_mid <span class="hljs-built_in">TEXT</span> <span class="hljs-keyword">UNIQUE</span>, 
+source_url <span class="hljs-built_in">TEXT</span>, source_rel <span class="hljs-built_in">TEXT</span>, source_name <span class="hljs-built_in">TEXT</span>, <span class="hljs-keyword">url</span> <span class="hljs-built_in">TEXT</span>, created_at <span class="hljs-keyword">TIMESTAMP</span>, 
+previous_id <span class="hljs-built_in">INT8</span>, origin_id <span class="hljs-built_in">INT8</span>, 
+previous_mid <span class="hljs-built_in">TEXT</span>, origin_mid <span class="hljs-built_in">TEXT</span>, 
+previous_idstr <span class="hljs-built_in">TEXT</span>, origin_idstr <span class="hljs-built_in">TEXT</span>, 
+repost_count INT4 <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+comment_count INT4 <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+attitude_count INT4 <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+user_uid <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>, 
+retweeted_status_id <span class="hljs-built_in">INT8</span>, 
+visited_query_mid INT4 <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+visited_query_id INT4 <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, 
+hit INT4 <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, crawl_time <span class="hljs-keyword">TIMESTAMP</span>, 
+PRIMARY <span class="hljs-keyword">KEY</span> (<span class="hljs-keyword">sid</span>));
+
+<span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">EXISTS</span> sina_status_detail;
+
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> sina_status_detail 
+(<span class="hljs-keyword">sid</span> SERIAL4, 
+status_id <span class="hljs-built_in">INT8</span> <span class="hljs-keyword">UNIQUE</span>, 
+<span class="hljs-built_in">text</span> <span class="hljs-built_in">TEXT</span>, 
+hit INT4 <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-number">0</span>, crawl_time <span class="hljs-keyword">TIMESTAMP</span>, 
+PRIMARY <span class="hljs-keyword">KEY</span> (<span class="hljs-keyword">sid</span>));
+
+\dt+
+
+<span class="hljs-keyword">UPDATE</span> sina_user <span class="hljs-keyword">SET</span> visited_friendship=<span class="hljs-number">0</span>;
+<span class="hljs-keyword">UPDATE</span> sina_user <span class="hljs-keyword">SET</span> visited_follower=<span class="hljs-number">0</span>;
+<span class="hljs-keyword">UPDATE</span> sina_user <span class="hljs-keyword">SET</span> visited_follower_active=<span class="hljs-number">0</span>;
+<span class="hljs-keyword">UPDATE</span> sina_user <span class="hljs-keyword">SET</span> visited_bilateral=<span class="hljs-number">0</span>;
+
+<span class="hljs-keyword">DELETE</span> <span class="hljs-keyword">FROM</span> sina_user *;
+<span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">NOW</span>(); <span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">COUNT</span>(uid) <span class="hljs-keyword">FROM</span> sina_user; <span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">COUNT</span>(fid) <span class="hljs-keyword">FROM</span> sina_friendship; <span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">COUNT</span>(uid) <span class="hljs-keyword">FROM</span> sina_user <span class="hljs-keyword">WHERE</span> visited_friend&gt;<span class="hljs-number">0</span>; <span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">COUNT</span>(uid) <span class="hljs-keyword">FROM</span> sina_user <span class="hljs-keyword">WHERE</span> visited_follower&gt;<span class="hljs-number">0</span>; <span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">COUNT</span>(<span class="hljs-keyword">sid</span>) <span class="hljs-keyword">FROM</span> sina_status_info; <span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">COUNT</span>(<span class="hljs-keyword">sid</span>) <span class="hljs-keyword">FROM</span> sina_status_detail;
+<span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> test1 <span class="hljs-keyword">VALUES</span> (<span class="hljs-string">'ok'</span>);
+<span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> test2 <span class="hljs-keyword">VALUES</span> (<span class="hljs-string">'too long'</span>::<span class="hljs-built_in">varchar</span>(<span class="hljs-number">5</span>)); <span class="hljs-comment">-- explicit truncation</span>
+
+\q
+</code></pre>
+</span></div></div><div class="blogSocialSection"></div></div><div class="blog-recent"><a class="button" href="/blog">Recent Posts</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#macos">macOS</a></li><li><a href="#centos">CentOS</a></li><li><a href="#remote-access">Remote Access</a><ul class="toc-headings"><li><a href="#disable-firewall">Disable Firewall</a></li><li><a href="#edit-conf-file">Edit conf File</a></li><li><a href="#configure-firewall">Configure Firewall</a></li><li><a href="#enable-firewall">Enable Firewall</a></li><li><a href="#control-service">Control Service</a></li></ul></li><li><a href="#tuning">Tuning</a></li><li><a href="#postgresql-studio">PostgreSQL Studio</a><ul class="toc-headings"><li><a href="#centos-tomcat6">CentOS Tomcat6</a></li><li><a href="#centos-tomcat6-1">CentOS Tomcat6</a></li></ul></li><li><a href="#pgadmin">PgAdmin</a></li><li><a href="#sql">SQL</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/docusaurus.svg" alt="Tao He" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/docs/en/doc2.html">Guides (or other categories)</a><a href="/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2019 Your Name or Your Company Name</section></footer></div></body></html>

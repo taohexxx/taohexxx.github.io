@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://taohexxx.github.io/blog</id>
+    <title>Tao He Blog</title>
+    <updated>2019-01-13T06:00:00Z</updated>
+    <generator>Feed for Node.js</generator>
+    <link rel="alternate" href="https://taohexxx.github.io/blog"/>
+    <subtitle>The best place to stay up-to-date with the latest Tao He news and events.</subtitle>
+    <logo>https://taohexxx.github.io/img/docusaurus.svg</logo>
+    <rights>Copyright © 2019 Your Name or Your Company Name</rights>
+    <entry>
+        <title type="html"><![CDATA[Microsoft PowerPoint]]></title>
+        <id>https://taohexxx.github.io/blog/2019/01/13/microsoft-powerpoint.html</id>
+        <link href="https://taohexxx.github.io/blog/2019/01/13/microsoft-powerpoint.html">
+        </link>
+        <updated>2019-01-13T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h1><a class="anchor" aria-hidden="true" id="change-theme-fonts"></a><a href="#change-theme-fonts" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Change Theme Fonts</h1> <p><code>Prefs...</code> -&gt; <code>East Asian Languages</code> -&gt; <code>Simplified Chinese</code></p> <p>Copy <code>/Applications/Microsoft PowerPoint.app/Contents/Resources/Office Themes/Theme Fonts/Arial.xml</code> to <code>/Users/taohe/Library/Group Containers/UBF8T34...</code></p>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Chrome]]></title>
+        <id>https://taohexxx.github.io/blog/2018/12/12/chrome.html</id>
+        <link href="https://taohexxx.github.io/blog/2018/12/12/chrome.html">
+        </link>
+        <updated>2018-12-12T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="shortcuts"></a><a href="#shortcuts" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Shortcuts</h2> <table> <thead> <tr><th>Shortcut</th><th>Function</th></tr> </thead> <tbody> <tr><td>⌘ + L</td><td>Jump to the address bar</td></tr> </tbody> </table> <p><a href="https://support.google.com/chrome/answer/157179?hl=en">Chrome keyboard shortcuts</a></p> ]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Alfred]]></title>
+        <id>https://taohexxx.github.io/blog/2018/11/21/alfred.html</id>
+        <link href="https://taohexxx.github.io/blog/2018/11/21/alfred.html">
+        </link>
+        <updated>2018-11-21T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="workflows"></a><a href="#workflows" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Workflows</h2> <h3><a class="anchor" aria-hidden="true" id="alfred-tty"></a><a href="#alfred-tty" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>alfred-tty</h3> <p><a href="https://github.com/isometry/alfred-tty">alfred-tty</a></p> <h3><a class="anchor" aria-hidden="true" id="alfred-tabs-improved"></a><a href="#alfred-tabs-improved" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>alfred-tabs-improved</h3> <p><a href="https://github.com/luceat-lux-vestra/alfred-tabs-improved">alfred-tabs-improved</a></p> <pre><code class="hljs css language-sh">yarn global add alfred-tabs-improved </code></pre> <h3><a class="anchor" aria-hidden="true" id="alfred-chrome-bookmarks"></a><a href="#alfred-chrome-bookmarks" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>alfred-chrome-bookmarks</h3> <p><a href="https://github.com/blainesch/alfred-chrome-bookmarks">alfred-chrome-bookmarks</a></p> <h3><a class="anchor" aria-hidden="true" id="chrome-bookmarks-alfred-workflow"></a><a href="#chrome-bookmarks-alfred-workflow" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>chrome-bookmarks-alfred-workflow</h3> <p><a href="https://github.com/mdreizin/chrome-bookmarks-alfred-workflow">chrome-bookmarks-alfred-workflow</a></p> <h3><a class="anchor" aria-hidden="true" id="alfred-fkill"></a><a href="#alfred-fkill" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>a...</h3>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Docusaurus]]></title>
+        <id>https://taohexxx.github.io/blog/2018/09/01/docusaurus.html</id>
+        <link href="https://taohexxx.github.io/blog/2018/09/01/docusaurus.html">
+        </link>
+        <updated>2018-09-01T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="install-docusaurus"></a><a href="#install-docusaurus" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Install Docusaurus</h2> <p><a href="https://github.com/facebook/docusaurus">Docusaurus</a> <a href="https://docusaurus.io/docs/en/commands">https://docusaurus.io/docs/en/commands</a></p> <pre><code class="hljs css language-sh">docusaurus-init <span class="hljs-comment"># switch to source branch</span> git co <span class="hljs-built_in">source</span> <span class="hljs-comment"># go to website directory</span> <span class="hljs-built_in">cd</span> website/ <span class="hljs-comment"># publish to master branch to GitHub</span> GIT_USER=taohexxx yarn run ...</code></pre>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Git Commands]]></title>
+        <id>https://taohexxx.github.io/blog/2018/08/30/git-commands.html</id>
+        <link href="https://taohexxx.github.io/blog/2018/08/30/git-commands.html">
+        </link>
+        <updated>2018-08-30T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="branch"></a><a href="#branch" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>branch</h2> <h3><a class="anchor" aria-hidden="true" id="basic"></a><a href="#basic" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Basic</h3> <pre><code class="hljs css language-sh"><span class="hljs-comment"># show</span> git branch -vv <span class="hljs-comment"># delete</span> git branch -d &lt;branch&gt; </code></pre> <h3><a class="anchor" aria-hidden="true" id="checkout"></a><a href="#checkout" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>checkout</h3> <pre><code class="hljs css language-sh"><span class="hljs-comment"># create a new branch as same as current branch</span> git checkout -b &lt;new branch&gt; <span class="hljs-comment"># switch to branch</span> git checkout &lt;branch&gt; </code></pre> <h3><a class="anchor" aria-hidden="true" id="rebase"></a><a href="#rebase" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>rebase</h3> <pre><code class="hljs css language-sh">git <span class="hljs-built_in">lo...</span></code></pre>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fonts]]></title>
+        <id>https://taohexxx.github.io/blog/2018/02/17/fonts.html</id>
+        <link href="https://taohexxx.github.io/blog/2018/02/17/fonts.html">
+        </link>
+        <updated>2018-02-17T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="0-preface"></a><a href="#0-preface" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>0. Preface</h2> <p>Ascender: 顶部(baseline为起点) Cap Height: 大写高度 x-Height: x高度 Descender: 底部(baseline为起点) Em Size = Ascender + Descender</p> <p>&lt;<a href="http://designwithfontforge.com/zh-CN/Line_Spacing.html">http://designwithfontforge.com/zh-CN/Line_Spacing.html</a>?</p> <h2><a class="anchor" aria-hidden="true" id="1-glyphs"></a><a href="#1-glyphs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>1. Glyphs</h2> <ul> <li><p>Open <code>FiraCode.glyphs</code>.</p></li> <li><p>Copy <code>*.l...</code></p></li></ul>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Node.js]]></title>
+        <id>https://taohexxx.github.io/blog/2018/02/09/nodejs.html</id>
+        <link href="https://taohexxx.github.io/blog/2018/02/09/nodejs.html">
+        </link>
+        <updated>2018-02-09T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="nodejs"></a><a href="#nodejs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Node.js</h2> <pre><code class="hljs css language-sh"></code></pre> <h2><a class="anchor" aria-hidden="true" id="yarn"></a><a href="#yarn" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Yarn</h2> <h3><a class="anchor" aria-hidden="true" id="macos"></a><a href="#macos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>macOS</h3> <pre><code class="hljs css language-sh">brew options node brew install node --with-debug brew install yarn </code></pre> <h3><a class="anchor" aria-hidden="true" id="ubuntu"></a><a href="#ubuntu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Ubuntu</h3> <p>Install Node.js</p> <pre><code class="hljs css language-sh">curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash - sudo apt-get install -y nodejs </code></pre> <p>Install Yarn</p> <pre><code class="hljs css language-sh">sudo apt ...</code></pre>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[PhxQueue]]></title>
+        <id>https://taohexxx.github.io/blog/2017/09/30/phxqueue.html</id>
+        <link href="https://taohexxx.github.io/blog/2017/09/30/phxqueue.html">
+        </link>
+        <updated>2017-09-30T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="third-party-dependence"></a><a href="#third-party-dependence" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Third Party Dependence</h2> <pre><code class="hljs css language-sh">apt-get update &amp;&amp; apt-get install -y build-essential cmake libtool python-dev libncurses-dev libreadline-dev libz-dev gdb ssh net-tools netcat tcpdump vim neovim apt list --installed </code></pre> <h3><a class="anchor" aria-hidden="true" id="gflags"></a><a href="#gflags" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>gflags</h3> <pre><code class="hljs css language-sh"><span class="hljs-built_in">cd</span> gf...</code></pre>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Spacemacs]]></title>
+        <id>https://taohexxx.github.io/blog/2016/10/12/spacemacs.html</id>
+        <link href="https://taohexxx.github.io/blog/2016/10/12/spacemacs.html">
+        </link>
+        <updated>2016-10-12T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="install"></a><a href="#install" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Install</h2> <p><a href="https://github.com/syl20bnr/spacemacs">Spacemacs</a></p> <pre><code class="hljs css language-sh">yarn global add tern </code></pre> <h2><a class="anchor" aria-hidden="true" id="keymap"></a><a href="#keymap" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Keymap</h2> <pre><code class="hljs"> Keybinding | Description <span class="hljs-comment">------------------|-------------------------------------</span> `SPC h SPC` | helm-spacemacs-<span class="hljs-keyword">help</span> <span class="hljs-string">`SPC h l`</span> | helm-spacemacs-<span class="hljs-keyword">help</span>-layers <span class="hljs-string">`SPC s j`</span> | helm-jump-<span class="hljs-keyword">in...</span></code></pre>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Go]]></title>
+        <id>https://taohexxx.github.io/blog/2016/01/16/go.html</id>
+        <link href="https://taohexxx.github.io/blog/2016/01/16/go.html">
+        </link>
+        <updated>2016-01-16T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="go"></a><a href="#go" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Go</h2> <pre><code class="hljs css language-sh">brew install go brew install glide </code></pre> <h2><a class="anchor" aria-hidden="true" id="beego"></a><a href="#beego" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Beego</h2> <ul> <li>Install Beego</li> </ul> <pre><code class="hljs css language-sh">go get -u github.com/astaxie/beego go get -u github.com/beego/bee </code></pre> <ul> <li>New web project</li> </ul> <pre><code class="hljs css language-sh">bee new APPNAME bee run </code></pre> <ul> <li>Test</li> </ul> <p><code>http://127.0.0.1:8080/</code></p> ]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[React]]></title>
+        <id>https://taohexxx.github.io/blog/2016/01/15/react.html</id>
+        <link href="https://taohexxx.github.io/blog/2016/01/15/react.html">
+        </link>
+        <updated>2016-01-15T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <p><a href="http://survivejs.com/webpack_react/webpack_and_react/">Webpack and React</a></p> <h2><a class="anchor" aria-hidden="true" id="node"></a><a href="#node" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Node</h2> <ul> <li>Init</li> </ul> <pre><code class="hljs css language-sh">npm init -y </code></pre> <h2><a class="anchor" aria-hidden="true" id="react"></a><a href="#react" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>React</h2> <ul> <li>Install React</li> </ul> <pre><code class="hljs css language-sh">npm install --save react react-dom </code></pre> <h2><a class="anchor" aria-hidden="true" id="babel"></a><a href="#babel" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Babel</h2> <ul> <li>Install Babel</li> </ul> <p>Method 1:</p> <pre><code class="hljs css language-sh">npm install --save-dev babel-cli babel-preset-es2015 babel-preset-react </code></pre> <p>Method 2:</p> <pre><code class="hljs css language-sh">npm install ...</code></pre>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Xcode]]></title>
+        <id>https://taohexxx.github.io/blog/2015/05/23/xcode.html</id>
+        <link href="https://taohexxx.github.io/blog/2015/05/23/xcode.html">
+        </link>
+        <updated>2015-05-23T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="xvim"></a><a href="#xvim" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>XVim</h2> <p><a href="https://github.com/XVimProject/XVim">XVim</a></p> <h2><a class="anchor" aria-hidden="true" id="solarized"></a><a href="#solarized" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Solarized</h2> <p><a href="https://github.com/taohex/Solarized-Dark-for-Xcode">Solarized-Dark-for-Xcode</a></p> <pre><code class="hljs css language-sh">cp Solarized\ Dark\ @ArtSabintsev.dvtcolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes </code></pre> <h2><a class="anchor" aria-hidden="true" id="settings"></a><a href="#settings" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Settings</h2> <p>Default output</p> <pre><code class="hljs css language-sh">~/Library/Developer/Xcode/DerivedData/cegui-test-hbelnf...</code></pre>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[OpenGL]]></title>
+        <id>https://taohexxx.github.io/blog/2015/05/22/opengl.html</id>
+        <link href="https://taohexxx.github.io/blog/2015/05/22/opengl.html">
+        </link>
+        <updated>2015-05-22T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="build"></a><a href="#build" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>BUILD</h2> <h3><a class="anchor" aria-hidden="true" id="macos"></a><a href="#macos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>macOS</h3> <pre><code class="hljs css language-sh">brew tap homebrew/versions brew install glfw3 brew install glew </code></pre> <p><a href="http://blog.hwrd.me/2014/05/07/beginning-opengl-development-on-os-x/">Beginning OpenGL Development on OS X</a></p> ]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CEGUI]]></title>
+        <id>https://taohexxx.github.io/blog/2015/05/10/cegui.html</id>
+        <link href="https://taohexxx.github.io/blog/2015/05/10/cegui.html">
+        </link>
+        <updated>2015-05-10T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="build"></a><a href="#build" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>BUILD</h2> <p><a href="http://cegui.org.uk/wiki/Building_from_source">Building from source</a></p> <h3><a class="anchor" aria-hidden="true" id="macos"></a><a href="#macos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>macOS</h3> <ul> <li>Install OpenGL</li> </ul> <p><a href="/blog/opengl/">OpenGL</a></p> <ul> <li>Download CEGUI source and dependencies from <a href="http://cegui.org.uk/drupal/download">CEGUI release</a></li> </ul> <pre><code class="hljs css language-sh"><span class="hljs-built_in">cd</span> ~/<span class="hljs-built_in">local</span>/src/cegui-deps-0.8.x-src/ mkdir build/ <span class="hljs-built_in">cd</span> build/ cmake -G Xcode .. xcodebuild -configuration Debug ...</code></pre>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Neovim]]></title>
+        <id>https://taohexxx.github.io/blog/2015/04/22/neovim.html</id>
+        <link href="https://taohexxx.github.io/blog/2015/04/22/neovim.html">
+        </link>
+        <updated>2015-04-22T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="compile"></a><a href="#compile" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Compile</h2> <h3><a class="anchor" aria-hidden="true" id="macos"></a><a href="#macos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>macOS</h3> <pre><code class="hljs css language-sh">pip install --upgrade pip pip3 install --upgrade pip pip -V pip3 -V pip install --upgrade neovim pip3 install --upgrade neovim gem install neovim brew tap neovim/neovim brew update brew reinstall --HEAD neovim bre...</code></pre>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux破解无线网络]]></title>
+        <id>https://taohexxx.github.io/blog/2015/01/18/linux-wifi-crack.html</id>
+        <link href="https://taohexxx.github.io/blog/2015/01/18/linux-wifi-crack.html">
+        </link>
+        <updated>2015-01-18T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="ubuntu破解wep加密无线网络"></a><a href="#ubuntu破解wep加密无线网络" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Ubuntu破解WEP加密无线网络</h2> <p><a href="http://www.net527.cn/a/anquan/Backtrack/7461.html">http://www.net527.cn/a/anquan/Backtrack/7461.html</a></p> ]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Google Maps]]></title>
+        <id>https://taohexxx.github.io/blog/2015/01/18/google-maps.html</id>
+        <link href="https://taohexxx.github.io/blog/2015/01/18/google-maps.html">
+        </link>
+        <updated>2015-01-18T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <p><iframe frameborder="0" height="350" marginheight="0" marginwidth="0" scrolling="no" src="http://ditu.google.cn/maps?f=q&amp;source=s_q&amp;hl=zh-CN&amp;geocode=&amp;q=%E5%B9%BF%E4%B8%9C%E7%9C%81%E4%BD%9B%E5%B1%B1%E5%B8%82%E7%A6%85%E5%9F%8E%E5%8C%BA&amp;aq=&amp;brcurrent=3,0x34025bf66dc0a79f:0x5b8dd10132b4c4da,1%3B5,0,0&amp;brv=25.1-fa8ed276_c3147e72_ccf32e81_040c821b_76b35545&amp;sll=23.021548,113.121416&amp;sspn=0.346944,0.561676&amp;vpsrc=0&amp;ie=UTF8&amp;hq=&amp;hnear=%E5%B9%BF%E4%B8%9C%E7%9C%81%E4%BD%9B%E5%B1%B1%E5%B8%82%E7%A6%85%E5%9F%8E%E5%8C%BA&amp;ll=23.009505,113.12244&amp;spn=0.173488,0.280838&amp;t=m&amp;z=12&amp;output=embed" width="425"></iframe><br> <small><a href="http://ditu.google.cn/maps?f=q&amp;source=embed&amp;hl=zh-CN&amp;geocode=&amp;q=%E5%B9%BF%E4%B8%9C%E7%9C%81%E4%BD%9B%E5%B1%B1%E5%B8%82%E7%A6%85%E5%9F%8E%E5%8C%BA&amp;aq=&amp;brcurrent=3,0x34025bf66dc0a79f:0x5b8dd10132b4c4da,1%3B5,0,0&amp;brv=25.1-fa8ed276_c3147e72_ccf32e81_040c821b_76b35545&amp;sll=23.021548,113.121416&amp;sspn=0.346944,0.561676&amp;vpsrc=0&amp;ie=UTF8&amp;hq=&amp;hnear=%E5%B9%BF%E4%B8%9C%E7%9C%81%E4%BD%9B%E5%B1%B1%E5%B8%82%E7%A6%85%E5%9F%8E%E5%8C%BA&amp;ll=23.009505,113.12244&amp;spn=0.173488,0.280838&amp;t=m&amp;z=12" style="color:#0000FF;text-align:left">查看大图</a></small></p> ]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Python]]></title>
+        <id>https://taohexxx.github.io/blog/2015/01/03/python.html</id>
+        <link href="https://taohexxx.github.io/blog/2015/01/03/python.html">
+        </link>
+        <updated>2015-01-03T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="macos"></a><a href="#macos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>macOS</h2> <h3><a class="anchor" aria-hidden="true" id="install-python"></a><a href="#install-python" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Install Python</h3> <pre><code class="hljs css language-sh">brew install python3 <span class="hljs-built_in">which</span> python3 ll /usr/<span class="hljs-built_in">local</span>/bin/python3 brew install python2 <span class="hljs-built_in">which</span> python2 ll /usr/<span class="hljs-built_in">local</span>/bin/python2 </code></pre> <h3><a class="anchor" aria-hidden="true" id="use-pip"></a><a href="#use-pip" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Use Pip</h3> <p>Upgrade Pip</p> <pre><code class="hljs css language-sh">pip3 install --upgrade pip setuptools wheel pip2 install --upgr...</code></pre>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Nagios]]></title>
+        <id>https://taohexxx.github.io/blog/2014/12/28/nagios.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/12/28/nagios.html">
+        </link>
+        <updated>2014-12-28T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="ubuntu-apache"></a><a href="#ubuntu-apache" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Ubuntu Apache</h2> <h3><a class="anchor" aria-hidden="true" id="linux-dash"></a><a href="#linux-dash" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>linux-dash</h3> <pre><code class="hljs css language-sh">sudo apt-get install php5 curl php5-curl php5-json </code></pre> <pre><code class="hljs css language-sh"><span class="hljs-built_in">cd</span> /var/www/html/ git <span class="hljs-built_in">clone</span> https://github.com/afaqurk/linux-dash.git </code></pre> <p>&lt;123.123.123.123/linux-dash/index.html&gt;</p> <h3><a class="anchor" aria-hidden="true" id="nagios"></a><a href="#nagios" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Nagios</h3> <p><a href="http://askubuntu.com/questions/145518/how-do-i-install-nagios">How do I install nagios?</a></p> <h2><a class="anchor" aria-hidden="true" id="ubuntu-nginx"></a><a href="#ubuntu-nginx" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>U...</h2>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Nginx]]></title>
+        <id>https://taohexxx.github.io/blog/2014/12/27/nginx.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/12/27/nginx.html">
+        </link>
+        <updated>2014-12-27T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="macos"></a><a href="#macos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>macOS</h2> <p><a href="https://gist.github.com/dtomasi/ab76d14338db82ec24a1fc137caff75b">Install NGINX with PHP7-FPM on Mac OS X with Homebrew</a></p> <h3><a class="anchor" aria-hidden="true" id="install"></a><a href="#install" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Install</h3> <pre><code class="hljs css language-sh">brew tap homebrew/dupes brew tap homebrew/php brew install nginx brew info php71 brew options php71 brew install php71 --with-imap --without-apache --with-debu...</code></pre>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ruby]]></title>
+        <id>https://taohexxx.github.io/blog/2014/07/14/ruby.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/07/14/ruby.html">
+        </link>
+        <updated>2014-07-14T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="install-ruby"></a><a href="#install-ruby" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Install Ruby</h2> <h3><a class="anchor" aria-hidden="true" id="ubuntu"></a><a href="#ubuntu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Ubuntu</h3> <pre><code class="hljs css language-sh">sudo apt-get install git ruby1.9.1 ruby1.9.1-dev make rake ruby --version </code></pre> <h3><a class="anchor" aria-hidden="true" id="macos"></a><a href="#macos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>macOS</h3> <pre><code class="hljs css language-sh">brew install git ruby ruby-build make ruby --version gem environment </code></pre> <h4><a class="anchor" aria-hidden="true" id="method-1-recommended"></a><a href="#method-1-recommended" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Method 1 (Recommended)</h4> <p>Add to <code>~/.zshrc</code></p> <pre><code class="hljs css language-sh">plugins=(ruby) </code></pre> <h4><a class="anchor" aria-hidden="true" id="method-2"></a><a href="#method-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>M...</h4>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Octopress]]></title>
+        <id>https://taohexxx.github.io/blog/2014/07/14/octopress.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/07/14/octopress.html">
+        </link>
+        <updated>2014-07-14T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="install-ruby"></a><a href="#install-ruby" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Install Ruby</h2> <p><a href="/blog/ruby/">Ruby</a></p> <h2><a class="anchor" aria-hidden="true" id="install-octopress"></a><a href="#install-octopress" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Install Octopress</h2> <pre><code class="hljs css language-sh">sudo gem update --system sudo gem install octopress -V </code></pre> <p>TODO:</p> ]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Teamviewer]]></title>
+        <id>https://taohexxx.github.io/blog/2014/07/07/teamviewer.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/07/07/teamviewer.html">
+        </link>
+        <updated>2014-07-07T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <p><a href="http://www.tonisoto.com/?p=215">Launching Teamviewer remotely through SSH</a></p> <p><a href="http://www.teamviewer.com/en/help/401-How-does-Wake-on-LAN-with-TeamViewer-work.aspx">How does Wake-on-LAN with TeamViewer work?</a></p> ]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MySQL]]></title>
+        <id>https://taohexxx.github.io/blog/2014/06/24/mysql.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/06/24/mysql.html">
+        </link>
+        <updated>2014-06-24T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="macos"></a><a href="#macos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>macOS</h2> <h3><a class="anchor" aria-hidden="true" id="install"></a><a href="#install" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Install</h3> <pre><code class="hljs css language-sh">brew update brew remove mysql brew install mysql --with-debug </code></pre> <h3><a class="anchor" aria-hidden="true" id="service"></a><a href="#service" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Service</h3> <pre><code class="hljs css language-sh">mysql.server restart ``` <span class="hljs-comment">## Ubuntu</span> <span class="hljs-comment">### Install</span> ```sh sudo apt-get install mysql-server ``` <span class="hljs-comment">### Service</span> ````sh sudo service mysql restart servi...</code></pre>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[下载电影、软件资源方法]]></title>
+        <id>https://taohexxx.github.io/blog/2014/06/22/download.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/06/22/download.html">
+        </link>
+        <updated>2014-06-22T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="用google百度一下"></a><a href="#用google百度一下" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>用Google百度一下</h2> <p>在Google搜索框中</p> <p>输入<code>电影或软件名称 site:pan.baidu.com</code>可以直接搜索百度网盘中的内容</p> <p>输入<code>电影或软件名称 site:kuai.xunlei.com</code>可以直接搜索迅雷快传中的内容</p> <p>如Google被墙参看<a href="/blog/visit-google/">上Google的方法汇总（持续更新中）</a></p> <h2><a class="anchor" aria-hidden="true" id="电影下载网站"></a><a href="#电影下载网站" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>电影下载网站</h2> <p><a href="http://www.tutumv.net/">兔兔电影网</a></p> <p><a href="http://www.dy2018.com/">电影天堂</a></p> <h2><a class="anchor" aria-hidden="true" id="无视版权在线看电影-电视的软件"></a><a href="#无视版权在线看电影-电视的软件" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>无视版权在线看电影、电视的软件</h2> <p><a href="http://time4popcorn.eu/">PopcornTime</a></p> ]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[OpenVPN]]></title>
+        <id>https://taohexxx.github.io/blog/2014/06/16/openvpn.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/06/16/openvpn.html">
+        </link>
+        <updated>2014-06-16T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <p><a href="https://www.digitalocean.com/community/tutorials/how-to-install-openvpn-access-server-on-ubuntu-12-04">How To Install OpenVPN Access Server on Ubuntu 12.04</a></p> <p><a href="https://help.ubuntu.com/12.04/serverguide/openvpn.html">OpenVPN</a></p> ]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[发现一个巨多打折信息的网站]]></title>
+        <id>https://taohexxx.github.io/blog/2014/06/16/maishoudang.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/06/16/maishoudang.html">
+        </link>
+        <updated>2014-06-16T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <p>这个网站的打折信息比较狠</p> <p><a href="http://maishoudang.com/" target="_blank">maishoudang.com</a></p> ]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[上Google的方法]]></title>
+        <id>https://taohexxx.github.io/blog/2014/06/08/visit-google.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/06/08/visit-google.html">
+        </link>
+        <updated>2014-06-08T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="方法"></a><a href="#方法" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>方法</h2> <p><a href="https://s3-us-west-2.amazonaws.com/google2/index.html" target="_blank">https://s3-us-west-2.amazonaws.com/google2/index.html</a></p> <p>Google镜像，可以直接搜索。</p> <p>如果搜索结果加载较慢，可以在搜索结果出来之后，把浏览器地址栏中的IP地址（注意只是数字表示的IP地址，例如<code>123.123.123.123</code>，不是整个网址）复制下来。以后直接在浏览器输入这个IP地址，回车，就能上Google了。等到这个IP地址被封了之后，再来重新生成一个。</p> <h2><a class="anchor" aria-hidden="true" id="其它地址"></a><a href="#其它地址" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>其它地址</h2> <p><a href="https://s3-ap-southeast-1.amazonaws.com/google.cn/index.html" target="_blank">https://s3-a...</a></p>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux Commands]]></title>
+        <id>https://taohexxx.github.io/blog/2014/06/08/linux-commands.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/06/08/linux-commands.html">
+        </link>
+        <updated>2014-06-08T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="jobs"></a><a href="#jobs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Jobs</h2> <p><a href="http://xiaorenxinong.iteye.com/blog/428872">Linux Jobs等前后台运行命令</a></p> ]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GoAgent]]></title>
+        <id>https://taohexxx.github.io/blog/2014/06/08/goagent.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/06/08/goagent.html">
+        </link>
+        <updated>2014-06-08T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <p><a href="https://code.google.com/p/goagent/">goagent</a></p> <p><a href="https://code.google.com/p/wwqgtxx-goagent/downloads/detail?name=SwitchyOptions.bak">SwitchyOptions.bak</a></p> ]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[通过IP地址上Google（旧）]]></title>
+        <id>https://taohexxx.github.io/blog/2014/06/07/visit-google-by-ip.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/06/07/visit-google-by-ip.html">
+        </link>
+        <updated>2014-06-07T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p>  <p>本文最新地址<a href="/blog/visit-google/">上Google的方法汇总（持续更新中）</a></p> ]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Vim]]></title>
+        <id>https://taohexxx.github.io/blog/2014/06/06/vim.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/06/06/vim.html">
+        </link>
+        <updated>2014-06-06T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="compile"></a><a href="#compile" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Compile</h2> <h3><a class="anchor" aria-hidden="true" id="macos"></a><a href="#macos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>macOS</h3> <h4><a class="anchor" aria-hidden="true" id="python-support"></a><a href="#python-support" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Python Support</h4> <pre><code class="hljs css language-sh">brew install python brew install python3 </code></pre> <p>Vim will drop all python linking flags while you build with enable both python2 and python3 binding.</p> <p>So use either <code>--enable-pythoninterp</code> or <code>--enable-python3...</code></p>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MySQL Migration]]></title>
+        <id>https://taohexxx.github.io/blog/2014/06/06/mysql-migration.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/06/06/mysql-migration.html">
+        </link>
+        <updated>2014-06-06T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <p><a href="http://www.fovweb.com/web/mysql-database-migration.html">mysql database migration</a></p> <p><a href="http://www.fovweb.com/web/linux-mysql-table-name.html">linux mysql table name</a></p> ]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Makefile]]></title>
+        <id>https://taohexxx.github.io/blog/2014/06/06/makefile.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/06/06/makefile.html">
+        </link>
+        <updated>2014-06-06T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <p><a href="http://www.chinaunix.net/jh/23/408225.html">跟我一起写 Makefile</a></p> <p><a href="http://blog.chinaunix.net/space.php?uid=11861796&amp;amp;do=blog&amp;amp;id=2813607">Configure，Makefile.am, Makefile.in, Makefile文件之间</a></p> <p><a href="http://cax.bloghi.com/2006/08/03/makefile-am-makefile-in-makefilea-a-a-e-a-c.html">Makefile.am, Makefile.in, Makefile文件之间关系</a></p> ]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux Server]]></title>
+        <id>https://taohexxx.github.io/blog/2014/06/06/linux-server.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/06/06/linux-server.html">
+        </link>
+        <updated>2014-06-06T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="aws"></a><a href="#aws" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>AWS</h2> <pre><code class="hljs css language-sh">ssh -i ~/workspace/amazon/taohe-key-pair-us-west-2.pem ec2-user@ec2-50-112-154-81.us-west-2.compute.amazonaws.com </code></pre> <h2><a class="anchor" aria-hidden="true" id="centos-blog-centos"></a><a href="#centos-blog-centos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a><a href="/blog/centos/">CentOS</a></h2> <h2><a class="anchor" aria-hidden="true" id="ubuntu-server"></a><a href="#ubuntu-server" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Ubuntu Server</h2> <h3><a class="anchor" aria-hidden="true" id="network"></a><a href="#network" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>network</h3> <pre><code class="hljs css language-sh">vim /etc/networks/eth0 static ip 192.168.0.81 </code></pre> <p>参考<a href="http://net.zdnet.com.cn/network_security_zone/2008/0704/964525.shtml">Redhat与Ubuntu系统的网卡配置方法比较</a></p> <h3><a class="anchor" aria-hidden="true" id="install-desktop-not-vnc"></a><a href="#install-desktop-not-vnc" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>insta...</h3>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux Firewall]]></title>
+        <id>https://taohexxx.github.io/blog/2014/06/06/linux-firewall.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/06/06/linux-firewall.html">
+        </link>
+        <updated>2014-06-06T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="centos"></a><a href="#centos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>CentOS</h2> <h3><a class="anchor" aria-hidden="true" id="clear-and-init"></a><a href="#clear-and-init" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Clear and init</h3> <pre><code class="hljs css language-sh">iptables -X iptables -F service iptables save service iptables restart </code></pre> <h3><a class="anchor" aria-hidden="true" id="disable"></a><a href="#disable" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Disable</h3> <pre><code class="hljs css language-sh">sudo service iptables stop </code></pre> <h3><a class="anchor" aria-hidden="true" id="add-rule"></a><a href="#add-rule" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Add rule</h3> <pre><code class="hljs css language-sh">iptables -A INPUT -s 101.227.4.21 -j DROP service iptables status service iptables save ...</code></pre>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Apache]]></title>
+        <id>https://taohexxx.github.io/blog/2014/06/06/apache.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/06/06/apache.html">
+        </link>
+        <updated>2014-06-06T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="关闭防火墙"></a><a href="#关闭防火墙" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>关闭防火墙</h2> <p><a href="/blog/linux-firewall/">Linux Firewall</a></p> <h2><a class="anchor" aria-hidden="true" id="配置mysql环境"></a><a href="#配置mysql环境" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>配置MySQL环境</h2> <p><a href="/blog/mysql/">MySQL</a></p> <h2><a class="anchor" aria-hidden="true" id="配置php环境"></a><a href="#配置php环境" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>配置PHP环境</h2> <h3><a class="anchor" aria-hidden="true" id="1-安装组件-可选组件"></a><a href="#1-安装组件-可选组件" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>1. 安装组件、可选组件</h3> <h4><a class="anchor" aria-hidden="true" id="ubuntu"></a><a href="#ubuntu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Ubuntu</h4> <p>Install</p> <pre><code class="hljs css language-sh">sudo apt-get install apache2 php5 php5-mysql phpmyadmin sudo apt-get install redis-server sudo apt-get install php5-redis sudo dpkg-reconfigure phpmyadmin ...</code></pre>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows PXE]]></title>
+        <id>https://taohexxx.github.io/blog/2014/06/02/windows-pxe.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/06/02/windows-pxe.html">
+        </link>
+        <updated>2014-06-02T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <p><a href="http://xuershan.iteye.com/blog/1002186">Windows下创建PXE网络安装linux</a></p> <p><a href="http://kalashnicov.iteye.com/blog/663337">Windows 7作PXE Server网络安装Ubuntu 10.04</a></p> ]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Vim Shortcut]]></title>
+        <id>https://taohexxx.github.io/blog/2014/06/02/vim-shortcut.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/06/02/vim-shortcut.html">
+        </link>
+        <updated>2014-06-02T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <p><a href="http://hi.baidu.com/bailyzheng/blog/item/850e49d10c57bfdf50da4b37.html">VIM分割窗口，比较文件</a></p> <p><a href="http://www.cnblogs.com/xuechao/archive/2011/03/29/1999292.html">vim: vs sp 调整窗口高度和宽度</a></p> ]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[TortoiseGit]]></title>
+        <id>https://taohexxx.github.io/blog/2014/06/02/tortoisegit.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/06/02/tortoisegit.html">
+        </link>
+        <updated>2014-06-02T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <p><a href="http://www.iteye.com/news/4503-tortoisegit-windows-user-to-use-git">tortoisegit： Windows用户使用Git的福音</a></p> <p><a href="http://leeon.me/a/use-gitosis-build-git-server-and-use-tortoisegit-build-windows-git-client">使用gitosis和tortoisegit打造自己的git服务</a></p> ]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Qt Library]]></title>
+        <id>https://taohexxx.github.io/blog/2014/06/02/qt-library.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/06/02/qt-library.html">
+        </link>
+        <updated>2014-06-02T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <p><a href="http://developer.qt.nokia.com/doc/qt-4.8/sharedlibrary.html">Creating Shared Libraries</a></p> ]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Qt Console I/O]]></title>
+        <id>https://taohexxx.github.io/blog/2014/06/02/qt-console-io.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/06/02/qt-console-io.html">
+        </link>
+        <updated>2014-06-02T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <p><a href="http://kingplesk.org/archives/411#codesyntax_2">QT 控制台输出</a></p> <p>输出最后一定要加endl之类的清空流，否则不会显示。这跟VC不同，VC最后总会输出流的所有内容。</p> ]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux Wakeonlan]]></title>
+        <id>https://taohexxx.github.io/blog/2014/06/02/linux-wakeonlan.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/06/02/linux-wakeonlan.html">
+        </link>
+        <updated>2014-06-02T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <p>Ubuntu下是wakeonlan</p> <p>CentOS下是wol</p> <p><a href="http://www.2cto.com/os/201107/97367.html">linux远程开机</a></p> ]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux SVN]]></title>
+        <id>https://taohexxx.github.io/blog/2014/06/02/linux-svn.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/06/02/linux-svn.html">
+        </link>
+        <updated>2014-06-02T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <p><a href="http://blog.csdn.net/nancy198696/article/details/4059726">linux常用svn命令</a></p> ]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux Network]]></title>
+        <id>https://taohexxx.github.io/blog/2014/06/02/linux-network.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/06/02/linux-network.html">
+        </link>
+        <updated>2014-06-02T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <p><a href="http://qgjie456.blog.163.com/blog/static/3545136720113844837596/">基于Linux Socket实现的网卡抓包程序</a></p> <p><a href="http://hi.baidu.com/hkjj66/blog/item/0c7513ee3e1892fab3fb953d.html">IP包头部格式</a></p> ]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Encode]]></title>
+        <id>https://taohexxx.github.io/blog/2014/06/02/encode.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/06/02/encode.html">
+        </link>
+        <updated>2014-06-02T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <p><a href="http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html">字符编码笔记：ASCII，Unicode和UTF-8</a></p> <p><a href="http://www.ruanyifeng.com/blog/2010/02/url_encoding.html">关于URL编码</a></p> ]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Backtrack]]></title>
+        <id>https://taohexxx.github.io/blog/2014/06/02/backtrack.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/06/02/backtrack.html">
+        </link>
+        <updated>2014-06-02T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="vlc"></a><a href="#vlc" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>vlc</h2> <pre><code class="hljs css language-sh">apt-get install vlc vlc-plugin-pulse mozilla-plugin-vlc cp /usr/bin/vlc /usr/bin/vlc.bak hexedit /usr/bin/vlc </code></pre> <p>Use &quot;Tab&quot; key to start ascii string editing. Then press &quot;/&quot; key. Input the search keyword be...</p>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Docker]]></title>
+        <id>https://taohexxx.github.io/blog/2014/04/26/docker.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/04/26/docker.html">
+        </link>
+        <updated>2014-04-26T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="installation"></a><a href="#installation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Installation</h2> <h3><a class="anchor" aria-hidden="true" id="ubuntu"></a><a href="#ubuntu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Ubuntu</h3> <p><a href="https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/">Get Docker CE for Ubuntu</a></p> <pre><code class="hljs css language-sh">sudo apt-get remove docker docker-engine docker.io sudo apt-get update sudo apt-get install \ linux-image-extra-$(uname -r) \ linux-image-extra-virtual sudo apt-get install \ apt-tra...</code></pre>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Microsoft Word]]></title>
+        <id>https://taohexxx.github.io/blog/2014/04/15/microsoft-word.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/04/15/microsoft-word.html">
+        </link>
+        <updated>2014-04-15T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="underline-the-space-after-a-word-in-microsoft-word"></a><a href="#underline-the-space-after-a-word-in-microsoft-word" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Underline the Space After a Word in Microsoft Word</h2> <p>One way is to type a non-breaking space (Ctrl+Shift+Spacebar) at the end of the line, select from the end of word to the end of the line, and then apply underline.</p> <p>A better way ...</p>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Microsoft Word Citation and Bibliography Styles]]></title>
+        <id>https://taohexxx.github.io/blog/2014/04/07/microsoft-word-citation-and-bibliography-styles.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/04/07/microsoft-word-citation-and-bibliography-styles.html">
+        </link>
+        <updated>2014-04-07T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="citation-and-bibliography-using-word"></a><a href="#citation-and-bibliography-using-word" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Citation and Bibliography Using Word</h2> <p><a href="http://www.scribendi.com/advice/how_to_create_a_bibliography_using_word.en.html">how to create a bibliography using word</a></p> <h2><a class="anchor" aria-hidden="true" id="using-my-pku-style"></a><a href="#using-my-pku-style" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Using My PKU Style</h2> <h3><a class="anchor" aria-hidden="true" id="office-2013"></a><a href="#office-2013" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Office 2013</h3> <p>Copy <a href="https://github.com/taohex/bibword/blob/master/PKU_IEEE_Reference.XSL">PKU_IEEE_Reference.XSL</a> to <code>%APPDATA%\Roaming\Microsoft\Bibliography\Style</code>.</p> <h3><a class="anchor" aria-hidden="true" id="office-2010-or-older"></a><a href="#office-2010-or-older" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Office 2010 or older</h3> <p>Copy <a href="https://github.com/taohex/bibword/blob/master/PKU_IEEE_Reference.XSL">PKU_IEEE_Refer...</a></p>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Reaver]]></title>
+        <id>https://taohexxx.github.io/blog/2014/04/03/reaver.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/04/03/reaver.html">
+        </link>
+        <updated>2014-04-03T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="kali-or-ubuntu"></a><a href="#kali-or-ubuntu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Kali or Ubuntu</h2> <h3><a class="anchor" aria-hidden="true" id="install"></a><a href="#install" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Install</h3> <pre><code class="hljs css language-sh">apt-get install reaver </code></pre> <h3><a class="anchor" aria-hidden="true" id="run"></a><a href="#run" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Run</h3> <pre><code class="hljs css language-sh">airmon-ng start wlan0 airodump-ng mon0 reaver -i mon0 -b 00:11:22:33:44:55 -c 1 -vv </code></pre> <h2><a class="anchor" aria-hidden="true" id="macos"></a><a href="#macos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>macOS</h2> <h3><a class="anchor" aria-hidden="true" id="install-1"></a><a href="#install-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Install</h3> <p><a href="http://www.aircrack-ng.org/doku.php?id=faq#is_mac_os_x_supported">airmon-ng on Mac OS X is not supported.</a></p> <p>Use GoAgent, or you will failed downl...</p>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Document]]></title>
+        <id>https://taohexxx.github.io/blog/2014/03/27/document.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/03/27/document.html">
+        </link>
+        <updated>2014-03-27T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="uml"></a><a href="#uml" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>UML</h2> <p><a href="http://plantuml.sourceforge.net/">PlantUML</a> <a href="https://github.com/aklt/plantuml-syntax">PlantUML Vim Syntax/Plugin/FTDetect</a></p> <h3><a class="anchor" aria-hidden="true" id="macos"></a><a href="#macos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>macOS</h3> <pre><code class="hljs css language-sh">brew install graphviz </code></pre> <h3><a class="anchor" aria-hidden="true" id="windows"></a><a href="#windows" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Windows</h3> <p>Download <a href="http://www.graphviz.org/Download_windows.php">Graphviz</a></p> <h3><a class="anchor" aria-hidden="true" id="eclipse"></a><a href="#eclipse" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Eclipse</h3> <p>Support UTF-8</p> <p>Eclipse -&gt; Preferences... -&gt; General -&gt; Workspace -&gt; Text file encoding -&gt; UTF-8</p> <h3><a class="anchor" aria-hidden="true" id="gui"></a><a href="#gui" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>GUI</h3> <p>D...</p>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[C Plus Plus]]></title>
+        <id>https://taohexxx.github.io/blog/2014/03/26/cpp.html</id>
+        <link href="https://taohexxx.github.io/blog/2014/03/26/cpp.html">
+        </link>
+        <updated>2014-03-26T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="graph"></a><a href="#graph" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Graph</h2> <p><a href="http://www.graphviz.org/content/resources">Graphviz - Graph Visualization Software</a></p> <h2><a class="anchor" aria-hidden="true" id="debug"></a><a href="#debug" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Debug</h2> <p><a href="http://valgrind.org/">Valgrind</a></p> <h2><a class="anchor" aria-hidden="true" id="dependency-analysis"></a><a href="#dependency-analysis" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Dependency Analysis</h2> <p>dependency-alalysis is a part of static-code-analysis. There are several commercial products which are able to do dependency-alalysis on <a href="http://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis">List of t...</a></p>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cygwin]]></title>
+        <id>https://taohexxx.github.io/blog/2013/12/21/cygwin.html</id>
+        <link href="https://taohexxx.github.io/blog/2013/12/21/cygwin.html">
+        </link>
+        <updated>2013-12-21T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="1-install-openssh"></a><a href="#1-install-openssh" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>1. Install openssh</h2> <p>Select <code>/libs/zlib</code>, <code>/net/openssh</code>, <code>/net/tcp_wrappers</code></p> <pre><code class="hljs css language-sh">ssh-host-config </code></pre> <p>When promote <code>... CYGWIN ...</code>, enter <code>ntsec</code></p> <pre><code class="hljs css language-sh">passwd taohe </code></pre> <p>Add rule inbound port 22 to firewall</p> <pre><code class="hljs css language-sh">net start sshd ssh localhost </code></pre> ]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CentOS]]></title>
+        <id>https://taohexxx.github.io/blog/2013/11/21/centos.html</id>
+        <link href="https://taohexxx.github.io/blog/2013/11/21/centos.html">
+        </link>
+        <updated>2013-11-21T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="create-usb-disk"></a><a href="#create-usb-disk" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Create USB Disk</h2> <pre><code class="hljs css language-sh">dd <span class="hljs-keyword">if</span>= CentOS-6.5-x86_64-bin-DVD1.iso of=/dev/sdb </code></pre> <h2><a class="anchor" aria-hidden="true" id="enable-dhcp"></a><a href="#enable-dhcp" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Enable DHCP</h2> <pre><code class="hljs css language-sh">sudo cp /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0.bak vi /etc/sysconfig/network-scripts/ifcfg-eth0 </code></pre> <p>Add th...</p>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Zsh]]></title>
+        <id>https://taohexxx.github.io/blog/2013/11/15/zsh.html</id>
+        <link href="https://taohexxx.github.io/blog/2013/11/15/zsh.html">
+        </link>
+        <updated>2013-11-15T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="zsh"></a><a href="#zsh" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>zsh</h2> <h3><a class="anchor" aria-hidden="true" id="macos"></a><a href="#macos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>macOS</h3> <pre><code class="hljs css language-sh">brew options zsh brew install zsh --with-gdbm --with-pcre --with-unicode9 brew install zsh-completions chsh -s $(<span class="hljs-built_in">which</span> zsh) </code></pre> <p>If encountered this error:</p> <pre><code class="hljs"><span class="hljs-string">chsh:</span> <span class="hljs-regexp">/usr/</span>local<span class="hljs-regexp">/bin/</span><span class="hljs-string">zsh:</span> non-standard shell </code></pre> <p>Add <code>/usr/local/bin/...</code></p>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[macOS]]></title>
+        <id>https://taohexxx.github.io/blog/2013/11/15/macos.html</id>
+        <link href="https://taohexxx.github.io/blog/2013/11/15/macos.html">
+        </link>
+        <updated>2013-11-15T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="overview"></a><a href="#overview" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Overview</h2> <p><a href="https://github.com/nikitavoloboev/my-mac-os">https://github.com/nikitavoloboev/my-mac-os</a></p> <p><a href="https://github.com/nikitavoloboev/my-ios">https://github.com/nikitavoloboev/my-ios</a></p> <h2><a class="anchor" aria-hidden="true" id="system"></a><a href="#system" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>System</h2> <p>Set the key repeat rate</p> <pre><code class="hljs css language-sh">defaults write -g InitialKeyRepeat -int 10 <span class="hljs-comment"># normal minimum is 15 (225 ms)</span> defaults write -g KeyRepeat ...</code></pre>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[macOS Server]]></title>
+        <id>https://taohexxx.github.io/blog/2013/11/15/macos-server.html</id>
+        <link href="https://taohexxx.github.io/blog/2013/11/15/macos-server.html">
+        </link>
+        <updated>2013-11-15T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="php"></a><a href="#php" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>PHP</h2> <p><a href="/blog/nginx/">Nginx</a></p> <h2><a class="anchor" aria-hidden="true" id="mysql"></a><a href="#mysql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>MySQL</h2> <h3><a class="anchor" aria-hidden="true" id="install-mysql"></a><a href="#install-mysql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Install MySQL</h3> <pre><code class="hljs css language-sh">brew options mysql brew install mysql --<span class="hljs-built_in">enable</span>-debug </code></pre> <h3><a class="anchor" aria-hidden="true" id="let-launchd-start-mysql-at-login"></a><a href="#let-launchd-start-mysql-at-login" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Let launchd Start MySQL at Login</h3> <p><strong>CAUTION:</strong> mysqld takes up 500 MB memory!</p> <pre><code class="hljs css language-sh">ln -sfv /usr/<span class="hljs-built_in">local</span>/Cellar/mysql/5.6.17_1/*.plist ~/Library/LaunchAgent...</code></pre>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[PostgreSQL]]></title>
+        <id>https://taohexxx.github.io/blog/2013/10/05/postgres.html</id>
+        <link href="https://taohexxx.github.io/blog/2013/10/05/postgres.html">
+        </link>
+        <updated>2013-10-05T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="macos"></a><a href="#macos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>macOS</h2> <p>Install postgres</p> <pre><code class="hljs css language-sh">brew update brew remove postgresql brew install postgresql </code></pre> <p>Create a database</p> <pre><code class="hljs css language-sh">initdb /usr/<span class="hljs-built_in">local</span>/var/postgres -E utf8 </code></pre> <p>Serve that database</p> <pre><code class="hljs css language-sh">postgres -D /usr/<span class="hljs-built_in">local</span>/var/postgres </code></pre> <p>To have launchd start postgre...</p>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux Java]]></title>
+        <id>https://taohexxx.github.io/blog/2013/10/05/linux-java.html</id>
+        <link href="https://taohexxx.github.io/blog/2013/10/05/linux-java.html">
+        </link>
+        <updated>2013-10-05T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="oracle-jdk"></a><a href="#oracle-jdk" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Oracle JDK</h2> <h3><a class="anchor" aria-hidden="true" id="ubuntu"></a><a href="#ubuntu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Ubuntu</h3> <pre><code class="hljs css language-sh">sudo apt-get install software-properties-common python-software-properties sudo add-apt-repository ppa:webupd8team/java sudo apt-get update sudo apt-get install oracle-java8-installer </code></pre> <h3><a class="anchor" aria-hidden="true" id="centos"></a><a href="#centos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>CentOS</h3> <pre><code class="hljs css language-sh">mkdir ~/bin/ <span class="hljs-built_in">cd</span> ~...</code></pre>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ubuntu]]></title>
+        <id>https://taohexxx.github.io/blog/2013/08/11/ubuntu.html</id>
+        <link href="https://taohexxx.github.io/blog/2013/08/11/ubuntu.html">
+        </link>
+        <updated>2013-08-11T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="user"></a><a href="#user" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>User</h2> <h3><a class="anchor" aria-hidden="true" id="add-user"></a><a href="#add-user" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Add User</h3> <pre><code class="hljs css language-sh">w userdel -f taohe rm -rf /home/taohe adduser taohe visudo vi /etc/sudoers </code></pre> <p>Under <code>root ALL=(ALL) ALL</code> Add <code>taohe ALL=(ALL) ALL</code></p> <h3><a class="anchor" aria-hidden="true" id="delete-user"></a><a href="#delete-user" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Delete User</h3> <pre><code class="hljs css language-sh">userdel -f taohe rm -rf /home/taohe/ </code></pre> <h3><a class="anchor" aria-hidden="true" id="disable-root-login-ssh"></a><a href="#disable-root-login-ssh" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Disable root Login SSH</h3> <pre><code class="hljs css language-sh">sudo cp /etc/ss...</code></pre>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Jekyll]]></title>
+        <id>https://taohexxx.github.io/blog/2013/08/11/jekyll.html</id>
+        <link href="https://taohexxx.github.io/blog/2013/08/11/jekyll.html">
+        </link>
+        <updated>2013-08-11T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="install-ruby"></a><a href="#install-ruby" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Install Ruby</h2> <p><a href="/blog/ruby/">Ruby</a></p> <h2><a class="anchor" aria-hidden="true" id="install-jekyll"></a><a href="#install-jekyll" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Install Jekyll</h2> <pre><code class="hljs css language-sh">sudo gem update --system sudo gem install jekyll -V </code></pre> <p>Clone jekyll-bootstrap</p> <pre><code class="hljs css language-sh"><span class="hljs-built_in">cd</span> ~/workspace/ git <span class="hljs-built_in">clone</span> https://github.com/plusjade/jekyll-bootstrap.git taohex.github.io <span class="hljs-built_in">cd</span> taohex.github.io/ git r...</code></pre>]]></summary>
+        <author>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Git]]></title>
+        <id>https://taohexxx.github.io/blog/2013/06/21/git-install.html</id>
+        <link href="https://taohexxx.github.io/blog/2013/06/21/git-install.html">
+        </link>
+        <updated>2013-06-21T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>{% include JB/setup %}</p> <h2><a class="anchor" aria-hidden="true" id="macos"></a><a href="#macos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>macOS</h2> <p>Install git</p> <pre><code class="hljs css language-sh">brew install git sudo xcodebuild -license brew install tig brew install fac <span class="hljs-comment"># Easy-to-use CUI for fixing git conflicts</span> brew install git-flow-avh git flow init git flow feature start rss-feed git flow feature f...</code></pre>]]></summary>
+        <author>
+        </author>
+    </entry>
+</feed>

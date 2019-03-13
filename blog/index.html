@@ -1,0 +1,715 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Blog · Tao He</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="A website for Tao He"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Blog · Tao He"/><meta property="og:type" content="website"/><meta property="og:url" content="https://taohexxx.github.io/index.html"/><meta property="og:description" content="A website for Tao He"/><meta property="og:image" content="https://taohexxx.github.io/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://taohexxx.github.io/img/docusaurus.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://taohexxx.github.io/blog/atom.xml" title="Tao He Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://taohexxx.github.io/blog/feed.xml" title="Tao He Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="blog"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/docusaurus.svg" alt="Tao He"/><h2 class="headerTitleWithLogo">Tao He</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/doc1" target="_self">Docs</a></li><li class=""><a href="/docs/doc4" target="_self">API</a></li><li class=""><a href="/en/help" target="_self">Help</a></li><li class="siteNavGroupActive siteNavItemActive"><a href="/blog" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Recent Posts</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Recent Posts</h3><ul><li class="navListItem"><a class="navItem" href="/blog/2019/01/13/microsoft-powerpoint">Microsoft PowerPoint</a></li><li class="navListItem"><a class="navItem" href="/blog/2018/12/12/chrome">Chrome</a></li><li class="navListItem"><a class="navItem" href="/blog/2018/11/21/alfred">Alfred</a></li><li class="navListItem"><a class="navItem" href="/blog/2018/09/01/docusaurus">Docusaurus</a></li><li class="navListItem"><a class="navItem" href="/blog/2018/08/30/git-commands">Git Commands</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer postContainer blogContainer"><div class="wrapper"><div class="posts"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2019/01/13/microsoft-powerpoint">Microsoft PowerPoint</a></h1><p class="post-meta">January 13, 2019</p><div class="authorBlock"></div></header><article class="post-content"><div><span><p>{% include JB/setup %}</p>
+<h1><a class="anchor" aria-hidden="true" id="change-theme-fonts"></a><a href="#change-theme-fonts" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Change Theme Fonts</h1>
+<p><code>Prefs...</code> -&gt; <code>East Asian Languages</code> -&gt; <code>Simplified Chinese</code></p>
+<p>Copy <code>/Applications/Microsoft PowerPoint.app/Contents/Resources/Office Themes/Theme Fonts/Arial.xml</code> to <code>/Users/taohe/Library/Group Containers/UBF8T346G9.Office/User Content.localized/Themes.localized/Theme Fonts/YaHei.xml</code> and modify.</p>
+<p><a href="http://www.brandwares.com/bestpractices/2015/10/xml-hacking-font-themes/">http://www.brandwares.com/bestpractices/2015/10/xml-hacking-font-themes/</a></p>
+<p><a href="http://www.brandwares.com/bestpractices/2017/02/xml-hacking-font-themes-complete/">http://www.brandwares.com/bestpractices/2017/02/xml-hacking-font-themes-complete/</a></p>
+</span></div></article></div><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2018/12/12/chrome">Chrome</a></h1><p class="post-meta">December 12, 2018</p><div class="authorBlock"></div></header><article class="post-content"><div><span><p>{% include JB/setup %}</p>
+<h2><a class="anchor" aria-hidden="true" id="shortcuts"></a><a href="#shortcuts" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Shortcuts</h2>
+<table>
+<thead>
+<tr><th>Shortcut</th><th>Function</th></tr>
+</thead>
+<tbody>
+<tr><td>⌘ + L</td><td>Jump to the address bar</td></tr>
+</tbody>
+</table>
+<p><a href="https://support.google.com/chrome/answer/157179?hl=en">Chrome keyboard shortcuts</a></p>
+</span></div></article></div><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2018/11/21/alfred">Alfred</a></h1><p class="post-meta">November 21, 2018</p><div class="authorBlock"></div></header><article class="post-content"><div><span><p>{% include JB/setup %}</p>
+<h2><a class="anchor" aria-hidden="true" id="workflows"></a><a href="#workflows" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Workflows</h2>
+<h3><a class="anchor" aria-hidden="true" id="alfred-tty"></a><a href="#alfred-tty" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>alfred-tty</h3>
+<p><a href="https://github.com/isometry/alfred-tty">alfred-tty</a></p>
+<h3><a class="anchor" aria-hidden="true" id="alfred-tabs-improved"></a><a href="#alfred-tabs-improved" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>alfred-tabs-improved</h3>
+<p><a href="https://github.com/luceat-lux-vestra/alfred-tabs-improved">alfred-tabs-improved</a></p>
+<pre><code class="hljs css language-sh">yarn global add alfred-tabs-improved
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="alfred-chrome-bookmarks"></a><a href="#alfred-chrome-bookmarks" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>alfred-chrome-bookmarks</h3>
+<p><a href="https://github.com/blainesch/alfred-chrome-bookmarks">alfred-chrome-bookmarks</a></p>
+<h3><a class="anchor" aria-hidden="true" id="chrome-bookmarks-alfred-workflow"></a><a href="#chrome-bookmarks-alfred-workflow" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>chrome-bookmarks-alfred-workflow</h3>
+<p><a href="https://github.com/mdreizin/chrome-bookmarks-alfred-workflow">chrome-bookmarks-alfred-workflow</a></p>
+<h3><a class="anchor" aria-hidden="true" id="alfred-fkill"></a><a href="#alfred-fkill" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>alfred-fkill</h3>
+<p><a href="https://github.com/SamVerschueren/alfred-fkill">alfred-fkill</a></p>
+<pre><code class="hljs css language-sh">yarn global add alfred-fkill
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="develop"></a><a href="#develop" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Develop</h2>
+<h3><a class="anchor" aria-hidden="true" id="jxa"></a><a href="#jxa" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>JXA</h3>
+<p>By default, Google Chrome executing JavaScript through AppleScript is turned off. To turn it on, from the menu bar, go to View &gt; Developer &gt; Allow JavaScript from Apple Events. For more information: <a href="https://support.google.com/chrome/?p=applescript">https://support.google.com/chrome/?p=applescript</a></p>
+<h3><a class="anchor" aria-hidden="true" id="var"></a><a href="#var" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Var</h3>
+<p><a href="https://github.com/JXA-Cookbook/JXA-Cookbook/issues/37">https://github.com/JXA-Cookbook/JXA-Cookbook/issues/37</a></p>
+<p><a href="https://github.com/JXA-Cookbook">JXA-Cookbook</a></p>
+<p><a href="https://computers.tutsplus.com/tutorials/a-beginners-guide-to-javascript-application-scripting-jxa--cms-27171">A Beginners Guide to JXA, JavaScript Application Scripting</a></p>
+<p><a href="https://medium.com/@SteveBarbera/automating-chrome-with-jxa-javascript-application-scripting-6f9bc433216a">Automating Chrome with JXA (Javascript Application Scripting)</a></p>
+<p><a href="https://gist.github.com/EvanLovely/cb01eafb0d61515c835ecd56f6ac199a">https://gist.github.com/EvanLovely/cb01eafb0d61515c835ecd56f6ac199a</a></p>
+<p><a href="https://github.com/codeslikejaggars/open-chrome-tab/blob/master/open-chrome-tab.jxa">https://github.com/codeslikejaggars/open-chrome-tab/blob/master/open-chrome-tab.jxa</a></p>
+<p><a href="https://hackmag.com/coding/getting-to-grips-with-javascript-automation-for-os-x/">https://hackmag.com/coding/getting-to-grips-with-javascript-automation-for-os-x/</a></p>
+<p><a href="https://stackoverflow.com/questions/10366003/applescript-google-chrome-activate-a-certain-window">https://stackoverflow.com/questions/10366003/applescript-google-chrome-activate-a-certain-window</a></p>
+</span></div></article></div><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2018/09/01/docusaurus">Docusaurus</a></h1><p class="post-meta">September 1, 2018</p><div class="authorBlock"></div></header><article class="post-content"><div><span><p>{% include JB/setup %}</p>
+<h2><a class="anchor" aria-hidden="true" id="install-docusaurus"></a><a href="#install-docusaurus" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install Docusaurus</h2>
+<p><a href="https://github.com/facebook/docusaurus">Docusaurus</a>
+<a href="https://docusaurus.io/docs/en/commands">https://docusaurus.io/docs/en/commands</a></p>
+<pre><code class="hljs css language-sh">docusaurus-init
+<span class="hljs-comment"># switch to source branch</span>
+git co <span class="hljs-built_in">source</span>
+<span class="hljs-comment"># go to website directory</span>
+<span class="hljs-built_in">cd</span> website/
+<span class="hljs-comment"># publish to master branch to GitHub</span>
+GIT_USER=taohexxx yarn run publish-gh-pages
+</code></pre>
+</span></div></article></div><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2018/08/30/git-commands">Git Commands</a></h1><p class="post-meta">August 30, 2018</p><div class="authorBlock"></div></header><article class="post-content"><div><span><p>{% include JB/setup %}</p>
+<h2><a class="anchor" aria-hidden="true" id="branch"></a><a href="#branch" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>branch</h2>
+<h3><a class="anchor" aria-hidden="true" id="basic"></a><a href="#basic" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Basic</h3>
+<pre><code class="hljs css language-sh"><span class="hljs-comment"># show</span>
+git branch -vv
+<span class="hljs-comment"># delete</span>
+git branch -d &lt;branch&gt;
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="checkout"></a><a href="#checkout" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>checkout</h3>
+<pre><code class="hljs css language-sh"><span class="hljs-comment"># create a new branch as same as current branch</span>
+git checkout -b &lt;new branch&gt;
+<span class="hljs-comment"># switch to branch</span>
+git checkout &lt;branch&gt;
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="rebase"></a><a href="#rebase" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>rebase</h3>
+<pre><code class="hljs css language-sh">git <span class="hljs-built_in">log</span>
+<span class="hljs-comment"># rebase from tracking remote branch</span>
+git rebase
+<span class="hljs-comment"># rebase from branch</span>
+git rebase &lt;branch&gt;
+<span class="hljs-comment"># rebase start from a commit</span>
+git rebase -i &lt;commit&gt;
+<span class="hljs-comment"># rebase start from last but 4 commit</span>
+git rebase -i HEAD~4
+<span class="hljs-comment"># abort</span>
+git rebase --abort
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="other"></a><a href="#other" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>other</h3>
+<pre><code class="hljs css language-sh"><span class="hljs-comment"># 以当前分支状态新建并复制一个分支new_branch</span>
+git branch -B new_branch
+<span class="hljs-comment"># 将分支master用标签v0.8.0的状态覆盖当前状态（将分支master恢复到标签v0.8.0）</span>
+git branch -f master v0.8.0
+<span class="hljs-comment"># 用分支some_branch覆盖master</span>
+git branch -f master some_branch
+<span class="hljs-comment"># 重命名当前分支</span>
+git branch -m new_name
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="remote"></a><a href="#remote" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>remote</h2>
+<h3><a class="anchor" aria-hidden="true" id="basic-1"></a><a href="#basic-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Basic</h3>
+<pre><code class="hljs css language-sh"><span class="hljs-comment"># show</span>
+git remote -v
+git remote show [remote]
+<span class="hljs-comment"># add</span>
+git remote add &lt;remote&gt; &lt;remote url&gt;
+<span class="hljs-comment"># fetch</span>
+git fetch [remote]
+<span class="hljs-comment"># pull</span>
+git pull [remote]
+<span class="hljs-comment"># push</span>
+git push [-f] [remote] [branch]
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="merge-from-remote"></a><a href="#merge-from-remote" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>merge from remote</h3>
+<pre><code class="hljs css language-sh">git fetch origin
+<span class="hljs-comment"># rebase远程origin仓库的master分支到本分支</span>
+git rebase origin/master
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="submodule"></a><a href="#submodule" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>submodule</h2>
+<p>update from remote</p>
+<pre><code class="hljs css language-sh">git submodule update --remote --merge
+git commit
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="revert"></a><a href="#revert" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>revert</h2>
+<p>Discard commit A,B,C by creating a new commit</p>
+<pre><code class="hljs css language-sh">git revert --no-commit C B A
+git revert --<span class="hljs-built_in">continue</span>
+</code></pre>
+<p>Discard changes in working directory. Recover file to last commit</p>
+<pre><code class="hljs css language-sh">git checkout -- &lt;file&gt;
+</code></pre>
+<p>Checkout file from another branch</p>
+<pre><code class="hljs css language-sh">git checkout &lt;branch&gt; -- &lt;file&gt;
+</code></pre>
+<p>Undo 'git add'</p>
+<pre><code class="hljs css language-sh">git reset &lt;file&gt;
+</code></pre>
+<p>Undo a commit</p>
+<pre><code class="hljs css language-sh">git reset HEAD~  <span class="hljs-comment"># HEAD~ is the same as HEAD~1</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="tool"></a><a href="#tool" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Tool</h2>
+<h3><a class="anchor" aria-hidden="true" id="cherry-pick"></a><a href="#cherry-pick" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>cherry-pick</h3>
+<pre><code class="hljs css language-sh">git cherry-pick &lt;commit&gt;
+<span class="hljs-comment"># abort</span>
+git cherry-pick --abort
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="mergetool"></a><a href="#mergetool" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>mergetool</h3>
+<pre><code class="hljs css language-sh">git mergetool
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="assume-unchanged"></a><a href="#assume-unchanged" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>assume-unchanged</h3>
+<p>作用：远程仓库大小写敏感，但本地文件系统大小写不敏感，导致部分文件一直是modified状态，需要忽略。</p>
+<p>忽略</p>
+<pre><code class="hljs css language-sh">git update-index --assume-unchanged &lt;file&gt;
+</code></pre>
+<p>不忽略</p>
+<pre><code class="hljs css language-sh">git update-index --no-assume-unchanged &lt;file&gt;
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="svn"></a><a href="#svn" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SVN</h2>
+<h3><a class="anchor" aria-hidden="true" id="basic-2"></a><a href="#basic-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Basic</h3>
+<pre><code class="hljs css language-sh"><span class="hljs-comment"># only first time</span>
+git svn <span class="hljs-built_in">clone</span> -r [commit:]HEAD &lt;svn remote url&gt;
+<span class="hljs-comment"># fetch and rebase</span>
+git svn rebase
+<span class="hljs-comment"># push</span>
+git svn dcommit
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="svn-as-master-and-git-as-branch"></a><a href="#svn-as-master-and-git-as-branch" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SVN as master and git as branch</h3>
+<pre><code class="hljs css language-sh">git svn <span class="hljs-built_in">clone</span> -r [commit:]HEAD &lt;svn remote url&gt; [--username=yyy]
+git remote add &lt;git remote&gt; &lt;git remote url&gt;
+git fetch &lt;git remote&gt;
+git checkout -b &lt;git <span class="hljs-built_in">local</span> branch&gt; &lt;git remote branch&gt;
+</code></pre>
+<p>Example</p>
+<pre><code class="hljs css language-sh">git svn <span class="hljs-built_in">clone</span> -r HEAD https://xxx.com/xxx/trunk/navim --username=yyy
+<span class="hljs-built_in">cd</span> navim/
+git remote add tencent https://github.com/taohexxx/navim
+git fetch tencent
+git checkout -b tencent_master tencent/master
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="git-as-master-and-svn-as-branch"></a><a href="#git-as-master-and-svn-as-branch" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Git as master and SVN as branch</h3>
+<pre><code class="hljs css language-sh">git <span class="hljs-built_in">clone</span> &lt;git remote url&gt;
+git svn init &lt;svn remote url&gt;
+git svn fetch -r [commit:]HEAD [--username=yyy]
+<span class="hljs-comment"># checkout to local branch</span>
+git checkout -b &lt;svn <span class="hljs-built_in">local</span> branch&gt; &lt;svn remote branch&gt;
+</code></pre>
+<p>Example</p>
+<pre><code class="hljs css language-sh">git <span class="hljs-built_in">clone</span> https://github.com/taohexxx/navim
+<span class="hljs-built_in">cd</span> navim/
+git svn init https://xxx.com/xxx/trunk/navim
+</code></pre>
+<p><code>.git/config</code> should looks like this:</p>
+<pre><code class="hljs css language-sh">[svn-remote <span class="hljs-string">"svn"</span>]
+  url = https://xxx.com/xxx/trunk/navim/navim
+  fetch = :refs/remotes/git-svn
+</code></pre>
+<p>Then</p>
+<pre><code class="hljs css language-sh">git svn fetch -r HEAD
+git checkout -b svn_trunk remotes/git-svn
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="add-another-svn-remote"></a><a href="#add-another-svn-remote" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Add another SVN remote</h3>
+<pre><code class="hljs css language-sh"><span class="hljs-comment"># edit `.git/config` and copy the `svn` section and rename</span>
+git svn fetch -r HEAD &lt;another svn remote&gt;
+git checkout -b &lt;another svn <span class="hljs-built_in">local</span> branch&gt; &lt;another svn remote branch&gt;
+</code></pre>
+<p>Example</p>
+<p>Edit <code>.git/config</code> and copy the <code>svn</code> section like this:</p>
+<pre><code class="hljs css language-sh">[svn-remote <span class="hljs-string">"svn_dev"</span>]
+  url = https://xxx.com/xxx/branches/navim/navim_dev
+  fetch = :refs/remotes/git-svn_dev
+</code></pre>
+<p>Then</p>
+<pre><code class="hljs css language-sh">git svn fetch -r HEAD svn_dev
+git checkout -b svn_dev remotes/git-svn_dev
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="delete-svn-remote"></a><a href="#delete-svn-remote" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Delete SVN remote</h3>
+<p>Delete <code>svn</code> section in <code>.git/config</code></p>
+<pre><code class="hljs css language-sh">rm -rf .git/svn/refs/remotes/git-svn/
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="实例"></a><a href="#实例" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>实例</h3>
+<pre><code class="hljs css language-sh"><span class="hljs-comment"># 把svn分支作为本地svn_trunk分支，把git的master分支作为本地的master分支</span>
+git <span class="hljs-built_in">clone</span> https://github.com/taohexxx/navim
+<span class="hljs-built_in">cd</span> phxrpc/
+cat .git/config
+git branch -a
+<span class="hljs-comment"># 设置git-svn路径</span>
+git svn init https://xxx.com/xxx/trunk/navim
+cat .git/config
+<span class="hljs-comment"># 从svn上fetch代码到remotes/git-svn分支</span>
+git svn fetch -r HEAD
+<span class="hljs-comment"># 新建一个本地分支svn_trunk，与svn的remotes/git-svn分支对应</span>
+git checkout -b svn_trunk remotes/git-svn
+git branch -a
+
+
+<span class="hljs-comment"># 把svn作为本地master分支，把git的master分支作为本地的git_master分支</span>
+git svn <span class="hljs-built_in">clone</span> -r HEAD https://xxx.com/xxx/trunk/navim
+<span class="hljs-built_in">cd</span> phxrpc/
+cat .git/config
+<span class="hljs-comment"># 设置git路径</span>
+git remote add origin https://github.com/taohexxx/navim
+cat .git/config
+<span class="hljs-comment"># 从git上fetch代码到remotes/origin/master分支</span>
+git fetch origin
+<span class="hljs-comment"># 新建一个本地分支git_master，与git的remotes/origin/master分支对应</span>
+git checkout -b git_master remotes/origin/master
+<span class="hljs-comment"># 上面两步等价于这样：从git上pull代码到本地git_master分支</span>
+<span class="hljs-comment"># git pull origin master:git_master</span>
+<span class="hljs-comment"># git checkout git_master</span>
+git branch -a
+</code></pre>
+<p><a href="https://www.cnblogs.com/h2zZhou/p/6136948.html">https://www.cnblogs.com/h2zZhou/p/6136948.html</a>
+<a href="http://www.ruanyifeng.com/blog/2014/06/git_remote.html">http://www.ruanyifeng.com/blog/2014/06/git_remote.html</a></p>
+<h2><a class="anchor" aria-hidden="true" id="third-party-tools"></a><a href="#third-party-tools" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Third-party tools</h2>
+<h3><a class="anchor" aria-hidden="true" id="gitsome"></a><a href="#gitsome" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>gitsome</h3>
+<p>A supercharged Git/GitHub command line interface (CLI). An official integration for GitHub and GitHub Enterprise</p>
+<p><a href="https://github.com/donnemartin/gitsome">gitsome</a></p>
+<h3><a class="anchor" aria-hidden="true" id="git-recall"></a><a href="#git-recall" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>git-recall</h3>
+<p><a href="https://github.com/Fakerr/git-recall">git-recall</a></p>
+<p>An interactive way to peruse your git history from the terminal</p>
+<pre><code class="hljs css language-sh">yarn global add git-recall
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="remove-file-from-last-commit"></a><a href="#remove-file-from-last-commit" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>remove file from last commit</h2>
+<p>moving the mistakenly committed files back to the staging area from the previous commit, without cancelling the changes done to them</p>
+<pre><code class="hljs css language-sh"><span class="hljs-comment"># restore to state HEAD~1 (newest - 1 commit) and save changes to index</span>
+git reset --soft HEAD~1
+<span class="hljs-comment"># restore to state HEAD (newest commit) and save changes to workspace</span>
+git reset HEAD &lt;unwanted_file&gt;
+<span class="hljs-comment"># restore to state HEAD (newest commit) and DROP changes</span>
+git reset --hard HEAD &lt;drop_file&gt;
+git commit -c ORIG_HEAD
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="break-a-previous-commit-into-multiple-commits"></a><a href="#break-a-previous-commit-into-multiple-commits" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>break a previous commit into multiple commits</h2>
+<pre><code class="hljs css language-sh">git rebase -i 4949c7cbcc0df57f130bafe6bde0
+<span class="hljs-comment"># 1. find the commit you want to break apart</span>
+<span class="hljs-comment"># 2. at the beginning of that line, replace pick with edit (e for short)</span>
+<span class="hljs-comment"># 3. do the same thing as [remove file from last commit](#remove-file-from-last-commit)</span>
+<span class="hljs-comment"># 4. repeat 3 for more commits</span>
+git rebase --<span class="hljs-built_in">continue</span>
+</code></pre>
+<p><a href="https://stackoverflow.com/questions/6217156/break-a-previous-commit-into-multiple-commits">https://stackoverflow.com/questions/6217156/break-a-previous-commit-into-multiple-commits</a></p>
+<h1><a class="anchor" aria-hidden="true" id="unstage-a-deleted-file"></a><a href="#unstage-a-deleted-file" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>unstage a deleted file</h1>
+<pre><code class="hljs css language-sh"><span class="hljs-comment"># this restores the file status in the index</span>
+git reset -- &lt;file&gt;
+<span class="hljs-comment"># then check out a copy from the index</span>
+git checkout -- &lt;file&gt;
+</code></pre>
+<p><a href="https://stackoverflow.com/questions/12481639/remove-files-from-git-commit">https://stackoverflow.com/questions/12481639/remove-files-from-git-commit</a></p>
+<h2><a class="anchor" aria-hidden="true" id="patch"></a><a href="#patch" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Patch</h2>
+<pre><code class="hljs css language-sh">git format-patch HEAD~2
+git am --ignore-whitespace --ignore-space-change XXX.patch
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="push"></a><a href="#push" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>push</h2>
+<pre><code class="hljs css language-sh">git push -u origin &lt;branch&gt;
+<span class="hljs-comment"># -u (short for --set-upstream)</span>
+git push -f
+<span class="hljs-comment"># force</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="head-1-and-head-1"></a><a href="#head-1-and-head-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>HEAD~1</code> and <code>HEAD^1</code></h2>
+<p><code>HEAD~1</code> equals to <code>HEAD^1</code></p>
+<p>If a node have 2 father, <code>HEAD~1</code> or <code>HEAD^1</code> is the left father, <code>HEAD^2</code> is the right father</p>
+<pre><code class="hljs css language-sh">git <span class="hljs-built_in">log</span> --graph
+git <span class="hljs-built_in">log</span> 3ff32cccd14a25cf57312e9c61^2
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="github"></a><a href="#github" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>GitHub</h2>
+<h3><a class="anchor" aria-hidden="true" id="creating-a-clean-gh-pages-branch"></a><a href="#creating-a-clean-gh-pages-branch" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Creating a clean gh-pages branch</h3>
+<pre><code class="hljs css language-sh"><span class="hljs-built_in">cd</span> /path/to/repo-name
+git symbolic-ref HEAD refs/heads/gh-pages
+rm .git/index
+git clean -fdx
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"My GitHub Page"</span> &gt; index.html
+git add .
+git commit -a -m <span class="hljs-string">"First pages commit"</span>
+git push origin gh-pages
+</code></pre>
+</span></div></article></div><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2018/02/17/fonts">Fonts</a></h1><p class="post-meta">February 17, 2018</p><div class="authorBlock"></div></header><article class="post-content"><div><span><p>{% include JB/setup %}</p>
+<h2><a class="anchor" aria-hidden="true" id="0-preface"></a><a href="#0-preface" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>0. Preface</h2>
+<p>Ascender: 顶部(baseline为起点)
+Cap Height: 大写高度
+x-Height: x高度
+Descender: 底部(baseline为起点)
+Em Size = Ascender + Descender</p>
+<p>&lt;<a href="http://designwithfontforge.com/zh-CN/Line_Spacing.html">http://designwithfontforge.com/zh-CN/Line_Spacing.html</a>?</p>
+<h2><a class="anchor" aria-hidden="true" id="1-glyphs"></a><a href="#1-glyphs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Glyphs</h2>
+<ul>
+<li><p>Open <code>FiraCode.glyphs</code>.</p></li>
+<li><p>Copy <code>*.liga</code> and <code>LIG</code> by <code>command</code> + <code>c</code>.</p></li>
+<li><p>Open target font.</p></li>
+<li><p>Paste <code>*.liga</code> and <code>LIG</code> by <code>command</code> + <code>v</code> to target font.</p></li>
+<li><p>Press <code>i</code> button at the top left corner.</p></li>
+<li><p>Select <code>Features</code> tab.</p></li>
+<li><p>Select <code>calt</code> under FEATURES.</p></li>
+<li><p>Copy lookup, such as <code>equal_equal</code>.</p>
+<pre><code class="hljs">lookup equal_equal {
+  ignore <span class="hljs-function"><span class="hljs-keyword">sub</span> <span class="hljs-title">equal</span> <span class="hljs-title">equal</span>' <span class="hljs-title">equal</span></span>;
+  ignore <span class="hljs-function"><span class="hljs-keyword">sub</span> <span class="hljs-title">equal</span>' <span class="hljs-title">equal</span> <span class="hljs-title">equal</span></span>;
+  <span class="hljs-function"><span class="hljs-keyword">sub</span> <span class="hljs-title">LIG</span> <span class="hljs-title">equal</span>' <span class="hljs-title">by</span> <span class="hljs-title">equal_equal</span>.<span class="hljs-title">liga</span></span>;
+  <span class="hljs-function"><span class="hljs-keyword">sub</span> <span class="hljs-title">equal</span>'  <span class="hljs-title">equal</span>  <span class="hljs-title">by</span> <span class="hljs-title">LIG</span></span>;
+} equal_equal;
+</code></pre></li>
+<li><p>Paste lookup to target font.</p></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="2-font-book"></a><a href="#2-font-book" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Font Book</h2>
+<p>Should uninstall the old font with same name before install the newer.</p>
+<h2><a class="anchor" aria-hidden="true" id="3-iterm"></a><a href="#3-iterm" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. iTerm</h2>
+<p>iTerm only support ligatures in whitelist. Have to change font family name to <code>Hasklug Nerd Font</code> or <code>FuraCode Nerd Font</code>.</p>
+<ul>
+<li><p>Press <code>i</code> button at the top left corner.</p></li>
+<li><p>Select <code>Font</code> tab.</p></li>
+<li><p>Edit Family Name.</p></li>
+</ul>
+</span></div></article></div><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2018/02/09/nodejs">Node.js</a></h1><p class="post-meta">February 9, 2018</p><div class="authorBlock"></div></header><article class="post-content"><div><span><p>{% include JB/setup %}</p>
+<h2><a class="anchor" aria-hidden="true" id="nodejs"></a><a href="#nodejs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Node.js</h2>
+<pre><code class="hljs css language-sh"></code></pre>
+<h2><a class="anchor" aria-hidden="true" id="yarn"></a><a href="#yarn" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Yarn</h2>
+<h3><a class="anchor" aria-hidden="true" id="macos"></a><a href="#macos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>macOS</h3>
+<pre><code class="hljs css language-sh">brew options node
+brew install node --with-debug
+brew install yarn
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="ubuntu"></a><a href="#ubuntu" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ubuntu</h3>
+<p>Install Node.js</p>
+<pre><code class="hljs css language-sh">curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
+sudo apt-get install -y nodejs
+</code></pre>
+<p>Install Yarn</p>
+<pre><code class="hljs css language-sh">sudo apt remove cmdtest
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"deb https://dl.yarnpkg.com/debian/ stable main"</span> | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update &amp;&amp; sudo apt-get install yarn
+<span class="hljs-comment"># upgrade</span>
+yarn global upgrade
+</code></pre>
+<p><a href="https://yarnpkg.com/lang/en/docs/install/#linux-tab">https://yarnpkg.com/lang/en/docs/install/#linux-tab</a></p>
+<h2><a class="anchor" aria-hidden="true" id="packages"></a><a href="#packages" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Packages</h2>
+<h3><a class="anchor" aria-hidden="true" id="docusaurus"></a><a href="#docusaurus" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Docusaurus</h3>
+<pre><code class="hljs css language-sh">yarn global add docusaurus-init
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="fkill"></a><a href="#fkill" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>fkill</h3>
+<pre><code class="hljs css language-sh">yarn global add fkill-cli
+yarn global add alfred-fkill
+</code></pre>
+<p><a href="https://github.com/sindresorhus/fkill-cli">https://github.com/sindresorhus/fkill-cli</a></p>
+<h3><a class="anchor" aria-hidden="true" id="mermaid"></a><a href="#mermaid" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>mermaid</h3>
+<p>Generation of diagrams and flowcharts from text in a similar manner as markdown.</p>
+<p><a href="https://github.com/knsv/mermaid">https://github.com/knsv/mermaid</a></p>
+</span></div></article></div><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2017/09/30/phxqueue">PhxQueue</a></h1><p class="post-meta">September 30, 2017</p><div class="authorBlock"></div></header><article class="post-content"><div><span><p>{% include JB/setup %}</p>
+<h2><a class="anchor" aria-hidden="true" id="third-party-dependence"></a><a href="#third-party-dependence" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Third Party Dependence</h2>
+<pre><code class="hljs css language-sh">apt-get update &amp;&amp; apt-get install -y build-essential cmake libtool python-dev libncurses-dev libreadline-dev libz-dev gdb ssh net-tools netcat tcpdump vim neovim
+apt list --installed
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="gflags"></a><a href="#gflags" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>gflags</h3>
+<pre><code class="hljs css language-sh"><span class="hljs-built_in">cd</span> gflags-2.2.1/
+mkdir cmake_build &amp;&amp; <span class="hljs-built_in">cd</span> cmake_build/
+CXXFLAGS=-fPIC cmake -DCMAKE_INSTALL_PREFIX=<span class="hljs-variable">$HOME</span>/<span class="hljs-built_in">local</span> ..
+make
+make <span class="hljs-built_in">test</span>
+make install
+<span class="hljs-built_in">cd</span> -
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="google-test-170-or-older-version"></a><a href="#google-test-170-or-older-version" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Google Test (1.7.0 or Older Version)</h3>
+<pre><code class="hljs css language-sh"><span class="hljs-built_in">cd</span> googletest-release-1.7.0/
+vi README
+g++ -isystem include -I. -pthread -c src/gtest-all.cc
+ar -rv libgtest.a gtest-all.o
+<span class="hljs-built_in">cd</span> -
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="google-glog"></a><a href="#google-glog" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>google-glog</h3>
+<pre><code class="hljs css language-sh"><span class="hljs-built_in">cd</span> glog-0.3.5/
+vi README
+./autogen.sh
+./configure CXXFLAGS=-fPIC --prefix=<span class="hljs-variable">$HOME</span>/<span class="hljs-built_in">local</span> --with-gflags=<span class="hljs-variable">$HOME</span>/<span class="hljs-built_in">local</span>
+make
+make install
+<span class="hljs-built_in">cd</span> -
+</code></pre>
+<p>Modify log file name</p>
+<p>In <code>glog\src\logging.cc</code> modify <code>LogFileObject::CreateLogfile</code></p>
+<h3><a class="anchor" aria-hidden="true" id="google-mock-170-or-older-version"></a><a href="#google-mock-170-or-older-version" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Google Mock (1.7.0 or Older Version)</h3>
+<pre><code class="hljs css language-sh"><span class="hljs-built_in">cd</span> googlemock-release-1.7.0/
+vi README
+ln -s ~/<span class="hljs-built_in">local</span>/src/googletest-release-1.7.0 gtest
+autoreconf -fvi
+<span class="hljs-built_in">cd</span> make/
+make
+<span class="hljs-built_in">cd</span> -
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="proto-buffers"></a><a href="#proto-buffers" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Proto Buffers</h3>
+<pre><code class="hljs css language-sh"><span class="hljs-built_in">cd</span> protobuf-3.5.1/
+vi src/README
+./autogen.sh
+./configure CXXFLAGS=-fPIC --prefix=<span class="hljs-variable">$HOME</span>/<span class="hljs-built_in">local</span>
+make
+make check
+make install
+sudo ldconfig
+<span class="hljs-built_in">cd</span> -
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="leveldb"></a><a href="#leveldb" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>LevelDB</h3>
+<pre><code class="hljs css language-sh"><span class="hljs-built_in">cd</span> leveldb-1.20/
+make
+make check
+ln -s out-static lib
+<span class="hljs-built_in">cd</span> -
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="boost-156-version"></a><a href="#boost-156-version" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Boost (1.56 Version)</h3>
+<p><a href="http://www.boost.org/">Boost</a></p>
+<pre><code class="hljs css language-sh"><span class="hljs-built_in">cd</span> boost_1_56_0/
+./bootstrap.sh --prefix=<span class="hljs-variable">$HOME</span>/<span class="hljs-built_in">local</span>
+./b2
+./b2 install
+<span class="hljs-built_in">cd</span> -
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="component"></a><a href="#component" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Component</h2>
+<h3><a class="anchor" aria-hidden="true" id="libco"></a><a href="#libco" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>libco</h3>
+<pre><code class="hljs css language-sh">git <span class="hljs-built_in">clone</span> https://github.com/Tencent/libco.git
+<span class="hljs-built_in">cd</span> libco/
+make
+<span class="hljs-built_in">cd</span> -
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="phxpaxos"></a><a href="#phxpaxos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PhxPaxos</h3>
+<pre><code class="hljs css language-sh">git <span class="hljs-built_in">clone</span> https://github.com/Tencent/phxpaxos.git
+<span class="hljs-built_in">pushd</span> .
+<span class="hljs-built_in">cd</span> phxpaxos/
+
+rm -r third_party/gflags/
+rm -r third_party/glog/
+rm -r third_party/gmock/
+rm -r third_party/protobuf/
+rm -r third_party/leveldb/
+ln -s ~/<span class="hljs-built_in">local</span> third_party/gflags
+ln -s ~/<span class="hljs-built_in">local</span> third_party/glog
+ln -s ~/<span class="hljs-built_in">local</span>/src/googlemock-release-1.7.0 third_party/gmock
+ln -s ~/<span class="hljs-built_in">local</span> third_party/protobuf
+ln -s ~/<span class="hljs-built_in">local</span>/src/leveldb-1.20 third_party/leveldb
+
+./autoinstall.sh
+make
+make install
+<span class="hljs-built_in">cd</span> plugin/
+make
+make install
+
+<span class="hljs-built_in">popd</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="phxrpc"></a><a href="#phxrpc" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PhxRPC</h3>
+<pre><code class="hljs css language-sh">git <span class="hljs-built_in">clone</span> https://github.com/Tencent/phxrpc.git
+<span class="hljs-built_in">cd</span> phxrpc/
+
+mkdir third_party
+ln -s ~/<span class="hljs-built_in">local</span> third_party/boost
+ln -s ~/<span class="hljs-built_in">local</span> third_party/protobuf
+
+<span class="hljs-built_in">cd</span> -
+</code></pre>
+<p>build debug</p>
+<pre><code class="hljs css language-sh">make debug=y
+make boost debug=y
+</code></pre>
+<p>or add <code>debug = y</code> to <code>phxrpc.mk</code> then <code>make</code></p>
+<pre><code class="hljs css language-sh"><span class="hljs-built_in">cd</span> sample/
+LD_LIBRARY_PATH=<span class="hljs-variable">$LD_LIBRARY_PATH</span>:<span class="hljs-variable">$HOME</span>/<span class="hljs-built_in">local</span>/boost/stage/lib ./search_main -c search_server.conf
+LD_LIBRARY_PATH=<span class="hljs-variable">$LD_LIBRARY_PATH</span>:<span class="hljs-variable">$HOME</span>/<span class="hljs-built_in">local</span>/boost/stage/lib ./search_tool_main -c search_client.conf -f PhxMqttPublish -s <span class="hljs-string">"test213"</span>
+LD_LIBRARY_PATH=<span class="hljs-variable">$LD_LIBRARY_PATH</span>:<span class="hljs-variable">$HOME</span>/<span class="hljs-built_in">local</span>/boost/stage/lib ./search_tool_main -c search_client.conf -f PhxEcho -s <span class="hljs-string">"test456"</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="phxsql"></a><a href="#phxsql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PhxSQL</h3>
+<p>Download <a href="https://www.percona.com/downloads/Percona-Server-5.6/Percona-Server-5.6.31-77.0/source/tarball/percona-server-5.6.31-77.0.tar.gz">percona-server-5.6.31-77.0.tar.gz</a></p>
+<p><strong>MUST</strong> extract to <code>phxsql/percona</code>. <code>ln -s</code> is not allowed.</p>
+<pre><code class="hljs css language-sh">sudo apt-get install cmake libncurses-dev libreadline-dev libz-dev
+
+git <span class="hljs-built_in">clone</span> https://github.com/Tencent/phxsql.git
+<span class="hljs-built_in">cd</span> phxsql/
+
+rm -r third_party/gflags/
+rm -r third_party/glog/
+rm -r third_party/protobuf/
+rm -r third_party/leveldb/
+ln -s ~/<span class="hljs-built_in">local</span> third_party/gflags
+ln -s ~/<span class="hljs-built_in">local</span> third_party/glog
+ln -s ~/<span class="hljs-built_in">local</span> third_party/protobuf
+ln -s ~/<span class="hljs-built_in">local</span>/src/leveldb-1.20 third_party/leveldb
+
+rm -r third_party/colib/
+rm -r third_party/phxpaxos/
+rm -r third_party/phxrpc/
+ln -s ~/<span class="hljs-built_in">local</span>/src/libco third_party/colib
+ln -s ~/<span class="hljs-built_in">local</span>/src/phxpaxos third_party/
+ln -s ~/<span class="hljs-built_in">local</span>/src/phxrpc third_party/
+
+./autoinstall.sh
+
+<span class="hljs-comment"># percona may require link `libz.so`, `libz.a` to `libzlib.so`, `libzlib.a`</span>
+
+sudo apt-get install libz-dev
+sudo apt-get install apt-file
+apt-file update
+apt-file list libz-dev
+
+<span class="hljs-built_in">cd</span> /usr/lib/x86_64-linux-gnu/
+sudo ln -s libz.so libzlib.so
+sudo ln -s libz.a libzlib.a
+
+make
+
+<span class="hljs-comment"># if percona has compile error cause by -Werror=implicit-fallthrough=, -Werror=nonnull-compare, -Wimplicit-fallthrough</span>
+<span class="hljs-comment"># just comment out these lines</span>
+
+make install
+make package
+
+<span class="hljs-built_in">cd</span> -
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="phxqueue"></a><a href="#phxqueue" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PhxQueue</h3>
+<pre><code class="hljs css language-sh">git <span class="hljs-built_in">clone</span> https://github.com/Tencent/phxqueue.git
+<span class="hljs-built_in">cd</span> phxqueue/
+
+rm -r third_party/gflags/
+rm -r third_party/glog/
+rm -r third_party/protobuf/
+rm -r third_party/leveldb/
+ln -s ~/<span class="hljs-built_in">local</span> third_party/gflags
+ln -s ~/<span class="hljs-built_in">local</span> third_party/glog
+ln -s ~/<span class="hljs-built_in">local</span> third_party/protobuf
+ln -s ~/<span class="hljs-built_in">local</span>/src/leveldb-1.20 third_party/leveldb
+
+rm -r third_party/colib/
+rm -r third_party/phxpaxos/
+rm -r third_party/phxrpc/
+ln -s ~/<span class="hljs-built_in">local</span>/src/libco third_party/colib
+ln -s ~/<span class="hljs-built_in">local</span>/src/phxpaxos third_party/
+ln -s ~/<span class="hljs-built_in">local</span>/src/phxrpc third_party/
+
+make debug=y
+make install
+
+<span class="hljs-built_in">cd</span> -
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="docker"></a><a href="#docker" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Docker</h2>
+<pre><code class="hljs css language-sh">docker pull buildpack-deps:artful
+docker run -it -w /phx -v ~/phx:/phx -p 1883:1883 --name=phx_1 --<span class="hljs-built_in">cap</span>-add=SYS_PTRACE --security-opt seccomp=unconfined phx
+docker cp test_file IMAGE_NAME:/test_directory
+docker port phx_1 1883
+nc -p 1883 -l -vv
+</code></pre>
+<p>Test connection from macOS</p>
+<pre><code class="hljs css language-sh">nc localhost 1883 -v
+</code></pre>
+<p>Change <code>[EventLoopServer]</code>: <code>BindIP</code> in <code>mqttbroker_server.conf</code> to real ip address. Don't use <code>127.0.0.1</code>!</p>
+<pre><code class="hljs css language-sh">./mqttbroker_main -c mqttbroker_server.conf
+</code></pre>
+<p><a href="https://stackoverflow.com/questions/35860527/warning-error-disabling-address-space-randomization-operation-not-permitted">warning: Error disabling address space randomization: Operation not permitted
+</a></p>
+<pre><code class="hljs css language-sh">apt-get update
+apt-get install -y cmake --no-install-recommends
+apt-get install python-dev
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="submodule"></a><a href="#submodule" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Submodule</h2>
+<h3><a class="anchor" aria-hidden="true" id="submodule-overview"></a><a href="#submodule-overview" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Submodule Overview</h3>
+<pre><code class="hljs css language-sh">git submodule
+</code></pre>
+<p>if has <code>-</code> before commit id: has not been checked out</p>
+<h3><a class="anchor" aria-hidden="true" id="add-submodule"></a><a href="#add-submodule" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Add Submodule</h3>
+<pre><code class="hljs css language-sh">git submodule add https://github.com/gflags/gflags third_party/gflags
+git submodule add https://github.com/google/glog third_party/glog
+git submodule add https://github.com/google/protobuf third_party/protobuf
+git submodule add https://github.com/google/leveldb third_party/leveldb
+git submodule add https://github.com/google/googlemock third_party/gmock
+
+git submodule add https://github.com/taohexxx/phxrpc third_party/phxrpc
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="remove-submodule"></a><a href="#remove-submodule" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Remove Submodule</h3>
+<pre><code class="hljs css language-sh">git submodule deinit -f -- third_party/glog
+rm -rf .git/modules/third_party/glog
+git rm -f third_party/glog
+
+git submodule deinit -f -- third_party/phxrpc
+rm -rf .git/modules/third_party/phxrpc
+git rm -f third_party/phxrpc
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="change-submodule-version"></a><a href="#change-submodule-version" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Change Submodule Version</h3>
+<pre><code class="hljs css language-sh">git submodule update --init --recursive
+<span class="hljs-built_in">cd</span> third_party/glog
+git checkout v0.3.5  <span class="hljs-comment"># if Detached HEAD, never mind</span>
+git status
+git add third_party/glog
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="branch"></a><a href="#branch" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Branch</h2>
+<h3><a class="anchor" aria-hidden="true" id="branch-overview"></a><a href="#branch-overview" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Branch Overview</h3>
+<pre><code class="hljs css language-sh"><span class="hljs-comment"># show tracking branch</span>
+git branch -vv
+<span class="hljs-comment"># show all branch</span>
+git branch -a
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="merge"></a><a href="#merge" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Merge</h2>
+<h3><a class="anchor" aria-hidden="true" id="rebase-remote-branch"></a><a href="#rebase-remote-branch" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>rebase remote branch</h3>
+<pre><code class="hljs css language-sh">git fetch tencent
+git co tencent_master
+git rebase tencent/master
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="cherry-pick"></a><a href="#cherry-pick" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>cherry-pick</h2>
+<pre><code class="hljs css language-sh">git cherry-pick &lt;commit&gt;
+</code></pre>
+<p><a href="http://jaskey.github.io/blog/2015/12/22/git-cherry-pick/">http://jaskey.github.io/blog/2015/12/22/git-cherry-pick/</a></p>
+<h2><a class="anchor" aria-hidden="true" id="日志文件加载查问题"></a><a href="#日志文件加载查问题" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>日志文件加载查问题</h2>
+<p><code>phxqueue/phxqueue_phxrpc/plugin/configfactory.cpp</code></p>
+<p><code>impl_-&gt;global_config_path</code>为global配置文件路径</p>
+</span></div></article></div><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2016/10/12/spacemacs">Spacemacs</a></h1><p class="post-meta">October 12, 2016</p><div class="authorBlock"></div></header><article class="post-content"><div><span><p>{% include JB/setup %}</p>
+<h2><a class="anchor" aria-hidden="true" id="install"></a><a href="#install" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install</h2>
+<p><a href="https://github.com/syl20bnr/spacemacs">Spacemacs</a></p>
+<pre><code class="hljs css language-sh">yarn global add tern
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="keymap"></a><a href="#keymap" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Keymap</h2>
+<pre><code class="hljs"> Keybinding       | Description
+<span class="hljs-comment">------------------|-------------------------------------</span>
+`SPC h SPC`       | helm-spacemacs-<span class="hljs-keyword">help</span>
+<span class="hljs-string">`SPC h l`</span>         | helm-spacemacs-<span class="hljs-keyword">help</span>-layers
+<span class="hljs-string">`SPC s j`</span>         | helm-jump-<span class="hljs-keyword">in</span>-buffer
+<span class="hljs-string">`SPC t h a`</span>       | <span class="hljs-keyword">automatic</span>-symbol-highlight
+<span class="hljs-string">`SPC t i`</span>         | indent-guide
+<span class="hljs-string">`SPC t C-8`</span>       | highlight-<span class="hljs-keyword">long</span>-<span class="hljs-keyword">lines</span>-<span class="hljs-keyword">globally</span>
+<span class="hljs-string">`SPC T C-d`</span>       | <span class="hljs-keyword">version</span>-control-margin-<span class="hljs-keyword">globally</span>
+<span class="hljs-string">`SPC f t`</span>         | neotree-toggle
+<span class="hljs-string">`SPC f e R`</span>       | dotspacemacs/<span class="hljs-keyword">sync</span>-configuration-layers
+<span class="hljs-string">`SPC f e d`</span>       | find-dotfile
+<span class="hljs-string">`C-h k`</span>           | <span class="hljs-keyword">describe</span>-<span class="hljs-keyword">key</span>
+<span class="hljs-string">`C-h f`</span>           | <span class="hljs-keyword">describe</span>-<span class="hljs-keyword">function</span>
+<span class="hljs-string">`C-h v`</span>           | <span class="hljs-keyword">describe</span>-<span class="hljs-keyword">variable</span>
+<span class="hljs-string">`C-x C-e`</span>         | eval-<span class="hljs-keyword">last</span>-sexp
+<span class="hljs-string">`, g g`</span>           | jump-<span class="hljs-keyword">to</span>-definition
+</code></pre>
+</span></div></article></div><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2016/01/16/go">Go</a></h1><p class="post-meta">January 16, 2016</p><div class="authorBlock"></div></header><article class="post-content"><div><span><p>{% include JB/setup %}</p>
+<h2><a class="anchor" aria-hidden="true" id="go"></a><a href="#go" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Go</h2>
+<pre><code class="hljs css language-sh">brew install go
+brew install glide
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="beego"></a><a href="#beego" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Beego</h2>
+<ul>
+<li>Install Beego</li>
+</ul>
+<pre><code class="hljs css language-sh">go get -u github.com/astaxie/beego
+go get -u github.com/beego/bee
+</code></pre>
+<ul>
+<li>New web project</li>
+</ul>
+<pre><code class="hljs css language-sh">bee new APPNAME
+bee run
+</code></pre>
+<ul>
+<li>Test</li>
+</ul>
+<p><code>http://127.0.0.1:8080/</code></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-next" href="/blog/page2/">Next →</a></div></div></div></div></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/docusaurus.svg" alt="Tao He" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/docs/en/doc2.html">Guides (or other categories)</a><a href="/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2019 Your Name or Your Company Name</section></footer></div></body></html>

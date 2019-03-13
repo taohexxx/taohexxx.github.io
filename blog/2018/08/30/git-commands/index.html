@@ -1,0 +1,281 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Git Commands · Tao He</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="{% include JB/setup %}"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Git Commands · Tao He"/><meta property="og:type" content="website"/><meta property="og:url" content="https://taohexxx.github.io/blog/2018/08/30/git-commands"/><meta property="og:description" content="{% include JB/setup %}"/><meta property="og:image" content="https://taohexxx.github.io/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://taohexxx.github.io/img/docusaurus.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://taohexxx.github.io/blog/atom.xml" title="Tao He Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://taohexxx.github.io/blog/feed.xml" title="Tao He Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/docusaurus.svg" alt="Tao He"/><h2 class="headerTitleWithLogo">Tao He</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/doc1" target="_self">Docs</a></li><li class=""><a href="/docs/doc4" target="_self">API</a></li><li class=""><a href="/en/help" target="_self">Help</a></li><li class="siteNavGroupActive"><a href="/blog" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Recent Posts</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Recent Posts</h3><ul><li class="navListItem"><a class="navItem" href="/blog/2019/01/13/microsoft-powerpoint">Microsoft PowerPoint</a></li><li class="navListItem"><a class="navItem" href="/blog/2018/12/12/chrome">Chrome</a></li><li class="navListItem"><a class="navItem" href="/blog/2018/11/21/alfred">Alfred</a></li><li class="navListItem"><a class="navItem" href="/blog/2018/09/01/docusaurus">Docusaurus</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/blog/2018/08/30/git-commands">Git Commands</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer postContainer blogContainer"><div class="wrapper"><div class="lonePost"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2018/08/30/git-commands">Git Commands</a></h1><p class="post-meta">August 30, 2018</p><div class="authorBlock"></div></header><div><span><p>{% include JB/setup %}</p>
+<h2><a class="anchor" aria-hidden="true" id="branch"></a><a href="#branch" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>branch</h2>
+<h3><a class="anchor" aria-hidden="true" id="basic"></a><a href="#basic" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Basic</h3>
+<pre><code class="hljs css language-sh"><span class="hljs-comment"># show</span>
+git branch -vv
+<span class="hljs-comment"># delete</span>
+git branch -d &lt;branch&gt;
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="checkout"></a><a href="#checkout" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>checkout</h3>
+<pre><code class="hljs css language-sh"><span class="hljs-comment"># create a new branch as same as current branch</span>
+git checkout -b &lt;new branch&gt;
+<span class="hljs-comment"># switch to branch</span>
+git checkout &lt;branch&gt;
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="rebase"></a><a href="#rebase" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>rebase</h3>
+<pre><code class="hljs css language-sh">git <span class="hljs-built_in">log</span>
+<span class="hljs-comment"># rebase from tracking remote branch</span>
+git rebase
+<span class="hljs-comment"># rebase from branch</span>
+git rebase &lt;branch&gt;
+<span class="hljs-comment"># rebase start from a commit</span>
+git rebase -i &lt;commit&gt;
+<span class="hljs-comment"># rebase start from last but 4 commit</span>
+git rebase -i HEAD~4
+<span class="hljs-comment"># abort</span>
+git rebase --abort
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="other"></a><a href="#other" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>other</h3>
+<pre><code class="hljs css language-sh"><span class="hljs-comment"># 以当前分支状态新建并复制一个分支new_branch</span>
+git branch -B new_branch
+<span class="hljs-comment"># 将分支master用标签v0.8.0的状态覆盖当前状态（将分支master恢复到标签v0.8.0）</span>
+git branch -f master v0.8.0
+<span class="hljs-comment"># 用分支some_branch覆盖master</span>
+git branch -f master some_branch
+<span class="hljs-comment"># 重命名当前分支</span>
+git branch -m new_name
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="remote"></a><a href="#remote" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>remote</h2>
+<h3><a class="anchor" aria-hidden="true" id="basic-1"></a><a href="#basic-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Basic</h3>
+<pre><code class="hljs css language-sh"><span class="hljs-comment"># show</span>
+git remote -v
+git remote show [remote]
+<span class="hljs-comment"># add</span>
+git remote add &lt;remote&gt; &lt;remote url&gt;
+<span class="hljs-comment"># fetch</span>
+git fetch [remote]
+<span class="hljs-comment"># pull</span>
+git pull [remote]
+<span class="hljs-comment"># push</span>
+git push [-f] [remote] [branch]
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="merge-from-remote"></a><a href="#merge-from-remote" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>merge from remote</h3>
+<pre><code class="hljs css language-sh">git fetch origin
+<span class="hljs-comment"># rebase远程origin仓库的master分支到本分支</span>
+git rebase origin/master
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="submodule"></a><a href="#submodule" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>submodule</h2>
+<p>update from remote</p>
+<pre><code class="hljs css language-sh">git submodule update --remote --merge
+git commit
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="revert"></a><a href="#revert" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>revert</h2>
+<p>Discard commit A,B,C by creating a new commit</p>
+<pre><code class="hljs css language-sh">git revert --no-commit C B A
+git revert --<span class="hljs-built_in">continue</span>
+</code></pre>
+<p>Discard changes in working directory. Recover file to last commit</p>
+<pre><code class="hljs css language-sh">git checkout -- &lt;file&gt;
+</code></pre>
+<p>Checkout file from another branch</p>
+<pre><code class="hljs css language-sh">git checkout &lt;branch&gt; -- &lt;file&gt;
+</code></pre>
+<p>Undo 'git add'</p>
+<pre><code class="hljs css language-sh">git reset &lt;file&gt;
+</code></pre>
+<p>Undo a commit</p>
+<pre><code class="hljs css language-sh">git reset HEAD~  <span class="hljs-comment"># HEAD~ is the same as HEAD~1</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="tool"></a><a href="#tool" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Tool</h2>
+<h3><a class="anchor" aria-hidden="true" id="cherry-pick"></a><a href="#cherry-pick" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>cherry-pick</h3>
+<pre><code class="hljs css language-sh">git cherry-pick &lt;commit&gt;
+<span class="hljs-comment"># abort</span>
+git cherry-pick --abort
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="mergetool"></a><a href="#mergetool" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>mergetool</h3>
+<pre><code class="hljs css language-sh">git mergetool
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="assume-unchanged"></a><a href="#assume-unchanged" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>assume-unchanged</h3>
+<p>作用：远程仓库大小写敏感，但本地文件系统大小写不敏感，导致部分文件一直是modified状态，需要忽略。</p>
+<p>忽略</p>
+<pre><code class="hljs css language-sh">git update-index --assume-unchanged &lt;file&gt;
+</code></pre>
+<p>不忽略</p>
+<pre><code class="hljs css language-sh">git update-index --no-assume-unchanged &lt;file&gt;
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="svn"></a><a href="#svn" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SVN</h2>
+<h3><a class="anchor" aria-hidden="true" id="basic-2"></a><a href="#basic-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Basic</h3>
+<pre><code class="hljs css language-sh"><span class="hljs-comment"># only first time</span>
+git svn <span class="hljs-built_in">clone</span> -r [commit:]HEAD &lt;svn remote url&gt;
+<span class="hljs-comment"># fetch and rebase</span>
+git svn rebase
+<span class="hljs-comment"># push</span>
+git svn dcommit
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="svn-as-master-and-git-as-branch"></a><a href="#svn-as-master-and-git-as-branch" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SVN as master and git as branch</h3>
+<pre><code class="hljs css language-sh">git svn <span class="hljs-built_in">clone</span> -r [commit:]HEAD &lt;svn remote url&gt; [--username=yyy]
+git remote add &lt;git remote&gt; &lt;git remote url&gt;
+git fetch &lt;git remote&gt;
+git checkout -b &lt;git <span class="hljs-built_in">local</span> branch&gt; &lt;git remote branch&gt;
+</code></pre>
+<p>Example</p>
+<pre><code class="hljs css language-sh">git svn <span class="hljs-built_in">clone</span> -r HEAD https://xxx.com/xxx/trunk/navim --username=yyy
+<span class="hljs-built_in">cd</span> navim/
+git remote add tencent https://github.com/taohexxx/navim
+git fetch tencent
+git checkout -b tencent_master tencent/master
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="git-as-master-and-svn-as-branch"></a><a href="#git-as-master-and-svn-as-branch" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Git as master and SVN as branch</h3>
+<pre><code class="hljs css language-sh">git <span class="hljs-built_in">clone</span> &lt;git remote url&gt;
+git svn init &lt;svn remote url&gt;
+git svn fetch -r [commit:]HEAD [--username=yyy]
+<span class="hljs-comment"># checkout to local branch</span>
+git checkout -b &lt;svn <span class="hljs-built_in">local</span> branch&gt; &lt;svn remote branch&gt;
+</code></pre>
+<p>Example</p>
+<pre><code class="hljs css language-sh">git <span class="hljs-built_in">clone</span> https://github.com/taohexxx/navim
+<span class="hljs-built_in">cd</span> navim/
+git svn init https://xxx.com/xxx/trunk/navim
+</code></pre>
+<p><code>.git/config</code> should looks like this:</p>
+<pre><code class="hljs css language-sh">[svn-remote <span class="hljs-string">"svn"</span>]
+  url = https://xxx.com/xxx/trunk/navim/navim
+  fetch = :refs/remotes/git-svn
+</code></pre>
+<p>Then</p>
+<pre><code class="hljs css language-sh">git svn fetch -r HEAD
+git checkout -b svn_trunk remotes/git-svn
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="add-another-svn-remote"></a><a href="#add-another-svn-remote" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Add another SVN remote</h3>
+<pre><code class="hljs css language-sh"><span class="hljs-comment"># edit `.git/config` and copy the `svn` section and rename</span>
+git svn fetch -r HEAD &lt;another svn remote&gt;
+git checkout -b &lt;another svn <span class="hljs-built_in">local</span> branch&gt; &lt;another svn remote branch&gt;
+</code></pre>
+<p>Example</p>
+<p>Edit <code>.git/config</code> and copy the <code>svn</code> section like this:</p>
+<pre><code class="hljs css language-sh">[svn-remote <span class="hljs-string">"svn_dev"</span>]
+  url = https://xxx.com/xxx/branches/navim/navim_dev
+  fetch = :refs/remotes/git-svn_dev
+</code></pre>
+<p>Then</p>
+<pre><code class="hljs css language-sh">git svn fetch -r HEAD svn_dev
+git checkout -b svn_dev remotes/git-svn_dev
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="delete-svn-remote"></a><a href="#delete-svn-remote" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Delete SVN remote</h3>
+<p>Delete <code>svn</code> section in <code>.git/config</code></p>
+<pre><code class="hljs css language-sh">rm -rf .git/svn/refs/remotes/git-svn/
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="实例"></a><a href="#实例" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>实例</h3>
+<pre><code class="hljs css language-sh"><span class="hljs-comment"># 把svn分支作为本地svn_trunk分支，把git的master分支作为本地的master分支</span>
+git <span class="hljs-built_in">clone</span> https://github.com/taohexxx/navim
+<span class="hljs-built_in">cd</span> phxrpc/
+cat .git/config
+git branch -a
+<span class="hljs-comment"># 设置git-svn路径</span>
+git svn init https://xxx.com/xxx/trunk/navim
+cat .git/config
+<span class="hljs-comment"># 从svn上fetch代码到remotes/git-svn分支</span>
+git svn fetch -r HEAD
+<span class="hljs-comment"># 新建一个本地分支svn_trunk，与svn的remotes/git-svn分支对应</span>
+git checkout -b svn_trunk remotes/git-svn
+git branch -a
+
+
+<span class="hljs-comment"># 把svn作为本地master分支，把git的master分支作为本地的git_master分支</span>
+git svn <span class="hljs-built_in">clone</span> -r HEAD https://xxx.com/xxx/trunk/navim
+<span class="hljs-built_in">cd</span> phxrpc/
+cat .git/config
+<span class="hljs-comment"># 设置git路径</span>
+git remote add origin https://github.com/taohexxx/navim
+cat .git/config
+<span class="hljs-comment"># 从git上fetch代码到remotes/origin/master分支</span>
+git fetch origin
+<span class="hljs-comment"># 新建一个本地分支git_master，与git的remotes/origin/master分支对应</span>
+git checkout -b git_master remotes/origin/master
+<span class="hljs-comment"># 上面两步等价于这样：从git上pull代码到本地git_master分支</span>
+<span class="hljs-comment"># git pull origin master:git_master</span>
+<span class="hljs-comment"># git checkout git_master</span>
+git branch -a
+</code></pre>
+<p><a href="https://www.cnblogs.com/h2zZhou/p/6136948.html">https://www.cnblogs.com/h2zZhou/p/6136948.html</a>
+<a href="http://www.ruanyifeng.com/blog/2014/06/git_remote.html">http://www.ruanyifeng.com/blog/2014/06/git_remote.html</a></p>
+<h2><a class="anchor" aria-hidden="true" id="third-party-tools"></a><a href="#third-party-tools" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Third-party tools</h2>
+<h3><a class="anchor" aria-hidden="true" id="gitsome"></a><a href="#gitsome" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>gitsome</h3>
+<p>A supercharged Git/GitHub command line interface (CLI). An official integration for GitHub and GitHub Enterprise</p>
+<p><a href="https://github.com/donnemartin/gitsome">gitsome</a></p>
+<h3><a class="anchor" aria-hidden="true" id="git-recall"></a><a href="#git-recall" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>git-recall</h3>
+<p><a href="https://github.com/Fakerr/git-recall">git-recall</a></p>
+<p>An interactive way to peruse your git history from the terminal</p>
+<pre><code class="hljs css language-sh">yarn global add git-recall
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="remove-file-from-last-commit"></a><a href="#remove-file-from-last-commit" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>remove file from last commit</h2>
+<p>moving the mistakenly committed files back to the staging area from the previous commit, without cancelling the changes done to them</p>
+<pre><code class="hljs css language-sh"><span class="hljs-comment"># restore to state HEAD~1 (newest - 1 commit) and save changes to index</span>
+git reset --soft HEAD~1
+<span class="hljs-comment"># restore to state HEAD (newest commit) and save changes to workspace</span>
+git reset HEAD &lt;unwanted_file&gt;
+<span class="hljs-comment"># restore to state HEAD (newest commit) and DROP changes</span>
+git reset --hard HEAD &lt;drop_file&gt;
+git commit -c ORIG_HEAD
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="break-a-previous-commit-into-multiple-commits"></a><a href="#break-a-previous-commit-into-multiple-commits" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>break a previous commit into multiple commits</h2>
+<pre><code class="hljs css language-sh">git rebase -i 4949c7cbcc0df57f130bafe6bde0
+<span class="hljs-comment"># 1. find the commit you want to break apart</span>
+<span class="hljs-comment"># 2. at the beginning of that line, replace pick with edit (e for short)</span>
+<span class="hljs-comment"># 3. do the same thing as [remove file from last commit](#remove-file-from-last-commit)</span>
+<span class="hljs-comment"># 4. repeat 3 for more commits</span>
+git rebase --<span class="hljs-built_in">continue</span>
+</code></pre>
+<p><a href="https://stackoverflow.com/questions/6217156/break-a-previous-commit-into-multiple-commits">https://stackoverflow.com/questions/6217156/break-a-previous-commit-into-multiple-commits</a></p>
+<h1><a class="anchor" aria-hidden="true" id="unstage-a-deleted-file"></a><a href="#unstage-a-deleted-file" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>unstage a deleted file</h1>
+<pre><code class="hljs css language-sh"><span class="hljs-comment"># this restores the file status in the index</span>
+git reset -- &lt;file&gt;
+<span class="hljs-comment"># then check out a copy from the index</span>
+git checkout -- &lt;file&gt;
+</code></pre>
+<p><a href="https://stackoverflow.com/questions/12481639/remove-files-from-git-commit">https://stackoverflow.com/questions/12481639/remove-files-from-git-commit</a></p>
+<h2><a class="anchor" aria-hidden="true" id="patch"></a><a href="#patch" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Patch</h2>
+<pre><code class="hljs css language-sh">git format-patch HEAD~2
+git am --ignore-whitespace --ignore-space-change XXX.patch
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="push"></a><a href="#push" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>push</h2>
+<pre><code class="hljs css language-sh">git push -u origin &lt;branch&gt;
+<span class="hljs-comment"># -u (short for --set-upstream)</span>
+git push -f
+<span class="hljs-comment"># force</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="head-1-and-head-1"></a><a href="#head-1-and-head-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>HEAD~1</code> and <code>HEAD^1</code></h2>
+<p><code>HEAD~1</code> equals to <code>HEAD^1</code></p>
+<p>If a node have 2 father, <code>HEAD~1</code> or <code>HEAD^1</code> is the left father, <code>HEAD^2</code> is the right father</p>
+<pre><code class="hljs css language-sh">git <span class="hljs-built_in">log</span> --graph
+git <span class="hljs-built_in">log</span> 3ff32cccd14a25cf57312e9c61^2
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="github"></a><a href="#github" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>GitHub</h2>
+<h3><a class="anchor" aria-hidden="true" id="creating-a-clean-gh-pages-branch"></a><a href="#creating-a-clean-gh-pages-branch" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Creating a clean gh-pages branch</h3>
+<pre><code class="hljs css language-sh"><span class="hljs-built_in">cd</span> /path/to/repo-name
+git symbolic-ref HEAD refs/heads/gh-pages
+rm .git/index
+git clean -fdx
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"My GitHub Page"</span> &gt; index.html
+git add .
+git commit -a -m <span class="hljs-string">"First pages commit"</span>
+git push origin gh-pages
+</code></pre>
+</span></div></div><div class="blogSocialSection"></div></div><div class="blog-recent"><a class="button" href="/blog">Recent Posts</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#branch">branch</a><ul class="toc-headings"><li><a href="#basic">Basic</a></li><li><a href="#checkout">checkout</a></li><li><a href="#rebase">rebase</a></li><li><a href="#other">other</a></li></ul></li><li><a href="#remote">remote</a><ul class="toc-headings"><li><a href="#basic-1">Basic</a></li><li><a href="#merge-from-remote">merge from remote</a></li></ul></li><li><a href="#submodule">submodule</a></li><li><a href="#revert">revert</a></li><li><a href="#tool">Tool</a><ul class="toc-headings"><li><a href="#cherry-pick">cherry-pick</a></li><li><a href="#mergetool">mergetool</a></li><li><a href="#assume-unchanged">assume-unchanged</a></li></ul></li><li><a href="#svn">SVN</a><ul class="toc-headings"><li><a href="#basic-2">Basic</a></li><li><a href="#svn-as-master-and-git-as-branch">SVN as master and git as branch</a></li><li><a href="#git-as-master-and-svn-as-branch">Git as master and SVN as branch</a></li><li><a href="#add-another-svn-remote">Add another SVN remote</a></li><li><a href="#delete-svn-remote">Delete SVN remote</a></li><li><a href="#实例">实例</a></li></ul></li><li><a href="#third-party-tools">Third-party tools</a><ul class="toc-headings"><li><a href="#gitsome">gitsome</a></li><li><a href="#git-recall">git-recall</a></li></ul></li><li><a href="#remove-file-from-last-commit">remove file from last commit</a></li><li><a href="#break-a-previous-commit-into-multiple-commits">break a previous commit into multiple commits</a></li><li><a href="#patch">Patch</a></li><li><a href="#push">push</a></li><li><a href="#head-1-and-head-1"><code>HEAD~1</code> and <code>HEAD^1</code></a></li><li><a href="#github">GitHub</a><ul class="toc-headings"><li><a href="#creating-a-clean-gh-pages-branch">Creating a clean gh-pages branch</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/docusaurus.svg" alt="Tao He" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/docs/en/doc2.html">Guides (or other categories)</a><a href="/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2019 Your Name or Your Company Name</section></footer></div></body></html>

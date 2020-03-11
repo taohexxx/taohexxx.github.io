@@ -9,7 +9,12 @@ tags: [linux, ubuntu, macos, docusaurus, github]
 
 ## Install Docusaurus
 
+```sh
+yarn global add docusaurus
+```
+
 [Docusaurus](https://github.com/facebook/docusaurus)
+
 <https://docusaurus.io/docs/en/commands>
 
 ```sh

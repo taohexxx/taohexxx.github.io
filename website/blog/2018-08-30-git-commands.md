@@ -23,6 +23,10 @@ git branch -d <branch>
 ```sh
 # create a new branch as same as current branch
 git checkout -b <new branch>
+# checkout the branch
+git checkout -b <local branch> <remote branch>
+# or
+git branch <local branch> <remote branch>
 # switch to branch
 git checkout <branch>
 ```
@@ -41,6 +45,9 @@ git rebase -i <commit>
 git rebase -i HEAD~4
 # abort
 git rebase --abort
+# 将commit追加到特定commit后面
+# 避免merge别人所有代码时大量的diff，也使分支图更整洁
+git rebase -i remote_branch --onto target_commit
 ```
 
 ### other
@@ -122,6 +129,14 @@ Undo a commit
 
 ```sh
 git reset HEAD~  # HEAD~ is the same as HEAD~1
+```
+
+## log
+
+view git log history for all files within a folder
+
+```sh
+it log -- <path>
 ```
 
 ## Tool
@@ -324,6 +339,29 @@ git reset --hard HEAD <drop_file>
 git commit -c ORIG_HEAD
 ```
 
+## undoing a rebase
+
+If conflict exists:
+
+```sh
+git rebase --abort
+```
+
+Otherwise, if no `reset`, `rebase` or `merge` after your undoing `rebase`:
+
+```sh
+git reset --hard ORIG_HEAD
+```
+
+Otherwise:
+
+```sh
+git reflog
+git reset --hard HEAD@{2}
+```
+
+<https://stackoverflow.com/questions/134882/undoing-a-git-rebase>
+
 ## break a previous commit into multiple commits
 
 ```sh
@@ -374,6 +412,10 @@ If a node have 2 father, `HEAD~1` or `HEAD^1` is the left father, `HEAD^2` is th
 git log --graph
 git log 3ff32cccd14a25cf57312e9c61^2
 ```
+
+## bisect
+
+<https://www.jianshu.com/p/e954e8821f6b>
 
 ## GitHub
 
